@@ -10,8 +10,13 @@ import SwiftUI
 @main
 struct Language_Byte_Watch_AppApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+           WindowGroup {
+               ContentView()
+           }
+       }
+   }
+
+   // A SwiftUI preview.
+   #Preview {
+       ContentView()
+   }
