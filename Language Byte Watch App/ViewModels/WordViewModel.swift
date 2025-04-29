@@ -123,7 +123,7 @@ class WordViewModel: ObservableObject {
 
         return categories
     }
-    
+
     // Available language pairs for selection
     var languagePairOptions: [String] {
         return languageManager.getAvailableLanguagePairsDisplay()
@@ -349,7 +349,7 @@ class WordViewModel: ObservableObject {
         guard enableTextToSpeech else { return }
 
         let utterance = AVSpeechUtterance(string: word)
-        
+
         // First try to use user-selected voice if available
         if !selectedVoiceForTargetLanguage.isEmpty, 
            let voice = AVSpeechSynthesisVoice(identifier: selectedVoiceForTargetLanguage) {
@@ -514,7 +514,7 @@ class WordViewModel: ObservableObject {
     }
 
     // MARK: - Other Methods
-
+   
     /// Toggles between displaying the foreign word and its translation, and speaks the new word aloud.
     func toggleDisplay() {
         showingForeign.toggle()
@@ -527,7 +527,7 @@ class WordViewModel: ObservableObject {
     }
     
     /// Saves the word history to UserDefaults.
-    func saveWordHistory() {
+     func saveWordHistory() {
         do {
             let encoder = JSONEncoder()
             let data = try encoder.encode(wordHistory)

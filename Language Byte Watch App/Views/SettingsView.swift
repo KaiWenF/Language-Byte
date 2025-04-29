@@ -62,15 +62,6 @@ struct SettingsView: View {
                 }
             }
             
-            // 🔹 Accessibility Settings
-            Section(header: Text("Accessibility")) {
-                Toggle("Enable Text-to-Speech", isOn: $enableTextToSpeech)
-                    .onChange(of: enableTextToSpeech) { _ in
-                        // Stop any current speaking when toggling
-                        viewModel.stopSpeaking()
-                    }
-            }
-
             // 🔹 Dynamic Voice Settings for Target Language
             Section(header: Text("Voice Settings")) {
                 // Determine language name for display

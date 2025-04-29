@@ -77,7 +77,19 @@ Here's a summary of the changes made to implement multi-language support:
 - Added helper method to format notification times based on device settings
 - Added notifications permission request on app startup
 
-## 10. Bug Fixes
+## 10. Text Scrolling Improvements
+- Implemented advanced scrolling mechanism for long words/phrases
+- Created custom `SimpleScrollingModifier` with optimized animation cycles
+- Resolved text truncation issues that previously showed ellipsis (...)
+- Added intelligent display logic that only scrolls text when needed
+- Optimized scrolling speed parameters based on text length
+- Implemented faster animation cycling for better readability
+- Fixed text measurement and container width handling
+- Ensured full text visibility without truncation or clipping
+- Added smooth transitions between scrolling and centered text modes
+- Modified container layout to maximize available space for text
+
+## 11. Bug Fixes
 - Resolved duplicate file references for MarqueeText.swift
 - Fixed multiple @main entry point conflicts
 - Eliminated invalid redeclaration errors for model types

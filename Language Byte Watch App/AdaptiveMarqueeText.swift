@@ -23,78 +23,122 @@ struct AdaptiveMarqueeText: View {
     
     @State private var textWidth: CGFloat = 0
     @State private var containerWidth: CGFloat = 0
-    
-    // This offset moves left when scrolling
     @State private var xOffset: CGFloat = 0
+    @State private var shouldScroll: Bool = false
     
     var body: some View {
-        GeometryReader { containerGeo in
+        GeometryReader { geometry in
             ZStack(alignment: .leading) {
+                if shouldScroll {
+                    // For text that needs scrolling - simplified direct approach
+                    let scrollableText = Text(text)
+                        .font(font)
+                        .lineLimit(1)
+                        .fixedSize(horizontal: true, vertical: false)
+                    
+                    scrollableText
+                        .modifier(AdaptiveScrollingModifier(
+                            textWidth: textWidth,
+                            containerWidth: containerWidth,
+                            speed: speed,
+                            delay: delay
+                        ))
+                        .id(text)
+                        .onAppear {
+                            print("Scrolling text: \(text), width: \(textWidth), container: \(containerWidth)")
+                        }
+                } else {
+                    // For text that fits within container
+                    Text(text)
+                        .font(font)
+                        .lineLimit(1)
+                        .fixedSize(horizontal: true, vertical: false)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
+            }
+            .background(
+                // Use this technique for measuring text width in SwiftUI
                 Text(text)
                     .font(font)
                     .lineLimit(1)
                     .fixedSize(horizontal: true, vertical: false)
+                    .hidden()
                     .background(
-                        GeometryReader { textGeo in
+                        GeometryReader { textGeometry in
                             Color.clear
                                 .onAppear {
-                                    // Measure the text and container once this subview appears
-                                    textWidth = textGeo.size.width
-                                    containerWidth = containerGeo.size.width
-                                    startOrStopScrolling()
+                                    let measuredWidth = textGeometry.size.width
+                                    let currentContainerWidth = geometry.size.width
+                                    // Update state only if measurements changed significantly
+                                    if abs(measuredWidth - textWidth) > 1 || abs(currentContainerWidth - containerWidth) > 1 {
+                                        textWidth = measuredWidth
+                                        containerWidth = currentContainerWidth
+                                        // Calculate shouldScroll HERE, after measurement
+                                        shouldScroll = textWidth > (containerWidth - 10)
+                                        print("Text measured: \(text), width: \(textWidth), container: \(containerWidth), should scroll: \(shouldScroll)")
+                                    }
                                 }
                         }
                     )
-                    .offset(x: xOffset)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .clipped()
-            .onChange(of: containerGeo.size.width) { newWidth in
-                // If user rotates the watch or container changes,
-                // re-measure and decide if we should scroll again.
-                containerWidth = newWidth
-                startOrStopScrolling()
-            }
+            )
             .onChange(of: text) { _ in
-                // Recalculate when text changes
-                DispatchQueue.main.async {
-                    startOrStopScrolling()
-                }
+                // Text changed, re-evaluating scroll state will happen naturally
+                // because the view with .id(text) gets recreated, triggering measurement.
+                // We don't need to calculate shouldScroll here with potentially old width.
+                print("Text changed to: \(text)")
+            }
+            .onChange(of: geometry.size.width) { newWidth in
+                containerWidth = newWidth
+                shouldScroll = textWidth > (containerWidth - 10)
             }
         }
-        .frame(height: 40) // Adjust for your design
+        .clipped()          // Ensure text is clipped to container bounds
+        .frame(height: 40)
+    }
+}
+
+// A modifier that handles the scrolling animation
+struct AdaptiveScrollingModifier: ViewModifier {
+    let textWidth: CGFloat
+    let containerWidth: CGFloat
+    let speed: Double
+    let delay: Double
+    
+    @State private var animating = false
+    @State private var animationID = UUID() // Add ID to force animation reset
+    
+    func body(content: Content) -> some View {
+        content
+            .offset(x: animating ? -textWidth : containerWidth)
+            .onAppear {
+                startAnimation()
+            }
+            .onChange(of: textWidth) { _ in resetAnimation() }
+            .onChange(of: containerWidth) { _ in resetAnimation() }
     }
     
-    /// Cancels scrolling if text fits, or starts a new scroll if text is too wide.
-    private func startOrStopScrolling() {
-        // If text fits within container, center it and don't scroll
-        guard textWidth > containerWidth else {
-            withAnimation(.none) {
-                xOffset = 0  // Start at left edge for all text
-            }
-            return
-        }
+    private func resetAnimation() {
+        animating = false // Stop current animation
+        animationID = UUID() // Change ID to break the previous animation chain
+        startAnimation()     // Start new animation
+    }
+    
+    private func startAnimation() {
+        // Ensure we don't start if widths are zero
+        guard textWidth > 0, containerWidth > 0, speed > 0 else { return }
         
-        // For text that needs scrolling
-        
-        // First, reset to initial position (visible at left edge)
-        withAnimation(.none) {
-            xOffset = 0
-        }
-        
-        // Calculate reasonable scroll time based on text length
-        let scrollDuration = Double(textWidth) / speed
-        
-        // Delayed start to make sure text is visible first
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            withAnimation(
-                Animation.linear(duration: scrollDuration)
-                    .delay(0.5)
-                    .repeatForever(autoreverses: true)
-            ) {
-                // Scroll to position where end of text is just visible
-                let scrollAmount = min(textWidth - containerWidth, max(0, textWidth - containerWidth + 10))
-                xOffset = -scrollAmount
+        let currentID = animationID
+        // Initial delay then start animation
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            // Only proceed if the animation ID hasn't changed (i.e., not reset)
+            guard currentID == animationID else { return }
+            
+            let totalDistance = textWidth + containerWidth
+            // Avoid division by zero if speed is somehow 0
+            let duration = totalDistance / max(speed, 1)
+            
+            withAnimation(.linear(duration: duration).repeatForever(autoreverses: false)) {
+                animating = true
             }
         }
     }

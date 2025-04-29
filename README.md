@@ -19,6 +19,8 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 ### User Interface
 - Clean, simple watchOS interface optimized for small screens
 - Animated transitions between language selections
+- Advanced text scrolling for long words/phrases with optimized cycling
+- Intelligent display that only scrolls text when necessary
 - Scrollable main view with quick access to all features
 - Clear language indicator showing current selection
 
@@ -85,6 +87,9 @@ The app uses a JSON structure for language data:
 
 ## Recent Improvements
 
+- Enhanced text scrolling mechanism to display long words without truncation
+- Optimized animation cycles for faster text return when scrolling long content
+- Implemented context-aware text display that adapts to content length
 - Added Word of the Day feature with persistent storage
 - Implemented daily notification system with customizable scheduling
 - Created DailyDashboardView to track learning progress

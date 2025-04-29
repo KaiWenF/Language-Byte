@@ -13,12 +13,12 @@ import struct Language_Byte_Watch_App.MainView
 @main
 struct Language_ByteApp: App {
     var body: some Scene {
-        WindowGroup {
+           WindowGroup {
             MainView()
-        }
-    }
-}
+           }
+       }
+   }
 
-#Preview {
+   #Preview {
     MainView()
-}
+   }
