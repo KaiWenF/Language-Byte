@@ -46,6 +46,12 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - Clear notification status indicators
 - Intelligent notification scheduling
 
+### Testing
+- Comprehensive automated test suite
+- Unit tests for models, managers, and view models
+- Basic UI initialization tests
+- Mock data for testing without external dependencies
+
 ## Setup Instructions
 
 ### Installation
@@ -78,6 +84,17 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - `WordViewModel`: Central data model managing words and app state
 - `LanguageDataManager`: Handles loading and organizing language data
 
+### Managers
+- `NotificationManager`: Handles scheduling of daily notifications
+- `LanguageDataManager`: Manages language data loading and formatting
+
+### Tests
+- `ModelTests`: Tests for data models and their behavior
+- `ManagerTests`: Tests for managers and their functionality
+- `WordViewModelTests`: Tests for the core view model logic
+- `UITests`: Basic tests for view initialization
+- `TestHelpers`: Helper methods and mock data for testing
+
 ## Data Structure
 
 The app uses a JSON structure for language data:
@@ -97,6 +114,7 @@ The app uses a JSON structure for language data:
 - Enhanced UI with better feedback for notification status
 - Improved overall app structure and navigation flow
 - Streamlined app startup by replacing ContentView with MainView
+- Added comprehensive automated test suite to ensure code reliability
 
 ## Future Development
 
@@ -111,6 +129,7 @@ Planned enhancements:
 - Offline voice support for environments without internet
 - Accessibility enhancements for diverse user needs
 - Multi-user support for family or classroom settings
+- Expanded test coverage with snapshot and integration tests
 
 ## Contributing
 

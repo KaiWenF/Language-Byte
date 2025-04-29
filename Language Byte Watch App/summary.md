@@ -89,7 +89,26 @@ Here's a summary of the changes made to implement multi-language support:
 - Added smooth transitions between scrolling and centered text modes
 - Modified container layout to maximize available space for text
 
-## 11. Bug Fixes
+## 11. Automated Unit Tests
+- Implemented comprehensive test suite using Swift Testing framework
+- Created modular test structure with separate files for each component type:
+  - `ModelTests.swift`: Tests for WordPair, Language, and LanguagePair models
+  - `ManagerTests.swift`: Tests for LanguageDataManager and NotificationManager
+  - `WordViewModelTests.swift`: Tests for core app logic and state management
+  - `UITests.swift`: Basic tests for view initialization and rendering
+- Added test helpers and mock data in `TestHelpers.swift`
+- Implemented tests for critical functionality:
+  - Model initialization, equality, and coding/decoding
+  - Data manager loading and filtering capabilities
+  - ViewModel state management and user interactions
+  - Word selection and language pair switching
+  - Category filtering and favorites management
+  - Word of the Day functionality
+- Created adaptable tests that work with actual app data
+- Added proper test assertions using the #expect syntax
+- Implemented safeguards for tests with external dependencies
+
+## 12. Bug Fixes
 - Resolved duplicate file references for MarqueeText.swift
 - Fixed multiple @main entry point conflicts
 - Eliminated invalid redeclaration errors for model types
@@ -109,5 +128,6 @@ Here's a summary of the changes made to implement multi-language support:
 - Ensuring persistence of user preferences
 - Coordinating notifications with app state
 - Managing EnvironmentObject references across different view hierarchies
+- Setting up proper test environment for WatchKit applications
 
-This implementation allows users to switch between language pairs while maintaining all existing functionality including favorites, text-to-speech, and category filtering. The codebase is now better organized with cleaner separation of concerns and improved maintainability. The app provides a smooth, intuitive user experience with proper persistence of user preferences across app launches. The addition of Word of the Day features and customizable notifications significantly enhances the app's ability to help users learn languages through regular, scheduled practice. 
+This implementation allows users to switch between language pairs while maintaining all existing functionality including favorites, text-to-speech, and category filtering. The codebase is now better organized with cleaner separation of concerns and improved maintainability. The app provides a smooth, intuitive user experience with proper persistence of user preferences across app launches. The addition of Word of the Day features and customizable notifications significantly enhances the app's ability to help users learn languages through regular, scheduled practice. The automated test suite ensures reliability and helps prevent regressions when making future changes. 
