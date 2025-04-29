@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AVFoundation
+import UserNotifications
 
 /// The view model that orchestrates loading words and toggling between foreign word / translation.
 class WordViewModel: ObservableObject {
@@ -32,6 +33,11 @@ class WordViewModel: ObservableObject {
     @AppStorage("wordOfTheDaySourceLanguage") public var wordOfTheDaySourceLanguage: String = ""
     @AppStorage("wordOfTheDayTargetLanguage") public var wordOfTheDayTargetLanguage: String = ""
     @AppStorage("wordOfTheDayDate") public var wordOfTheDayDate: String = ""
+    
+    // Notification properties
+    @AppStorage("notificationHour") public var notificationHour: Int = 9
+    @AppStorage("notificationMinute") public var notificationMinute: Int = 0
+    @AppStorage("notificationsEnabled") public var notificationsEnabled: Bool = true
     
     // Daily progress tracking
     @AppStorage("dailyGoal") var dailyGoal: Int = 10
@@ -129,6 +135,72 @@ class WordViewModel: ObservableObject {
         loadFavorites()
         loadWordHistory()
         loadLanguageData()
+        
+        // Request notification permissions
+        requestNotificationPermissions()
+        
+        // Schedule notifications with saved time
+        scheduleDailyWordNotification()
+    }
+    
+    // MARK: - Notification Methods
+    
+    /// Request permissions for sending notifications
+    private func requestNotificationPermissions() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if granted {
+                print("Notifications allowed.")
+            } else {
+                print("Notifications not allowed.")
+            }
+        }
+    }
+    
+    /// Display language name helper function
+    func displayLanguageName(for code: String) -> String {
+        switch code {
+        case "en": return "English"
+        case "es": return "Spanish"
+        case "fr": return "French"
+        case "de": return "German"
+        case "it": return "Italian"
+        case "ja": return "Japanese"
+        case "zh": return "Chinese"
+        default: return code.uppercased()
+        }
+    }
+    
+    /// Schedules a daily notification for the Word of the Day at the user's preferred time
+    public func scheduleDailyWordNotification() {
+        let center = UNUserNotificationCenter.current()
+
+        // Cancel any existing scheduled notification first
+        center.removePendingNotificationRequests(withIdentifiers: ["DailyWordNotification"])
+        
+        // Don't schedule if notifications are disabled or hour is -1 (no notification)
+        if !notificationsEnabled || notificationHour == -1 {
+            return
+        }
+
+        // Build the new notification
+        let content = UNMutableNotificationContent()
+        content.title = "Word of the Day"
+        content.body = "\(wordOfTheDayTarget) means \(wordOfTheDaySource) in \(displayLanguageName(for: wordOfTheDayTargetLanguage))!"
+        content.sound = .default
+
+        var dateComponents = DateComponents()
+        dateComponents.hour = notificationHour
+        dateComponents.minute = notificationMinute
+
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+
+        let request = UNNotificationRequest(identifier: "DailyWordNotification", content: content, trigger: trigger)
+
+        center.add(request) { error in
+            if let error = error {
+                print("Error scheduling notification: \(error.localizedDescription)")
+            }
+        }
     }
     
     // MARK: - Word of the Day Methods
@@ -139,6 +211,9 @@ class WordViewModel: ObservableObject {
         if today != wordOfTheDayDate {
             selectNewWordOfTheDay()
             wordOfTheDayDate = today
+            
+            // Update the notification with the new word
+            scheduleDailyWordNotification()
         }
     }
     
@@ -195,6 +270,9 @@ class WordViewModel: ObservableObject {
     
     /// Sets the currently selected language pair and loads its words
     func selectLanguagePair(_ languagePair: LanguagePair) {
+        print("🔍 Selecting language pair: \(languagePair.sourceLanguage.name) → \(languagePair.targetLanguage.name)")
+        print("📚 Word count in this pair: \(languagePair.pairs.count)")
+        
         selectedLanguagePair = languagePair
         allWords = languagePair.pairs
         saveSelectedLanguagePair()
@@ -203,11 +281,20 @@ class WordViewModel: ObservableObject {
         selectedSourceLanguage = languagePair.sourceLanguage.code
         selectedTargetLanguage = languagePair.targetLanguage.code
         
+        print("🔤 Updated AppStorage language codes: \(selectedSourceLanguage) → \(selectedTargetLanguage)")
+        
         // Update speech code based on whether showing foreign or translation
         updateSpeechLanguage()
         
         // Select a word from the new language pair
         pickRandomWord()
+        
+        // Check if we actually have a current word
+        if let current = currentWord {
+            print("✅ Successfully selected word: \(current.foreignWord) = \(current.translation)")
+        } else {
+            print("❌ Failed to select a word after language change")
+        }
     }
     
     /// Selects a language pair by its display name
@@ -314,11 +401,40 @@ class WordViewModel: ObservableObject {
     
     /// Picks a random word from the current language pair
     func pickRandomWord() {
-        if !allWords.isEmpty {
-            currentWord = allWords.randomElement()
-            showingForeign = true
-            incrementWordsStudied()
+        guard !allWords.isEmpty else {
+            print("❌ No words available in current language pair!")
+            return
         }
+        
+        // Filter words based on the current category
+        var wordsToChooseFrom = allWords
+        
+        // Special category handling
+        if selectedCategory == "favorites" {
+            // Only use favorites from the current language
+            wordsToChooseFrom = Array(favoriteWordPairs.filter { 
+                allWords.contains($0) 
+            })
+        } 
+        else if selectedCategory != "all" && selectedCategory != "⚙️ Settings" && selectedCategory != "🌐 Languages" {
+            // Filter by the selected category
+            wordsToChooseFrom = allWords.filter { 
+                $0.category.lowercased() == selectedCategory.lowercased() 
+            }
+        }
+        
+        // Safety check - if no words match the filter, use all words
+        if wordsToChooseFrom.isEmpty {
+            print("⚠️ No words match the filter '\(selectedCategory)', using all words instead")
+            wordsToChooseFrom = allWords
+        }
+        
+        // Pick a random word
+        currentWord = wordsToChooseFrom.randomElement()
+        showingForeign = true
+        incrementWordsStudied()
+        
+        print("📝 Selected word: \(currentWord?.foreignWord ?? "none") (\(currentWord?.category ?? "no category"))")
     }
     
     /// Toggles the favorite status of the current word.

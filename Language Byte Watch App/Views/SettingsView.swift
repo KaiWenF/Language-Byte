@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AVFoundation  // 🔹 Import AVFoundation for voice selection
+import UserNotifications
 
 struct SettingsView: View {
     @EnvironmentObject var viewModel: WordViewModel
@@ -18,6 +19,12 @@ struct SettingsView: View {
     @AppStorage("enableTextToSpeech") private var enableTextToSpeech = false
     @AppStorage("favoriteColor") private var favoriteColor: String = "yellow"
     @AppStorage("selectedVoiceForTargetLanguage") private var selectedVoiceForTargetLanguage: String = "com.apple.tts.voice.siri.en-US.premium"
+    
+    // Notification time settings
+    @AppStorage("notificationHour") var notificationHour: Int = 9
+    @AppStorage("notificationMinute") var notificationMinute: Int = 0
+    @AppStorage("notificationsEnabled") var notificationsEnabled: Bool = true
+    @State private var notificationTime: Date = Date()
     
     // Dynamic voice selection based on target language
     private var availableVoices: [(String, String)] {
@@ -85,6 +92,56 @@ struct SettingsView: View {
                 }
                 .foregroundColor(.blue)
             }
+            
+            // Notification Settings
+            Section(header: Text("Notification Settings")) {
+                Toggle("Enable Daily Notifications", isOn: $notificationsEnabled)
+                    .onChange(of: notificationsEnabled) { newValue in
+                        if newValue {
+                            viewModel.scheduleDailyWordNotification()
+                        } else {
+                            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["DailyWordNotification"])
+                        }
+                    }
+                
+                if !notificationsEnabled {
+                    Text("Notifications are currently turned off.")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                        .padding(.leading, 10)
+                }
+                
+                if notificationsEnabled {
+                    DatePicker("Notification Time", selection: $notificationTime, displayedComponents: .hourAndMinute)
+                        .onChange(of: notificationTime) { newTime in
+                            // Extract hour and minute from selected Date
+                            let components = Calendar.current.dateComponents([.hour, .minute], from: newTime)
+                            notificationHour = components.hour ?? 9
+                            notificationMinute = components.minute ?? 0
+                            viewModel.scheduleDailyWordNotification()
+                        }
+                    
+                    Button("Disable Notifications") {
+                        notificationHour = -1
+                        notificationMinute = 0
+                        notificationsEnabled = false
+                        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["DailyWordNotification"])
+                    }
+                    .foregroundColor(.red)
+                }
+                
+                if notificationsEnabled && notificationHour >= 0 {
+                    Text("Your next Word of the Day will arrive at \(formattedNotificationTime()).")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                        .padding(.leading, 10)
+                } else if notificationsEnabled && notificationHour == -1 {
+                    Text("No daily reminder set.")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                        .padding(.leading, 10)
+                }
+            }
 
             // 🔹 Storage Settings
             Section(header: Text("Storage")) {
@@ -127,6 +184,28 @@ struct SettingsView: View {
                 selectedVoiceForTargetLanguage = ""
             }
         }
+        .onAppear {
+            // Set notification time based on saved hour and minute
+            var components = DateComponents()
+            components.hour = notificationHour
+            components.minute = notificationMinute
+            if let date = Calendar.current.date(from: components) {
+                notificationTime = date
+            }
+        }
+    }
+    
+    private func formattedNotificationTime() -> String {
+        var components = DateComponents()
+        components.hour = notificationHour
+        components.minute = notificationMinute
+        let calendar = Calendar.current
+        if let date = calendar.date(from: components) {
+            let formatter = DateFormatter()
+            formatter.timeStyle = .short
+            return formatter.string(from: date)
+        }
+        return "Unknown time"
     }
 }
 
@@ -145,3 +224,4 @@ func colorFromString(_ colorName: String) -> Color {
     SettingsView()
         .environmentObject(WordViewModel())
 }
+

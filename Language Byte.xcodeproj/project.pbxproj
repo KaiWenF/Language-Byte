@@ -11,6 +11,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B0FF94D2DC079AE00288B41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BBA6F3B2DA6182000E3998B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BBA6F462DA6182000E3998B;
+			remoteInfo = "Language Byte Watch App";
+		};
 		7BBA6F492DA6182000E3998B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BBA6F3B2DA6182000E3998B /* Project object */;
@@ -35,11 +42,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B0FF9492DC079AE00288B41 /* Language_ByteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Language_ByteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBA6F412DA6182000E3998B /* Language Byte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Language Byte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBA6F472DA6182000E3998B /* Language Byte Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Language Byte Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7B0FF94A2DC079AE00288B41 /* Language_ByteTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Language_ByteTests;
+			sourceTree = "<group>";
+		};
 		7BBA6F4B2DA6182000E3998B /* Language Byte Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Language Byte Watch App";
@@ -48,6 +61,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7B0FF9462DC079AE00288B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BBA6F442DA6182000E3998B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				7BBA6F4B2DA6182000E3998B /* Language Byte Watch App */,
+				7B0FF94A2DC079AE00288B41 /* Language_ByteTests */,
 				7BBA6F422DA6182000E3998B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +92,7 @@
 			children = (
 				7BBA6F412DA6182000E3998B /* Language Byte.app */,
 				7BBA6F472DA6182000E3998B /* Language Byte Watch App.app */,
+				7B0FF9492DC079AE00288B41 /* Language_ByteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +100,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7B0FF9482DC079AE00288B41 /* Language_ByteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B0FF94F2DC079AE00288B41 /* Build configuration list for PBXNativeTarget "Language_ByteTests" */;
+			buildPhases = (
+				7B0FF9452DC079AE00288B41 /* Sources */,
+				7B0FF9462DC079AE00288B41 /* Frameworks */,
+				7B0FF9472DC079AE00288B41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B0FF94E2DC079AE00288B41 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7B0FF94A2DC079AE00288B41 /* Language_ByteTests */,
+			);
+			name = Language_ByteTests;
+			packageProductDependencies = (
+			);
+			productName = Language_ByteTests;
+			productReference = 7B0FF9492DC079AE00288B41 /* Language_ByteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7BBA6F402DA6182000E3998B /* Language Byte */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BBA6F582DA6182100E3998B /* Build configuration list for PBXNativeTarget "Language Byte" */;
@@ -129,6 +174,10 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					7B0FF9482DC079AE00288B41 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 7BBA6F462DA6182000E3998B;
+					};
 					7BBA6F402DA6182000E3998B = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -153,11 +202,19 @@
 			targets = (
 				7BBA6F462DA6182000E3998B /* Language Byte Watch App */,
 				7BBA6F402DA6182000E3998B /* Language Byte */,
+				7B0FF9482DC079AE00288B41 /* Language_ByteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7B0FF9472DC079AE00288B41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BBA6F3F2DA6182000E3998B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +232,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B0FF9452DC079AE00288B41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BBA6F432DA6182000E3998B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +249,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B0FF94E2DC079AE00288B41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BBA6F462DA6182000E3998B /* Language Byte Watch App */;
+			targetProxy = 7B0FF94D2DC079AE00288B41 /* PBXContainerItemProxy */;
+		};
 		7BBA6F4A2DA6182000E3998B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7BBA6F462DA6182000E3998B /* Language Byte Watch App */;
@@ -193,6 +262,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7B0FF9502DC079AE00288B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VFKR7NYEN3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiwendesigns.Language-ByteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Language Byte Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Language Byte Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		7B0FF9512DC079AE00288B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VFKR7NYEN3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiwendesigns.Language-ByteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Language Byte Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Language Byte Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
 		7BBA6F522DA6182100E3998B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +512,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7B0FF94F2DC079AE00288B41 /* Build configuration list for PBXNativeTarget "Language_ByteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0FF9502DC079AE00288B41 /* Debug */,
+				7B0FF9512DC079AE00288B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7BBA6F3E2DA6182000E3998B /* Build configuration list for PBXProject "Language Byte" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

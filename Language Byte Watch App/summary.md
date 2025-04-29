@@ -57,7 +57,27 @@ Here's a summary of the changes made to implement multi-language support:
 - Maintained compatibility with existing `words.json` format
 - Organized into clear categories: verbs, food, family, colors, numbers, and phrases
 
-## 8. Bug Fixes
+## 8. Daily Dashboard and Word of the Day Feature
+- Created new `DailyDashboardView` to display daily progress and Word of the Day
+- Integrated with `MainView` navigation using an orange-tinted button
+- Implemented Word of the Day functionality in `WordViewModel` with auto-refresh logic
+- Added persistent storage using `@AppStorage` properties for Word of the Day data
+- Created progress tracking for daily study goals
+- Removed the obsolete `ContentView.swift` file and replaced with `MainView` as main entry point
+- Enhanced dashboard with contextual navigation to other app sections
+
+## 9. Notification System
+- Implemented customizable daily notifications for Word of the Day
+- Added notification time configuration with DatePicker in Settings
+- Created notification toggle with visual indicators for on/off states
+- Added intelligent preview text showing next scheduled notification time
+- Implemented special handling for disabled notifications (hour = -1)
+- Added "Disable Notifications" button for quick access in Settings
+- Integrated notification scheduling directly with user actions
+- Added helper method to format notification times based on device settings
+- Added notifications permission request on app startup
+
+## 10. Bug Fixes
 - Resolved duplicate file references for MarqueeText.swift
 - Fixed multiple @main entry point conflicts
 - Eliminated invalid redeclaration errors for model types
@@ -66,6 +86,7 @@ Here's a summary of the changes made to implement multi-language support:
 - Fixed language selection persistence issues
 - Resolved UI refresh problems when changing languages
 - Corrected voice selection updating issues
+- Fixed EnvironmentObject access issues with WordViewModel
 
 ## Implementation Challenges
 - Import issues between files (circular dependencies)
@@ -74,5 +95,7 @@ Here's a summary of the changes made to implement multi-language support:
 - SwiftUI view hierarchies and modifier application
 - State management across multiple views
 - Ensuring persistence of user preferences
+- Coordinating notifications with app state
+- Managing EnvironmentObject references across different view hierarchies
 
-This implementation allows users to switch between language pairs while maintaining all existing functionality including favorites, text-to-speech, and category filtering. The codebase is now better organized with cleaner separation of concerns and improved maintainability. The app provides a smooth, intuitive user experience with proper persistence of user preferences across app launches. 
+This implementation allows users to switch between language pairs while maintaining all existing functionality including favorites, text-to-speech, and category filtering. The codebase is now better organized with cleaner separation of concerns and improved maintainability. The app provides a smooth, intuitive user experience with proper persistence of user preferences across app launches. The addition of Word of the Day features and customizable notifications significantly enhances the app's ability to help users learn languages through regular, scheduled practice. 

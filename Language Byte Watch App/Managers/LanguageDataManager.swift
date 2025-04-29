@@ -26,8 +26,8 @@ class LanguageDataManager {
     
     /// Loads language data from JSON
     func loadLanguageData() {
-        // First try to load the multi-language JSON file
-        if let pairs = loadMultiLanguageData() {
+        // Try to load from multilingual_words.json
+        if let pairs = loadMultilingualWordsJSON() {
             self.languagePairs = pairs
             return
         }
@@ -62,21 +62,97 @@ class LanguageDataManager {
         }
     }
     
-    /// Loads the new multi-language format
-    private func loadMultiLanguageData() -> [LanguagePair]? {
-        guard let url = Bundle.main.url(forResource: "language_data", withExtension: "json") else {
-            print("⚠️ Could not find language_data.json in the bundle.")
+    /// Loads data from multilingual_words.json format
+    private func loadMultilingualWordsJSON() -> [LanguagePair]? {
+        guard let url = Bundle.main.url(forResource: "multilingual_words", withExtension: "json") else {
+            print("⚠️ Could not find multilingual_words.json in the bundle.")
             return nil
         }
         
         do {
             let data = try Data(contentsOf: url)
-            let languagePairs = try JSONDecoder().decode([LanguagePair].self, from: data)
-            print("🌍 Successfully loaded \(languagePairs.count) language pairs from JSON.")
+            
+            // Define the structure for the multilingual words JSON
+            struct MultilingualData: Codable {
+                struct LanguageData: Codable {
+                    let source: String
+                    let target: String
+                    let name: LanguageName
+                    let pairs: [WordPairData]
+                    
+                    struct LanguageName: Codable {
+                        let source: String
+                        let target: String
+                    }
+                    
+                    struct WordPairData: Codable {
+                        let sourceWord: String
+                        let targetWord: String
+                        let category: String
+                    }
+                }
+                
+                let languages: [LanguageData]
+            }
+            
+            // Decode the JSON
+            let multilingualData = try JSONDecoder().decode(MultilingualData.self, from: data)
+            
+            // Convert to our LanguagePair model
+            var languagePairs: [LanguagePair] = []
+            
+            for langData in multilingualData.languages {
+                // Create Language objects
+                let sourceLanguage = Language(
+                    code: langData.source,
+                    name: langData.name.source,
+                    speechCode: getSpeechCode(for: langData.source)
+                )
+                
+                let targetLanguage = Language(
+                    code: langData.target,
+                    name: langData.name.target,
+                    speechCode: getSpeechCode(for: langData.target)
+                )
+                
+                // Convert word pairs
+                let wordPairs = langData.pairs.map { pair in
+                    WordPair(
+                        foreignWord: pair.targetWord,
+                        translation: pair.sourceWord,
+                        category: pair.category
+                    )
+                }
+                
+                // Create and add the language pair
+                let languagePair = LanguagePair(
+                    sourceLanguage: sourceLanguage,
+                    targetLanguage: targetLanguage,
+                    pairs: wordPairs
+                )
+                
+                languagePairs.append(languagePair)
+            }
+            
+            print("📚 Successfully loaded \(languagePairs.count) language pairs from multilingual JSON with \(languagePairs.flatMap { $0.pairs }.count) total words.")
             return languagePairs
         } catch {
-            print("❌ Error loading or decoding language data JSON: \(error)")
+            print("❌ Error loading or decoding multilingual JSON: \(error)")
             return nil
+        }
+    }
+    
+    /// Helper to get speech code from language code
+    private func getSpeechCode(for languageCode: String) -> String {
+        switch languageCode {
+        case "en": return "en-US"
+        case "es": return "es-ES"
+        case "fr": return "fr-FR"
+        case "de": return "de-DE"
+        case "it": return "it-IT"
+        case "ja": return "ja-JP"
+        case "zh": return "zh-CN"
+        default: return "\(languageCode)-\(languageCode.uppercased())"
         }
     }
     

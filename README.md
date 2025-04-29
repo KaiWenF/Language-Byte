@@ -27,11 +27,22 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - Categorized vocabulary (verbs, food, family, colors, numbers, phrases)
 - Tap to toggle between source and target languages
 - History tracking of viewed words
+- Daily dashboard with progress tracking
+- Word of the Day feature for regular practice
 
 ### Customization
 - User preferences saved automatically
 - Voice selection per language
 - Appearance customization options
+- Customizable daily notification schedule
+- Daily word notifications with time selection
+
+### Notifications & Reminders
+- Daily Word of the Day notifications
+- Customizable notification time
+- Enable/disable notifications through Settings
+- Clear notification status indicators
+- Intelligent notification scheduling
 
 ## Setup Instructions
 
@@ -59,6 +70,7 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - `SettingsView`: Configure app preferences and options
 - `LanguageSelectionView`: Select language pair for study
 - `FavoritesView`: View and manage favorite words
+- `DailyDashboardView`: Track progress and view Word of the Day
 
 ### View Models
 - `WordViewModel`: Central data model managing words and app state
@@ -73,21 +85,27 @@ The app uses a JSON structure for language data:
 
 ## Recent Improvements
 
-- Added support for persistent language and voice selection
-- Implemented dynamic voice selection based on target language
-- Enhanced UI with better spacing and organization
-- Added new navigation buttons for quick access to features
-- Improved language selection interface
-- Fixed issues with state persistence and UI updates
+- Added Word of the Day feature with persistent storage
+- Implemented daily notification system with customizable scheduling
+- Created DailyDashboardView to track learning progress
+- Added notification settings with time picker and toggle controls
+- Enhanced UI with better feedback for notification status
+- Improved overall app structure and navigation flow
+- Streamlined app startup by replacing ContentView with MainView
 
 ## Future Development
 
 Planned enhancements:
-- Additional language support
-- More vocabulary categories
-- Spaced repetition learning algorithm
-- User-created custom word lists
-- Cloud sync for user data
+- Gamification features with points and streaks for daily learning
+- Enhanced statistics tracking with progress visualization
+- Multiple Words of the Day with difficulty levels
+- AI-powered adaptive learning based on user performance
+- Interactive learning modes beyond simple word display
+- Advanced notification options (weekly reviews, quizzes)
+- Extension to iPad and iPhone platforms
+- Offline voice support for environments without internet
+- Accessibility enhancements for diverse user needs
+- Multi-user support for family or classroom settings
 
 ## Contributing
 

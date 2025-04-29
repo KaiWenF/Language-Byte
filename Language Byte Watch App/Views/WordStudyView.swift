@@ -11,11 +11,12 @@ struct WordStudyView: View {
                     // Word display with marquee text
                     AdaptiveMarqueeText(
                         text: viewModel.displayWord,
-                        font: .system(size: 32, weight: .bold),
-                        speed: 50,
-                        delay: 1
+                        font: .largeTitle,
+                        speed: determineScrollSpeed(for: viewModel.displayWord)
                     )
+                    .multilineTextAlignment(.center)
                     .frame(height: 40)
+                    .padding(.horizontal, 10)
                     .padding(.top, 20)
                     
                     // Action buttons
@@ -67,6 +68,19 @@ struct WordStudyView: View {
                 .padding()
             }
             .navigationTitle("Word Study")
+        }
+    }
+    
+    // Helper function to adjust scroll speed based on text length
+    private func determineScrollSpeed(for text: String) -> Double {
+        let characterCount = text.count
+
+        if characterCount <= 10 {
+            return 25 // Short text: faster scroll
+        } else if characterCount <= 20 {
+            return 20 // Medium text: medium speed
+        } else {
+            return 15 // Long phrases: slower for readability
         }
     }
 }

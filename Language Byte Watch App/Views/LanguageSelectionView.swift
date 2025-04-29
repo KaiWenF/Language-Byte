@@ -31,6 +31,8 @@ struct LanguageSelectionView: View {
                 // Use only the static language pairs for now
                 ForEach(languagePairs, id: \.label) { pair in
                     Button(action: {
+                        print("🔤 Selected language: \(pair.label)")
+                        
                         // Save selected languages with AppStorage
                         selectedSourceLanguage = pair.source
                         selectedTargetLanguage = pair.target
@@ -40,7 +42,22 @@ struct LanguageSelectionView: View {
                             $0.sourceLanguage.code == pair.source && 
                             $0.targetLanguage.code == pair.target 
                         }) {
+                            print("✅ Found matching language pair in viewModel.availableLanguagePairs")
                             viewModel.selectLanguagePair(matchingPair)
+                        } else {
+                            print("❌ No matching language pair found in viewModel.availableLanguagePairs!")
+                            print("🔍 Available pairs: \(viewModel.availableLanguagePairs.map { $0.sourceLanguage.code + "-" + $0.targetLanguage.code })")
+                            
+                            // Force reload language data
+                            viewModel.loadLanguageData()
+                            
+                            // Try again after reload
+                            if let matchingPair = viewModel.availableLanguagePairs.first(where: { 
+                                $0.sourceLanguage.code == pair.source && 
+                                $0.targetLanguage.code == pair.target 
+                            }) {
+                                viewModel.selectLanguagePair(matchingPair)
+                            }
                         }
                         
                         dismiss()
@@ -66,7 +83,10 @@ struct LanguageSelectionView: View {
         .onAppear {
             // Ensure the view model has loaded language data
             if viewModel.availableLanguagePairs.isEmpty {
+                print("🔄 Loading language data on LanguageSelectionView appear")
                 viewModel.loadLanguageData()
+            } else {
+                print("✅ Language data already loaded: \(viewModel.availableLanguagePairs.count) pairs")
             }
         }
     }
