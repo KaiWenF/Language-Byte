@@ -1,0 +1,69 @@
+[
+  {
+    "sourceLanguage": {
+      "code": "en",
+      "name": "English",
+      "speechCode": "en-US"
+    },
+    "targetLanguage": {
+      "code": "es",
+      "name": "Spanish",
+      "speechCode": "es-ES"
+    },
+    "pairs": [
+      { "foreignWord": "hola", "translation": "hello", "category": "phrases" },
+      { "foreignWord": "adiós", "translation": "goodbye", "category": "phrases" },
+      { "foreignWord": "gracias", "translation": "thank you", "category": "phrases" },
+      { "foreignWord": "por favor", "translation": "please", "category": "phrases" },
+      { "foreignWord": "lo siento", "translation": "sorry", "category": "phrases" },
+      { "foreignWord": "buenos días", "translation": "good morning", "category": "phrases" },
+      { "foreignWord": "buenas noches", "translation": "good night", "category": "phrases" },
+      { "foreignWord": "me llamo", "translation": "my name is", "category": "phrases" },
+      { "foreignWord": "uno", "translation": "one", "category": "numbers" },
+      { "foreignWord": "dos", "translation": "two", "category": "numbers" },
+      { "foreignWord": "tres", "translation": "three", "category": "numbers" },
+      { "foreignWord": "cuatro", "translation": "four", "category": "numbers" },
+      { "foreignWord": "cinco", "translation": "five", "category": "numbers" },
+      { "foreignWord": "rojo", "translation": "red", "category": "colors" },
+      { "foreignWord": "azul", "translation": "blue", "category": "colors" },
+      { "foreignWord": "verde", "translation": "green", "category": "colors" },
+      { "foreignWord": "amarillo", "translation": "yellow", "category": "colors" },
+      { "foreignWord": "negro", "translation": "black", "category": "colors" },
+      { "foreignWord": "manzana", "translation": "apple", "category": "food" },
+      { "foreignWord": "naranja", "translation": "orange", "category": "food" }
+    ]
+  },
+  {
+    "sourceLanguage": {
+      "code": "en",
+      "name": "English",
+      "speechCode": "en-US"
+    },
+    "targetLanguage": {
+      "code": "fr",
+      "name": "French",
+      "speechCode": "fr-FR"
+    },
+    "pairs": [
+      { "foreignWord": "bonjour", "translation": "hello", "category": "phrases" },
+      { "foreignWord": "au revoir", "translation": "goodbye", "category": "phrases" },
+      { "foreignWord": "merci", "translation": "thank you", "category": "phrases" },
+      { "foreignWord": "s'il vous plaît", "translation": "please", "category": "phrases" },
+      { "foreignWord": "je suis désolé", "translation": "sorry", "category": "phrases" },
+      { "foreignWord": "bonne nuit", "translation": "good night", "category": "phrases" },
+      { "foreignWord": "je m'appelle", "translation": "my name is", "category": "phrases" },
+      { "foreignWord": "un", "translation": "one", "category": "numbers" },
+      { "foreignWord": "deux", "translation": "two", "category": "numbers" },
+      { "foreignWord": "trois", "translation": "three", "category": "numbers" },
+      { "foreignWord": "quatre", "translation": "four", "category": "numbers" },
+      { "foreignWord": "cinq", "translation": "five", "category": "numbers" },
+      { "foreignWord": "rouge", "translation": "red", "category": "colors" },
+      { "foreignWord": "bleu", "translation": "blue", "category": "colors" },
+      { "foreignWord": "vert", "translation": "green", "category": "colors" },
+      { "foreignWord": "jaune", "translation": "yellow", "category": "colors" },
+      { "foreignWord": "noir", "translation": "black", "category": "colors" },
+      { "foreignWord": "pomme", "translation": "apple", "category": "food" },
+      { "foreignWord": "orange", "translation": "orange", "category": "food" }
+    ]
+  }
+] 
