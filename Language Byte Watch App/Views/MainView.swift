@@ -87,6 +87,19 @@ struct MainView: View {
                     .tint(.green)
                     .padding(.bottom, 10)
                     
+                    // Quiz Mode button
+                    NavigationLink(destination: QuizView().environmentObject(viewModel)) {
+                        HStack {
+                            Image(systemName: "questionmark.circle.fill")
+                            Text("Quiz Mode")
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.purple)
+                    .padding(.bottom, 10)
+                    
                     // Daily Dashboard button
                     NavigationLink(destination: DailyDashboardView().environmentObject(viewModel)) {
                         HStack {

@@ -1,0 +1,133 @@
+//
+//  QuizView.swift
+//  Language Byte Watch App
+//
+//  Created by Kai Wen on 3/21/2025.
+//
+
+import SwiftUI
+
+struct QuizView: View {
+    // STEP 1: Use EnvironmentObject for WordViewModel (reuse the words already loaded)
+    @EnvironmentObject var viewModel: WordViewModel
+    
+    // STEP 2: Create state variables to hold the current quiz question and feedback state
+    @State private var currentQuestion: QuizQuestion? = nil
+    @State private var showFeedback: Bool = false
+    @State private var isCorrect: Bool = false
+    @State private var totalAttempts: Int = 0
+    @State private var correctAnswers: Int = 0
+    @State private var selectedChoice: String = ""
+    
+    var body: some View {
+        // Simpler layout structure with fewer nested containers
+        ZStack {
+            // Main content - use VStack with spacer for proper element distribution
+            VStack(spacing: 0) {
+                // Top bar with title and feedback
+                HStack {
+                    Spacer()
+                    
+                    Text("Quiz Mode Score")
+                        .font(.footnote)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                    
+                    Spacer()
+                    
+                    Text("\(correctAnswers)/\(totalAttempts)")
+                        .font(.system(size: 16))
+                        .foregroundColor(.primary)
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 16)
+                
+                // Word display - centered with proper spacing
+                if let question = currentQuestion {
+                    Spacer()
+                    
+                    // Simple text with larger font instead of AdaptiveMarqueeText
+                    Text(question.sourceWord)
+                        .font(.system(size: 42, weight: .regular))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                    
+                    Spacer()
+                    
+                    // Buttons stack
+                    VStack(spacing: 8) {
+                        ForEach(question.choices, id: \.self) { choice in
+                            Button(action: {
+                                totalAttempts += 1
+                                selectedChoice = choice
+                                isCorrect = (choice == question.correctAnswer)
+                                if isCorrect {
+                                    correctAnswers += 1
+                                }
+                                showFeedback = true
+                                
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+                                    generateNewQuestion()
+                                }
+                            }) {
+                                Text(choice)
+                                    .font(.body)
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.8)
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.bordered)
+                            .frame(height: 44)
+                            .tint(showFeedback && choice == selectedChoice ? 
+                                  (isCorrect ? .green : .red) : nil)
+                        }
+                    }
+                    .padding(.bottom, 10)
+                } else {
+                    Spacer()
+                    Text("Loading quiz...")
+                    Spacer()
+                }
+            }
+            .padding(.horizontal, 8)
+        }
+        .onAppear {
+            generateNewQuestion()
+        }
+    }
+    
+    // STEP 4: Define a local function to generate a quiz question
+    private func generateNewQuestion() {
+        let allWords = viewModel.allWords.shuffled()
+        
+        guard allWords.count >= 3 else { return }
+        
+        let correctPair = allWords[0]
+        let wrongChoices = allWords[1...].prefix(2).map { $0.foreignWord }
+        
+        var choices = wrongChoices + [correctPair.foreignWord]
+        choices.shuffle()
+        
+        currentQuestion = QuizQuestion(
+            sourceWord: correctPair.translation,
+            correctAnswer: correctPair.foreignWord,
+            choices: choices
+        )
+        showFeedback = false
+        selectedChoice = ""
+    }
+}
+
+// STEP 9: Define a supporting model struct
+struct QuizQuestion {
+    let sourceWord: String
+    let correctAnswer: String
+    let choices: [String]
+}
+
+#Preview {
+    NavigationStack {
+        QuizView()
+            .environmentObject(WordViewModel())
+    }
+} 
