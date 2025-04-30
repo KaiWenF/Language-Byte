@@ -6,6 +6,9 @@ struct DailyDashboardView: View {
     @AppStorage("quiz_correctAnswers") var correctAnswers: Int = 0
     @AppStorage("quiz_bestStreak") var bestStreak: Int = 0
     @State private var showQuizStats = false
+    @State private var showCategorySelection = false
+    @State private var showResetConfirmation = false
+    @State private var showResetSuccessMessage = false
     
     var body: some View {
         NavigationStack {
@@ -81,6 +84,59 @@ struct DailyDashboardView: View {
                     
                     // Quick Access Buttons Section
                     VStack(spacing: 15) {
+                        // Category section with debug coloring
+                        VStack(spacing: 10) {
+                            // Show currently selected category (moved here for better visibility)
+                            if let category = viewModel.selectedCategory {
+                                Text("Currently Studying: \(category.capitalized)")
+                                    .font(.headline)
+                                    .foregroundColor(.primary)
+                                    .padding(.vertical, 5)
+                            } else {
+                                Text("Currently Studying: All Categories")
+                                    .font(.headline)
+                                    .foregroundColor(.primary)
+                                    .padding(.vertical, 5)
+                            }
+                            
+                            // Category selection buttons
+                            NavigationLink(destination: CategorySelectionView().environmentObject(viewModel)) {
+                                HStack {
+                                    Image(systemName: "tag.fill")
+                                    Text("Choose Category")
+                                }
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .tint(.blue) // Changed to more visible blue
+                            
+                            Button(action: {
+                                showResetConfirmation = true
+                            }) {
+                                HStack {
+                                    Image(systemName: "arrow.uturn.backward.circle.fill")
+                                    Text("Reset Category")
+                                }
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .tint(.orange) // Changed to more visible orange
+                            
+                            if showResetSuccessMessage {
+                                Text("✅ Category reset")
+                                    .font(.caption)
+                                    .foregroundColor(.green)
+                                    .padding(.bottom, 4)
+                                    .transition(.opacity)
+                            }
+                        }
+                        .padding()
+                        .background(Color.gray.opacity(0.1)) // Debug background
+                        .cornerRadius(10)
+                        
+                        // Other buttons (Start Studying, Favorites, Settings)
                         NavigationLink(destination: WordStudyView().environmentObject(viewModel)) {
                             HStack {
                                 Image(systemName: "play.fill")
@@ -113,6 +169,22 @@ struct DailyDashboardView: View {
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(.blue)
+                    }
+                    .confirmationDialog("Are you sure you want to reset the category filter?", isPresented: $showResetConfirmation, titleVisibility: .visible) {
+                        Button("Reset Category", role: .destructive) {
+                            viewModel.selectCategory(nil)
+                            
+                            withAnimation(.easeInOut(duration: 0.3)) {
+                                showResetSuccessMessage = true
+                            }
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                withAnimation(.easeInOut(duration: 0.3)) {
+                                    showResetSuccessMessage = false
+                                }
+                            }
+                        }
+                        Button("Cancel", role: .cancel) {}
                     }
                 }
                 .padding()

@@ -61,10 +61,15 @@ class WordViewModel: ObservableObject {
     @AppStorage("wordHistory") private var storedWordHistory: Data?
     @Published var wordHistory: [WordPair] = []
     
-    // The selected category from the Picker.
-    @Published var selectedCategory: String = "all" {
-        didSet {
-            saveSelectedCategory()
+    // The selected category from the Picker with @AppStorage persistence
+    @AppStorage("selectedCategory") var selectedCategoryRawValue: String = "All"
+    
+    var selectedCategory: String? {
+        get {
+            selectedCategoryRawValue == "All" ? nil : selectedCategoryRawValue
+        }
+        set {
+            selectedCategoryRawValue = newValue ?? "All"
         }
     }
     
@@ -92,6 +97,17 @@ class WordViewModel: ObservableObject {
         guard let current = currentWord else { return "N/A" }
         return showingForeign ? current.foreignWord : current.translation
     }
+    
+    // Computed property that filters words by selectedCategory + language pair
+    var filteredWords: [WordPair] {
+        return allWords.filter { word in
+            if let category = selectedCategory {
+                return word.category.lowercased() == category.lowercased()
+            } else {
+                return true  // If no category is selected, include all words
+            }
+        }
+    }
 
     // Computed property to check if the current word is a favorite.
     var isCurrentWordFavorite: Bool {
@@ -110,15 +126,14 @@ class WordViewModel: ObservableObject {
 
     // Computed property for available categories.
     var availableCategories: [String] {
-        var categories = ["⚙️ Settings"]  // Settings at the top
-        categories.append("🌐 Languages") // New language selection category
-
-        categories.append("all")  // Default category
+        var categories = ["All"]  // Default category always first
+        
         if !favoriteWordPairs.isEmpty {
-            categories.append("favorites")
+            categories.append("Favorites")
         }
 
-        let uniqueCategories = Set(allWords.map { $0.category.lowercased() })
+        // Add actual word categories from the word data
+        let uniqueCategories = Set(allWords.map { $0.category.lowercased().capitalized })
         categories.append(contentsOf: uniqueCategories.sorted())
 
         return categories
@@ -399,6 +414,18 @@ class WordViewModel: ObservableObject {
 
     // MARK: - Word Selection and Toggle Methods
     
+    /// Helper function to set/reset the category
+    func selectCategory(_ category: String?) {
+        selectedCategory = category
+    }
+    
+    /// Load the saved category from UserDefaults
+    private func loadSelectedCategory() {
+        if let savedCategory = UserDefaults.standard.string(forKey: selectedCategoryKey) {
+            selectedCategory = savedCategory
+        }
+    }
+    
     /// Picks a random word from the current language pair
     func pickRandomWord() {
         guard !allWords.isEmpty else {
@@ -410,22 +437,24 @@ class WordViewModel: ObservableObject {
         var wordsToChooseFrom = allWords
         
         // Special category handling
-        if selectedCategory == "favorites" {
-            // Only use favorites from the current language
-            wordsToChooseFrom = Array(favoriteWordPairs.filter { 
-                allWords.contains($0) 
-            })
-        } 
-        else if selectedCategory != "all" && selectedCategory != "⚙️ Settings" && selectedCategory != "🌐 Languages" {
-            // Filter by the selected category
-            wordsToChooseFrom = allWords.filter { 
-                $0.category.lowercased() == selectedCategory.lowercased() 
+        if let category = selectedCategory {
+            if category.lowercased() == "favorites" {
+                // Only use favorites from the current language
+                wordsToChooseFrom = Array(favoriteWordPairs.filter { 
+                    allWords.contains($0) 
+                })
+            } 
+            else if category.lowercased() != "all" {
+                // Filter by the selected category
+                wordsToChooseFrom = allWords.filter { 
+                    $0.category.lowercased() == category.lowercased() 
+                }
             }
         }
         
         // Safety check - if no words match the filter, use all words
         if wordsToChooseFrom.isEmpty {
-            print("⚠️ No words match the filter '\(selectedCategory)', using all words instead")
+            print("⚠️ No words match the filter '\(selectedCategory ?? "no category")', using all words instead")
             wordsToChooseFrom = allWords
         }
         
@@ -446,7 +475,7 @@ class WordViewModel: ObservableObject {
 
             // If Favorites is now empty, switch back to "All"
             if selectedCategory == "favorites" && favoriteWordPairs.isEmpty {
-                selectedCategory = "all"
+                selectedCategory = nil
             }
         } else {
             // Prevent duplicate entries
@@ -467,7 +496,7 @@ class WordViewModel: ObservableObject {
 
         // If the user is currently in the "favorites" category, switch them back to "all"
         if selectedCategory == "favorites" {
-            selectedCategory = "all"
+            selectedCategory = nil
         }
 
         pickRandomWord()
@@ -496,20 +525,6 @@ class WordViewModel: ObservableObject {
             favoriteWordPairs = Set(favoritesArray)
         } catch {
             print("Error loading favorites: \(error)")
-        }
-    }
-
-    /// Saves the selected category to UserDefaults
-    private func saveSelectedCategory() {
-        UserDefaults.standard.set(selectedCategory, forKey: selectedCategoryKey)
-    }
-
-    /// Loads the selected category from UserDefaults
-    private func loadSelectedCategory() {
-        if let savedCategory = UserDefaults.standard.string(forKey: selectedCategoryKey) {
-            selectedCategory = savedCategory
-        } else {
-            selectedCategory = "all"
         }
     }
 

@@ -61,6 +61,19 @@ struct MainView: View {
                     // Remove the Spacer and add a small fixed-height spacer instead
                     Spacer(minLength: 4)
                     
+                    // Daily Dashboard button (moved to first position)
+                    NavigationLink(destination: DailyDashboardView().environmentObject(viewModel)) {
+                        HStack {
+                            Image(systemName: "chart.bar.fill")
+                            Text("Daily Dashboard")
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.orange)
+                    .padding(.bottom, 10)
+                    
                     // Start studying button
                     NavigationLink(destination: WordStudyView().environmentObject(viewModel)) {
                         HStack {
@@ -98,19 +111,6 @@ struct MainView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.purple)
-                    .padding(.bottom, 10)
-                    
-                    // Daily Dashboard button
-                    NavigationLink(destination: DailyDashboardView().environmentObject(viewModel)) {
-                        HStack {
-                            Image(systemName: "chart.bar.fill")
-                            Text("Daily Dashboard")
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.orange)
                     .padding(.bottom, 10)
                     
                     // Settings button

@@ -134,12 +134,19 @@ struct QuizView: View {
     
     // Reset the quiz state for a fresh start next time
     private func resetQuiz() {
-        // Save the current state to AppStorage (already handled by @AppStorage wrappers)
-        // Then reset the local session state
+        // Reset current session state
         showFeedback = false
         isCorrect = false
         selectedChoice = ""
         currentQuestion = nil
+        currentStreak = 0
+        
+        // Reset score counters
+        correctAnswers = 0
+        totalAttempts = 0
+        
+        // Note: We keep the bestStreak in AppStorage as a high score record
+        // but reset all other variables
     }
     
     // STEP 4: Define a local function to generate a quiz question
