@@ -15,9 +15,15 @@ struct QuizView: View {
     @State private var currentQuestion: QuizQuestion? = nil
     @State private var showFeedback: Bool = false
     @State private var isCorrect: Bool = false
-    @State private var totalAttempts: Int = 0
-    @State private var correctAnswers: Int = 0
     @State private var selectedChoice: String = ""
+    
+    // Use AppStorage to persist stats across app launches
+    @AppStorage("quiz_totalAttempts") private var totalAttempts: Int = 0
+    @AppStorage("quiz_correctAnswers") private var correctAnswers: Int = 0
+    @AppStorage("quiz_bestStreak") private var bestStreak: Int = 0
+    @State private var currentStreak: Int = 0
+    @State private var showExitConfirmation: Bool = false
+    @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         // Simpler layout structure with fewer nested containers
@@ -63,6 +69,12 @@ struct QuizView: View {
                                 isCorrect = (choice == question.correctAnswer)
                                 if isCorrect {
                                     correctAnswers += 1
+                                    currentStreak += 1
+                                    if currentStreak > bestStreak {
+                                        bestStreak = currentStreak
+                                    }
+                                } else {
+                                    currentStreak = 0
                                 }
                                 showFeedback = true
                                 
@@ -94,6 +106,40 @@ struct QuizView: View {
         .onAppear {
             generateNewQuestion()
         }
+        .confirmationDialog(
+            "Leave Quiz?",
+            isPresented: $showExitConfirmation,
+            titleVisibility: .visible
+        ) {
+            Button("Leave", role: .destructive) {
+                resetQuiz()
+                presentationMode.wrappedValue.dismiss()
+            }
+            Button("Stay", role: .cancel) { }
+        } message: {
+            Text("Your progress will be saved, but you'll start with a new question next time.")
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .cancellationAction) {
+                Button(action: {
+                    showExitConfirmation = true
+                }) {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.blue)
+                }
+            }
+        }
+    }
+    
+    // Reset the quiz state for a fresh start next time
+    private func resetQuiz() {
+        // Save the current state to AppStorage (already handled by @AppStorage wrappers)
+        // Then reset the local session state
+        showFeedback = false
+        isCorrect = false
+        selectedChoice = ""
+        currentQuestion = nil
     }
     
     // STEP 4: Define a local function to generate a quiz question

@@ -2,6 +2,10 @@ import SwiftUI
 
 struct DailyDashboardView: View {
     @EnvironmentObject private var viewModel: WordViewModel
+    @AppStorage("quiz_totalAttempts") var totalAttempts: Int = 0
+    @AppStorage("quiz_correctAnswers") var correctAnswers: Int = 0
+    @AppStorage("quiz_bestStreak") var bestStreak: Int = 0
+    @State private var showQuizStats = false
     
     var body: some View {
         NavigationStack {
@@ -26,6 +30,40 @@ struct DailyDashboardView: View {
                             .font(.body)
                             .foregroundColor(.secondary)
                     }
+                    
+                    Divider()
+                    
+                    // Quiz Stats Section
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("📈 Quiz Performance")
+                            .font(.headline)
+                            .padding(.top, 12)
+
+                        if totalAttempts > 0 {
+                            Text("✅ Correct: \(correctAnswers)")
+                            Text("❌ Incorrect: \(totalAttempts - correctAnswers)")
+                            Text("🎯 Accuracy: \(Int(Double(correctAnswers) / Double(totalAttempts) * 100))%")
+                            Text("🔥 Best Streak: \(bestStreak)")
+                        } else {
+                            Text("No quiz attempts yet")
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    .padding(.top, 8)
+                    
+                    Button(action: {
+                        showQuizStats = true
+                    }) {
+                        HStack {
+                            Image(systemName: "chart.pie.fill")
+                            Text("View Quiz Stats")
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.purple)
+                    .padding(.top, 10)
                     
                     Divider()
                     
@@ -84,6 +122,9 @@ struct DailyDashboardView: View {
                 DispatchQueue.main.async {
                     self.viewModel.updateWordOfTheDayIfNeeded()
                 }
+            }
+            .navigationDestination(isPresented: $showQuizStats) {
+                QuizStatsView()
             }
         }
     }
