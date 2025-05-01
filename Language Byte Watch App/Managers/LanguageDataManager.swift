@@ -152,6 +152,9 @@ class LanguageDataManager {
         case "it": return "it-IT"
         case "ja": return "ja-JP"
         case "zh": return "zh-CN"
+        case "ko": return "ko-KR"
+        case "ht": return "ht-HT"
+        case "pt": return "pt-BR"
         default: return "\(languageCode)-\(languageCode.uppercased())"
         }
     }

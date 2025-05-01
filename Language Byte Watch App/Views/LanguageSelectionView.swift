@@ -22,7 +22,10 @@ struct LanguageSelectionView: View {
         ("en", "de", "English → German"),
         ("en", "it", "English → Italian"),
         ("en", "ja", "English → Japanese"),
-        ("en", "zh", "English → Chinese")
+        ("en", "zh", "English → Chinese"),
+        ("en", "ko", "English → Korean"),
+        ("en", "ht", "English → Haitian Creole"),
+        ("en", "pt", "English → Portuguese")
     ]
     
     var body: some View {

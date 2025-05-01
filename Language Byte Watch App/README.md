@@ -1,74 +1,96 @@
 # Language Byte Watch App
 
-A comprehensive language learning application for Apple Watch that helps users learn new languages through interactive features and daily practice.
+A comprehensive language learning companion for Apple Watch, featuring vocabulary building, interactive quizzes, progress tracking, and achievement systems.
+
+![App Screenshot](screenshot.png)
 
 ## Features
 
-### Core Learning Features
-- **Multi-language Support**: Learn multiple languages including Spanish, French, German, and Japanese
-- **Word Pairs**: Study words and phrases with translations
-- **Categories**: Organized learning by categories (verbs, food, family, colors, numbers, phrases)
-- **Text-to-Speech**: Hear correct pronunciation in target language
-- **Favorites**: Save and review your favorite words
+### Core Functionality
+- **Multi-Language Support**: Learn Spanish, French, German, Japanese, Chinese, and more
+- **Interactive Quiz System**: Multiple question types with streak tracking
+- **Daily Progress Dashboard**: Track your learning statistics and daily goals
+- **Achievement System**: Unlock 10+ badges for various learning milestones
+- **Smart Notifications**: Customizable daily reminders with Word of the Day
+- **Speech Synthesis**: Hear pronunciations with authentic accents
+- **Text Scrolling**: Automatic marquee effect for long words/phrases
 
-### Interactive Quiz System
-- **Score Tracking**: Track your progress with persistent scoring
-- **Streak System**: Build and maintain learning streaks
-- **Achievements**: Unlock various achievements:
-  - Beginner achievements (Quiz Novice, Language Apprentice)
-  - Streak-based achievements (On Fire, Unstoppable)
-  - Accuracy-based achievements (Sharp Mind, Brainiac, Perfect Recall)
-  - Mastery achievements (Dedicated Scholar, Language Master)
-  - Special achievements (Comeback Kid, Quick Thinker)
-- **Visual Feedback**: Immediate feedback for correct/incorrect answers
-- **Progress Statistics**: Detailed tracking of quiz performance
+### Recent Additions
+- **Expanded Language Support**: Added Korean, Haitian Creole, and Portuguese
+- **Quiz Achievements**: 
+  - Streak-based: On Fire (5), Unstoppable (10)
+  - Accuracy-based: Sharp Mind (80%), Perfect Recall (100%)
+  - Special: Comeback Kid, Quick Thinker
+- **Enhanced Testing Suite**:
+  - Centralized mock classes
+  - XCTest integration
+  - ViewInspector for UI testing
+- **Performance Improvements**:
+  - Optimized text scrolling
+  - Improved quiz state management
+  - Enhanced voice selection logic
 
-### Daily Learning
-- **Word of the Day**: Learn a new word each day
-- **Daily Dashboard**: Track your daily progress and goals
-- **Customizable Notifications**: Set reminders for daily practice
-- **Progress Tracking**: Monitor your learning journey
+## Getting Started
 
-### User Experience
-- **Dynamic Voice Selection**: Automatically selects appropriate voice for target language
-- **Text Scrolling**: Smooth scrolling for long words and phrases
-- **Intuitive Navigation**: Easy access to all features
-- **Settings Customization**: Personalize your learning experience
-- **Language Pair Selection**: Choose your source and target languages
+### Prerequisites
+- Xcode 15+
+- watchOS 10+ compatible device
+- Swift 5.9+
 
-## Technical Details
+### Installation
+1. Clone the repository
+2. Open `Language Byte.xcodeproj`
+3. Add required packages:
+   - ViewInspector (for testing)
+4. Build and run on simulator or device
 
-### Architecture
-- SwiftUI-based interface
-- MVVM architecture pattern
-- Persistent storage using @AppStorage
-- Comprehensive test suite
+### Basic Usage
+1. **Select Language Pair**:
+   - Open Settings > Language Selection
+   - Choose source and target languages
 
-### Data Management
-- JSON-based word database
-- Support for multiple language formats
-- Fallback mechanisms for data loading
-- Efficient state management
+2. **Daily Practice**:
+   - Receive Word of the Day via notification
+   - Track progress in Daily Dashboard
+
+3. **Quiz Mode**:
+   - Test your knowledge in timed quizzes
+   - Track streaks and accuracy
+   - Unlock achievements as you progress
+
+## Development Setup
 
 ### Testing
-- Unit tests for core functionality
-- UI tests for interface components
-- Model validation tests
-- Achievement system tests
-- Quiz functionality tests
+```bash
+# Run all unit tests
+xcodebuild test -scheme "Language_Byte_Tests"
+```
 
-## Requirements
-- watchOS 9.0+
-- Xcode 14.0+
-- Swift 5.7+
-
-## Installation
-1. Clone the repository
-2. Open the project in Xcode
-3. Build and run on your Apple Watch or simulator
+### Key Components
+- `WordViewModel`: Core business logic
+- `QuizEngine`: Manages quiz state and scoring
+- `AchievementManager`: Handles achievement tracking
+- `LanguageDataManager`: Loads and processes language data
 
 ## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
+
+**Testing Guidelines**:
+- Use centralized mocks from `QuizMocks.swift`
+- Follow XCTest patterns
+- Maintain 80%+ test coverage
+- Validate all achievement conditions
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details 
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Acknowledgements
+- ViewInspector for SwiftUI testing
+- Apple Speech Synthesis framework
+- Word data from Open Multilingual Wordnet 

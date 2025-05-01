@@ -2,9 +2,12 @@ import SwiftUI
 
 struct DailyDashboardView: View {
     @EnvironmentObject private var viewModel: WordViewModel
-    @AppStorage("quiz_totalAttempts") var totalAttempts: Int = 0
-    @AppStorage("quiz_correctAnswers") var correctAnswers: Int = 0
-    @AppStorage("quiz_bestStreak") var bestStreak: Int = 0
+    
+    // Use State rather than AppStorage to ensure values are refreshed on view appear
+    @State private var totalAttempts: Int = 0
+    @State private var correctAnswers: Int = 0
+    @State private var bestStreak: Int = 0
+    
     @State private var showQuizStats = false
     @State private var showCategorySelection = false
     @State private var showResetConfirmation = false
@@ -36,25 +39,45 @@ struct DailyDashboardView: View {
                     
                     Divider()
                     
-                    // Quiz Stats Section
+                    // Quiz Stats Section - Improved with better visibility
                     VStack(alignment: .leading, spacing: 6) {
-                        Text("📈 Quiz Performance")
-                            .font(.headline)
-                            .padding(.top, 12)
+                        HStack {
+                            Text("📈 Quiz Performance")
+                                .font(.headline)
+                            
+                            Spacer()
+                            
+                            // Add a refresh button
+                            Button(action: {
+                                refreshQuizStats()
+                            }) {
+                                Image(systemName: "arrow.clockwise")
+                                    .font(.caption)
+                            }
+                            .buttonStyle(.borderless)
+                        }
+                        .padding(.top, 12)
 
                         if totalAttempts > 0 {
                             Text("✅ Correct: \(correctAnswers)")
+                                .foregroundColor(.green)
                             Text("❌ Incorrect: \(totalAttempts - correctAnswers)")
-                            Text("🎯 Accuracy: \(Int(Double(correctAnswers) / Double(totalAttempts) * 100))%")
+                                .foregroundColor(.red)
+                            Text("🎯 Accuracy: \(calculateAccuracy())%")
+                                .foregroundColor(.blue)
                             Text("🔥 Best Streak: \(bestStreak)")
+                                .foregroundColor(.orange)
                         } else {
                             Text("No quiz attempts yet")
                                 .foregroundColor(.secondary)
+                                .padding(.vertical, 4)
                         }
                     }
                     .padding(.top, 8)
                     
                     Button(action: {
+                        // Refresh stats before showing detailed view
+                        refreshQuizStats()
                         showQuizStats = true
                     }) {
                         HStack {
@@ -84,91 +107,70 @@ struct DailyDashboardView: View {
                     
                     // Quick Access Buttons Section
                     VStack(spacing: 15) {
-                        // Category section with debug coloring
-                        VStack(spacing: 10) {
-                            // Show currently selected category (moved here for better visibility)
-                            if let category = viewModel.selectedCategory {
-                                Text("Currently Studying: \(category.capitalized)")
-                                    .font(.headline)
-                                    .foregroundColor(.primary)
-                                    .padding(.vertical, 5)
-                            } else {
-                                Text("Currently Studying: All Categories")
-                                    .font(.headline)
-                                    .foregroundColor(.primary)
-                                    .padding(.vertical, 5)
+                        Text("Quick Actions")
+                            .font(.headline)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        // Language Selection Button
+                        Button(action: {
+                            viewModel.showLanguagePicker = true
+                        }) {
+                            HStack {
+                                Text(viewModel.selectedLanguagePair != nil ? 
+                                    "\(viewModel.selectedLanguagePair!.sourceLanguage.name) → \(viewModel.selectedLanguagePair!.targetLanguage.name)" : 
+                                    "Select Language")
+                                Image(systemName: "chevron.right")
                             }
-                            
-                            // Category selection buttons
-                            NavigationLink(destination: CategorySelectionView().environmentObject(viewModel)) {
-                                HStack {
-                                    Image(systemName: "tag.fill")
-                                    Text("Choose Category")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.vertical, 12)
+                            .padding(.horizontal, 16)
+                            .background(Color.blue.opacity(0.1))
+                            .cornerRadius(8)
+                        }
+                        .buttonStyle(.plain)
+                        
+                        // Category Filter Button
+                        Button(action: {
+                            showCategorySelection = true
+                        }) {
+                            HStack {
+                                Text("Category: \(viewModel.selectedCategory?.capitalized ?? "All")")
+                                Image(systemName: "chevron.right")
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.vertical, 12)
+                            .padding(.horizontal, 16)
+                            .background(Color.green.opacity(0.1))
+                            .cornerRadius(8)
+                        }
+                        .buttonStyle(.plain)
+                        
+                        // Reset Category Filter Button
+                        if viewModel.selectedCategory != nil && viewModel.selectedCategory?.lowercased() != "all" {
+                            VStack {
+                                Button(action: {
+                                    showResetConfirmation = true
+                                }) {
+                                    Text("Reset Category Filter")
+                                        .foregroundColor(.red)
+                                        .font(.footnote)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .padding(.horizontal, 16)
                                 }
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                            }
-                            .buttonStyle(.borderedProminent)
-                            .tint(.blue) // Changed to more visible blue
-                            
-                            Button(action: {
-                                showResetConfirmation = true
-                            }) {
-                                HStack {
-                                    Image(systemName: "arrow.uturn.backward.circle.fill")
-                                    Text("Reset Category")
+                                .buttonStyle(.plain)
+                                
+                                if showResetSuccessMessage {
+                                    Text("✅ Category reset")
+                                        .font(.caption)
+                                        .foregroundColor(.green)
+                                        .padding(.bottom, 4)
+                                        .transition(.opacity)
                                 }
-                                .frame(maxWidth: .infinity)
-                                .padding()
                             }
-                            .buttonStyle(.borderedProminent)
-                            .tint(.orange) // Changed to more visible orange
-                            
-                            if showResetSuccessMessage {
-                                Text("✅ Category reset")
-                                    .font(.caption)
-                                    .foregroundColor(.green)
-                                    .padding(.bottom, 4)
-                                    .transition(.opacity)
-                            }
-                        }
-                        .padding()
-                        .background(Color.gray.opacity(0.1)) // Debug background
-                        .cornerRadius(10)
-                        
-                        // Other buttons (Start Studying, Favorites, Settings)
-                        NavigationLink(destination: WordStudyView().environmentObject(viewModel)) {
-                            HStack {
-                                Image(systemName: "play.fill")
-                                Text("Start Studying")
-                            }
-                            .frame(maxWidth: .infinity)
                             .padding()
+                            .background(Color.gray.opacity(0.1))
+                            .cornerRadius(10)
                         }
-                        .buttonStyle(.borderedProminent)
-                        .tint(.green)
-                        
-                        NavigationLink(destination: FavoritesView().environmentObject(viewModel)) {
-                            HStack {
-                                Image(systemName: "star.fill")
-                                Text("Favorites")
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .tint(.green)
-                        
-                        NavigationLink(destination: SettingsView().environmentObject(viewModel)) {
-                            HStack {
-                                Image(systemName: "gear")
-                                Text("Settings")
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .tint(.blue)
                     }
                     .confirmationDialog("Are you sure you want to reset the category filter?", isPresented: $showResetConfirmation, titleVisibility: .visible) {
                         Button("Reset Category", role: .destructive) {
@@ -191,7 +193,9 @@ struct DailyDashboardView: View {
             }
             .navigationTitle("Daily Dashboard")
             .onAppear {
+                // Refresh all data when view appears
                 DispatchQueue.main.async {
+                    refreshQuizStats()
                     self.viewModel.updateWordOfTheDayIfNeeded()
                 }
             }
@@ -199,6 +203,20 @@ struct DailyDashboardView: View {
                 QuizStatsView()
             }
         }
+    }
+    
+    // Helper function to calculate accuracy with protection against division by zero
+    private func calculateAccuracy() -> Int {
+        guard totalAttempts > 0 else { return 0 }
+        return Int(Double(correctAnswers) / Double(totalAttempts) * 100)
+    }
+    
+    // Helper function to refresh quiz stats from UserDefaults
+    private func refreshQuizStats() {
+        totalAttempts = UserDefaults.standard.integer(forKey: "quiz_totalAttempts")
+        correctAnswers = UserDefaults.standard.integer(forKey: "quiz_correctAnswers")
+        bestStreak = UserDefaults.standard.integer(forKey: "quiz_bestStreak")
+        print("📊 Refreshed quiz stats: \(correctAnswers)/\(totalAttempts) attempts, \(bestStreak) best streak")
     }
 }
 

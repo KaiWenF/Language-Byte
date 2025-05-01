@@ -181,6 +181,9 @@ class WordViewModel: ObservableObject {
         case "it": return "Italian"
         case "ja": return "Japanese"
         case "zh": return "Chinese"
+        case "ko": return "Korean"
+        case "ht": return "Haitian Creole"
+        case "pt": return "Portuguese"
         default: return code.uppercased()
         }
     }

@@ -1,12 +1,12 @@
-import Testing
+import XCTest
 import Foundation
 @testable import Language_Byte_Watch_App
 
-struct ModelTests {
+class ModelTests: XCTestCase {
     
     // MARK: - WordPair Tests
     
-    @Test func testWordPairInitialization() {
+    func testWordPairInitialization() {
         // Arrange
         let foreignWord = "hola"
         let translation = "hello"
@@ -16,23 +16,23 @@ struct ModelTests {
         let wordPair = WordPair(foreignWord: foreignWord, translation: translation, category: category)
         
         // Assert
-        #expect(wordPair.foreignWord == foreignWord)
-        #expect(wordPair.translation == translation)
-        #expect(wordPair.category == category)
+        XCTAssertEqual(wordPair.foreignWord, foreignWord)
+        XCTAssertEqual(wordPair.translation, translation)
+        XCTAssertEqual(wordPair.category, category)
     }
     
-    @Test func testWordPairEquality() {
+    func testWordPairEquality() {
         // Arrange
         let wordPair1 = WordPair(foreignWord: "hola", translation: "hello", category: "greetings")
         let wordPair2 = WordPair(foreignWord: "hola", translation: "hello", category: "greetings")
         let wordPair3 = WordPair(foreignWord: "adios", translation: "goodbye", category: "greetings")
         
         // Assert
-        #expect(wordPair1 == wordPair2)
-        #expect(wordPair1 != wordPair3)
+        XCTAssertEqual(wordPair1, wordPair2)
+        XCTAssertNotEqual(wordPair1, wordPair3)
     }
     
-    @Test func testWordPairHashable() {
+    func testWordPairHashable() {
         // Arrange
         let wordPair1 = WordPair(foreignWord: "hola", translation: "hello", category: "greetings")
         let wordPair2 = WordPair(foreignWord: "adios", translation: "goodbye", category: "greetings")
@@ -43,11 +43,11 @@ struct ModelTests {
         dictionary[wordPair2] = "Farewell"
         
         // Assert
-        #expect(dictionary[wordPair1] == "Greeting")
-        #expect(dictionary[wordPair2] == "Farewell")
+        XCTAssertEqual(dictionary[wordPair1], "Greeting")
+        XCTAssertEqual(dictionary[wordPair2], "Farewell")
     }
     
-    @Test func testWordPairCodable() throws {
+    func testWordPairCodable() throws {
         // Arrange
         let wordPair = WordPair(foreignWord: "hola", translation: "hello", category: "greetings")
         
@@ -58,32 +58,55 @@ struct ModelTests {
         let decodedWordPair = try decoder.decode(WordPair.self, from: data)
         
         // Assert
-        #expect(wordPair == decodedWordPair)
+        XCTAssertEqual(wordPair, decodedWordPair)
     }
     
     // MARK: - Language Tests
     
-    @Test func testLanguageInitialization() {
+    func testLanguageInitialization() {
         // Arrange & Act
         let language = Language(code: "fr", name: "French", speechCode: "fr-FR")
         
         // Assert
-        #expect(language.code == "fr")
-        #expect(language.name == "French")
-        #expect(language.speechCode == "fr-FR")
+        XCTAssertEqual(language.code, "fr")
+        XCTAssertEqual(language.name, "French")
+        XCTAssertEqual(language.speechCode, "fr-FR")
     }
     
-    @Test func testLanguagePresets() {
+    func testLanguagePresets() {
         // Act & Assert
-        #expect(Language.english.code == "en")
-        #expect(Language.spanish.name == "Spanish")
-        #expect(Language.french.speechCode == "fr-FR")
-        #expect(Language.allLanguages.count >= 7) // Should have at least the predefined languages
+        XCTAssertEqual(Language.english.code, "en")
+        XCTAssertEqual(Language.spanish.name, "Spanish")
+        XCTAssertEqual(Language.french.speechCode, "fr-FR")
+        XCTAssertGreaterThanOrEqual(Language.allLanguages.count, 10) // Should have at least 10 predefined languages now
+    }
+    
+    func testNewlyAddedLanguages() {
+        // Test Korean
+        XCTAssertEqual(Language.korean.code, "ko")
+        XCTAssertEqual(Language.korean.name, "Korean")
+        XCTAssertEqual(Language.korean.speechCode, "ko-KR")
+        
+        // Test Haitian Creole
+        XCTAssertEqual(Language.haitianCreole.code, "ht")
+        XCTAssertEqual(Language.haitianCreole.name, "Haitian Creole")
+        XCTAssertEqual(Language.haitianCreole.speechCode, "ht-HT")
+        
+        // Test Portuguese
+        XCTAssertEqual(Language.portuguese.code, "pt")
+        XCTAssertEqual(Language.portuguese.name, "Portuguese")
+        XCTAssertEqual(Language.portuguese.speechCode, "pt-BR")
+        
+        // Make sure all languages are in allLanguages
+        let allLanguageCodes = Language.allLanguages.map { $0.code }
+        XCTAssertTrue(allLanguageCodes.contains("ko"))
+        XCTAssertTrue(allLanguageCodes.contains("ht"))
+        XCTAssertTrue(allLanguageCodes.contains("pt"))
     }
     
     // MARK: - LanguagePair Tests
     
-    @Test func testLanguagePairInitialization() {
+    func testLanguagePairInitialization() {
         // Arrange
         let source = Language.english
         let target = Language.spanish
@@ -96,12 +119,12 @@ struct ModelTests {
         let languagePair = LanguagePair(sourceLanguage: source, targetLanguage: target, pairs: pairs)
         
         // Assert
-        #expect(languagePair.sourceLanguage == source)
-        #expect(languagePair.targetLanguage == target)
-        #expect(languagePair.pairs.count == 2)
+        XCTAssertEqual(languagePair.sourceLanguage, source)
+        XCTAssertEqual(languagePair.targetLanguage, target)
+        XCTAssertEqual(languagePair.pairs.count, 2)
     }
     
-    @Test func testLanguagePairID() {
+    func testLanguagePairID() {
         // Arrange
         let pair = LanguagePair(
             sourceLanguage: Language.english,
@@ -113,10 +136,10 @@ struct ModelTests {
         let id = pair.id
         
         // Assert
-        #expect(id == "en-es")
+        XCTAssertEqual(id, "en-es")
     }
     
-    @Test func testLanguagePairEquality() {
+    func testLanguagePairEquality() {
         // Arrange
         let pair1 = LanguagePair(
             sourceLanguage: Language.english,
@@ -137,7 +160,59 @@ struct ModelTests {
         )
         
         // Assert
-        #expect(pair1 == pair2) // Same id (en-es) despite different number of pairs
-        #expect(pair1 != pair3) // Different id (en-es vs en-fr)
+        XCTAssertEqual(pair1, pair2) // Same id (en-es) despite different number of pairs
+        XCTAssertNotEqual(pair1, pair3) // Different id (en-es vs en-fr)
+    }
+    
+    func testPreviouslyUnavailableLanguagePairs() {
+        // Test English → Italian
+        let englishItalian = LanguagePair(
+            sourceLanguage: Language.english,
+            targetLanguage: Language.italian,
+            pairs: []
+        )
+        XCTAssertEqual(englishItalian.id, "en-it")
+        
+        // Test English → Japanese
+        let englishJapanese = LanguagePair(
+            sourceLanguage: Language.english,
+            targetLanguage: Language.japanese,
+            pairs: []
+        )
+        XCTAssertEqual(englishJapanese.id, "en-ja")
+        
+        // Test English → Chinese
+        let englishChinese = LanguagePair(
+            sourceLanguage: Language.english,
+            targetLanguage: Language.chinese,
+            pairs: []
+        )
+        XCTAssertEqual(englishChinese.id, "en-zh")
+    }
+    
+    func testNewLanguagePairs() {
+        // Test English → Korean
+        let englishKorean = LanguagePair(
+            sourceLanguage: Language.english,
+            targetLanguage: Language.korean,
+            pairs: []
+        )
+        XCTAssertEqual(englishKorean.id, "en-ko")
+        
+        // Test English → Haitian Creole
+        let englishHaitianCreole = LanguagePair(
+            sourceLanguage: Language.english,
+            targetLanguage: Language.haitianCreole,
+            pairs: []
+        )
+        XCTAssertEqual(englishHaitianCreole.id, "en-ht")
+        
+        // Test English → Portuguese
+        let englishPortuguese = LanguagePair(
+            sourceLanguage: Language.english,
+            targetLanguage: Language.portuguese,
+            pairs: []
+        )
+        XCTAssertEqual(englishPortuguese.id, "en-pt")
     }
 } 

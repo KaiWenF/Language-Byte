@@ -1,8 +1,8 @@
-import Testing
+import XCTest
 import SwiftUI
-@testable import Language_Byte
+@testable import Language_Byte_Watch_App
 
-struct AchievementManagerTests {
+class AchievementManagerTests: XCTestCase {
     
     // Helper function to reset achievement-related UserDefaults
     func resetAchievementDefaults() {
@@ -14,7 +14,7 @@ struct AchievementManagerTests {
     }
     
     // Test basic achievement unlocking
-    @Test func testBasicAchievements() throws {
+    func testBasicAchievements() throws {
         // Reset and setup test data
         resetAchievementDefaults()
         
@@ -30,7 +30,7 @@ struct AchievementManagerTests {
         
         // Verify no achievements are unlocked
         for achievement in achievements {
-            #expect(achievement.unlocked == false, "Expected \(achievement.title) to be locked")
+            XCTAssertFalse(achievement.unlocked, "Expected \(achievement.title) to be locked")
         }
         
         // Now simulate unlocking the starter achievement (Quiz Novice - 10 questions answered)
@@ -44,16 +44,16 @@ struct AchievementManagerTests {
         
         // Find the Quiz Novice achievement
         let quizNovice = updatedAchievements.first { $0.id == "starter" }
-        #expect(quizNovice != nil, "Quiz Novice achievement should exist")
-        #expect(quizNovice?.unlocked == true, "Quiz Novice should be unlocked")
+        XCTAssertNotNil(quizNovice, "Quiz Novice achievement should exist")
+        XCTAssertTrue(quizNovice?.unlocked == true, "Quiz Novice should be unlocked")
         
         // Other achievements should still be locked
         let hotStreak = updatedAchievements.first { $0.id == "hotstreak" }
-        #expect(hotStreak?.unlocked == false, "Hot Streak should still be locked")
+        XCTAssertFalse(hotStreak?.unlocked == true, "Hot Streak should still be locked")
     }
     
     // Test streak achievements
-    @Test func testStreakAchievements() throws {
+    func testStreakAchievements() throws {
         // Reset and setup test data
         resetAchievementDefaults()
         
@@ -68,12 +68,12 @@ struct AchievementManagerTests {
         
         // Verify On Fire is unlocked
         let onFire = achievements1.first { $0.id == "hotstreak" }
-        #expect(onFire != nil, "On Fire achievement should exist")
-        #expect(onFire?.unlocked == true, "On Fire should be unlocked with streak of 5")
+        XCTAssertNotNil(onFire, "On Fire achievement should exist")
+        XCTAssertTrue(onFire?.unlocked == true, "On Fire should be unlocked with streak of 5")
         
         // Verify Unstoppable is still locked
         let unstoppable1 = achievements1.first { $0.id == "inferno" }
-        #expect(unstoppable1?.unlocked == false, "Unstoppable should still be locked with streak of 5")
+        XCTAssertFalse(unstoppable1?.unlocked == true, "Unstoppable should still be locked with streak of 5")
         
         // Now test with streak of 10 (should unlock Unstoppable)
         let achievements2 = AchievementManager.unlockedAchievements(
@@ -83,11 +83,11 @@ struct AchievementManagerTests {
         
         // Verify Unstoppable is now unlocked
         let unstoppable2 = achievements2.first { $0.id == "inferno" }
-        #expect(unstoppable2?.unlocked == true, "Unstoppable should be unlocked with streak of 10")
+        XCTAssertTrue(unstoppable2?.unlocked == true, "Unstoppable should be unlocked with streak of 10")
     }
     
     // Test accuracy achievements
-    @Test func testAccuracyAchievements() throws {
+    func testAccuracyAchievements() throws {
         // Reset and setup test data
         resetAchievementDefaults()
         
@@ -102,11 +102,11 @@ struct AchievementManagerTests {
         
         // Verify Sharp Mind is unlocked
         let sharpMind = achievements.first { $0.id == "accurate" }
-        #expect(sharpMind?.unlocked == true, "Sharp Mind should be unlocked with 80% accuracy")
+        XCTAssertTrue(sharpMind?.unlocked == true, "Sharp Mind should be unlocked with 80% accuracy")
         
         // Verify Brainiac is still locked (needs 90% over 50 questions)
         let brainiac = achievements.first { $0.id == "brainiac" }
-        #expect(brainiac?.unlocked == false, "Brainiac should be locked without enough attempts")
+        XCTAssertFalse(brainiac?.unlocked == true, "Brainiac should be locked without enough attempts")
         
         // Test Perfect Recall (100% with at least 15 attempts)
         UserDefaults.standard.set(15, forKey: "quiz_totalAttempts") // 15 attempts
@@ -119,11 +119,11 @@ struct AchievementManagerTests {
         
         // Verify Perfect Recall is unlocked
         let perfectRecall = perfectAchievements.first { $0.id == "perfect" }
-        #expect(perfectRecall?.unlocked == true, "Perfect Recall should be unlocked with 100% accuracy")
+        XCTAssertTrue(perfectRecall?.unlocked == true, "Perfect Recall should be unlocked with 100% accuracy")
     }
     
     // Test special achievements
-    @Test func testSpecialAchievements() throws {
+    func testSpecialAchievements() throws {
         // Reset and setup test data
         resetAchievementDefaults()
         
@@ -137,7 +137,7 @@ struct AchievementManagerTests {
         
         // Verify Comeback Kid is unlocked
         let comebackKid = achievements.first { $0.id == "comeback" }
-        #expect(comebackKid?.unlocked == true, "Comeback Kid should be unlocked")
+        XCTAssertTrue(comebackKid?.unlocked == true, "Comeback Kid should be unlocked")
         
         // Test Quick Thinker
         resetAchievementDefaults()
@@ -150,11 +150,11 @@ struct AchievementManagerTests {
         
         // Verify Quick Thinker is unlocked
         let quickThinker = speedsterAchievements.first { $0.id == "speedster" }
-        #expect(quickThinker?.unlocked == true, "Quick Thinker should be unlocked")
+        XCTAssertTrue(quickThinker?.unlocked == true, "Quick Thinker should be unlocked")
     }
     
     // Test achievement icons and colors
-    @Test func testAchievementVisuals() throws {
+    func testAchievementVisuals() throws {
         // Reset and setup test data
         resetAchievementDefaults()
         UserDefaults.standard.set(50, forKey: "quiz_totalAttempts")
@@ -168,17 +168,17 @@ struct AchievementManagerTests {
         
         // Verify each achievement has a valid icon name
         for achievement in achievements {
-            #expect(!achievement.iconName.isEmpty, "Achievement \(achievement.id) should have an icon name")
+            XCTAssertFalse(achievement.iconName.isEmpty, "Achievement \(achievement.id) should have an icon name")
         }
         
         // Check specific icons for key achievements
         let novice = achievements.first { $0.id == "starter" }
-        #expect(novice?.iconName == "1.circle", "Quiz Novice should have 1.circle icon")
+        XCTAssertEqual(novice?.iconName, "1.circle", "Quiz Novice should have 1.circle icon")
         
         let onFire = achievements.first { $0.id == "hotstreak" }
-        #expect(onFire?.iconName == "flame", "On Fire should have flame icon")
+        XCTAssertEqual(onFire?.iconName, "flame", "On Fire should have flame icon")
         
         let unstoppable = achievements.first { $0.id == "inferno" }
-        #expect(unstoppable?.iconName == "flame.fill", "Unstoppable should have flame.fill icon")
+        XCTAssertEqual(unstoppable?.iconName, "flame.fill", "Unstoppable should have flame.fill icon")
     }
 } 

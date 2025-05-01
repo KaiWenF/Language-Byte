@@ -6,6 +6,7 @@ struct MainView: View {
     @AppStorage("selectedSourceLanguage") private var sourceLanguage: String = "en"
     @AppStorage("selectedTargetLanguage") private var targetLanguage: String = "es"
     @State private var showLanguageSelection = false
+    @State private var showCategorySelection = false
     
     // Function to get display name for language code
     private func languageName(for code: String) -> String {
@@ -17,6 +18,9 @@ struct MainView: View {
         case "it": return "Italian"
         case "ja": return "Japanese"
         case "zh": return "Chinese"
+        case "ko": return "Korean"
+        case "ht": return "Haitian Creole"
+        case "pt": return "Portuguese"
         default: return code.uppercased()
         }
     }
@@ -72,6 +76,19 @@ struct MainView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.orange)
+                    .padding(.bottom, 10)
+                    
+                    // Category Selection Button
+                    NavigationLink(destination: CategorySelectionView().environmentObject(viewModel)) {
+                        HStack {
+                            Image(systemName: "tag.fill")
+                            Text("Choose Category")
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.indigo)
                     .padding(.bottom, 10)
                     
                     // Start studying button

@@ -8,106 +8,481 @@
         "target": "Spanish"
       },
       "pairs": [
-        { "sourceWord": "to eat", "targetWord": "comer", "category": "verb" },
-        { "sourceWord": "to drink", "targetWord": "beber", "category": "verb" },
-        { "sourceWord": "to cook", "targetWord": "cocinar", "category": "verb" },
-        { "sourceWord": "to cut", "targetWord": "cortar", "category": "verb" },
-        { "sourceWord": "to peel", "targetWord": "pelar", "category": "verb" },
-        { "sourceWord": "to fry", "targetWord": "freír", "category": "verb" },
-        { "sourceWord": "to bake", "targetWord": "hornear", "category": "verb" },
-        { "sourceWord": "to mix", "targetWord": "mezclar", "category": "verb" },
-        { "sourceWord": "to taste", "targetWord": "probar", "category": "verb" },
-        { "sourceWord": "to season", "targetWord": "sazonar", "category": "verb" },
-        { "sourceWord": "to buy", "targetWord": "comprar", "category": "verb" },
-        { "sourceWord": "to sell", "targetWord": "vender", "category": "verb" },
-        { "sourceWord": "to prepare", "targetWord": "preparar", "category": "verb" },
-        { "sourceWord": "to wash", "targetWord": "lavar", "category": "verb" },
-        { "sourceWord": "to change", "targetWord": "cambiar", "category": "verb" },
-        { "sourceWord": "to serve", "targetWord": "servir", "category": "verb" },
-        { "sourceWord": "to do", "targetWord": "hacer", "category": "verb" },
-        { "sourceWord": "to clean", "targetWord": "limpiar", "category": "verb" },
-        { "sourceWord": "to help", "targetWord": "ayudar", "category": "verb" },
-        { "sourceWord": "to need", "targetWord": "necesitar", "category": "verb" },
-
-        { "sourceWord": "bread", "targetWord": "pan", "category": "food" },
-        { "sourceWord": "cheese", "targetWord": "queso", "category": "food" },
-        { "sourceWord": "milk", "targetWord": "leche", "category": "food" },
-        { "sourceWord": "egg", "targetWord": "huevo", "category": "food" },
-        { "sourceWord": "meat", "targetWord": "carne", "category": "food" },
-        { "sourceWord": "fish", "targetWord": "pescado", "category": "food" },
-        { "sourceWord": "chicken", "targetWord": "pollo", "category": "food" },
-        { "sourceWord": "rice", "targetWord": "arroz", "category": "food" },
-        { "sourceWord": "beans", "targetWord": "frijoles", "category": "food" },
-        { "sourceWord": "potatoes", "targetWord": "papas", "category": "food" },
-        { "sourceWord": "strawberries", "targetWord": "fresas", "category": "food" },
-        { "sourceWord": "apple", "targetWord": "manzana", "category": "food" },
-        { "sourceWord": "banana", "targetWord": "plátano", "category": "food" },
-        { "sourceWord": "orange", "targetWord": "naranja", "category": "food" },
-        { "sourceWord": "grape", "targetWord": "uva", "category": "food" },
-        { "sourceWord": "watermelon", "targetWord": "sandía", "category": "food" },
-        { "sourceWord": "lemon", "targetWord": "limón", "category": "food" },
-        { "sourceWord": "carrot", "targetWord": "zanahoria", "category": "food" },
-        { "sourceWord": "lettuce", "targetWord": "lechuga", "category": "food" },
-        { "sourceWord": "tomato", "targetWord": "tomate", "category": "food" },
-
-        { "sourceWord": "mother", "targetWord": "madre", "category": "family" },
-        { "sourceWord": "father", "targetWord": "padre", "category": "family" },
-        { "sourceWord": "son", "targetWord": "hijo", "category": "family" },
-        { "sourceWord": "daughter", "targetWord": "hija", "category": "family" },
-        { "sourceWord": "brother", "targetWord": "hermano", "category": "family" },
-        { "sourceWord": "sister", "targetWord": "hermana", "category": "family" },
-        { "sourceWord": "grandfather", "targetWord": "abuelo", "category": "family" },
-        { "sourceWord": "grandmother", "targetWord": "abuela", "category": "family" },
-        { "sourceWord": "uncle", "targetWord": "tío", "category": "family" },
-        { "sourceWord": "aunt", "targetWord": "tía", "category": "family" },
-        { "sourceWord": "cousin (male)", "targetWord": "primo", "category": "family" },
-        { "sourceWord": "cousin (female)", "targetWord": "prima", "category": "family" },
-        { "sourceWord": "grandson", "targetWord": "nieto", "category": "family" },
-        { "sourceWord": "granddaughter", "targetWord": "nieta", "category": "family" },
-        { "sourceWord": "husband", "targetWord": "esposo", "category": "family" },
-        { "sourceWord": "wife", "targetWord": "esposa", "category": "family" },
-        { "sourceWord": "father-in-law", "targetWord": "suegro", "category": "family" },
-        { "sourceWord": "mother-in-law", "targetWord": "suegra", "category": "family" },
-        { "sourceWord": "brother-in-law", "targetWord": "cuñado", "category": "family" },
-        { "sourceWord": "sister-in-law", "targetWord": "cuñada", "category": "family" },
-        
-        { "sourceWord": "red", "targetWord": "rojo", "category": "colors" },
-        { "sourceWord": "blue", "targetWord": "azul", "category": "colors" },
-        { "sourceWord": "green", "targetWord": "verde", "category": "colors" },
-        { "sourceWord": "yellow", "targetWord": "amarillo", "category": "colors" },
-        { "sourceWord": "orange", "targetWord": "naranja", "category": "colors" },
-        { "sourceWord": "purple", "targetWord": "morado", "category": "colors" },
-        { "sourceWord": "pink", "targetWord": "rosa", "category": "colors" },
-        { "sourceWord": "black", "targetWord": "negro", "category": "colors" },
-        { "sourceWord": "white", "targetWord": "blanco", "category": "colors" },
-        { "sourceWord": "gray", "targetWord": "gris", "category": "colors" },
-        { "sourceWord": "brown", "targetWord": "marrón", "category": "colors" },
-        { "sourceWord": "turquoise", "targetWord": "turquesa", "category": "colors" },
-        { "sourceWord": "sky blue", "targetWord": "celeste", "category": "colors" },
-        { "sourceWord": "golden", "targetWord": "dorado", "category": "colors" },
-        { "sourceWord": "silver", "targetWord": "plateado", "category": "colors" },
-        
-        { "sourceWord": "one", "targetWord": "uno", "category": "numbers" },
-        { "sourceWord": "two", "targetWord": "dos", "category": "numbers" },
-        { "sourceWord": "three", "targetWord": "tres", "category": "numbers" },
-        { "sourceWord": "four", "targetWord": "cuatro", "category": "numbers" },
-        { "sourceWord": "five", "targetWord": "cinco", "category": "numbers" },
-        { "sourceWord": "six", "targetWord": "seis", "category": "numbers" },
-        { "sourceWord": "seven", "targetWord": "siete", "category": "numbers" },
-        { "sourceWord": "eight", "targetWord": "ocho", "category": "numbers" },
-        { "sourceWord": "nine", "targetWord": "nueve", "category": "numbers" },
-        { "sourceWord": "ten", "targetWord": "diez", "category": "numbers" },
-        
-        { "sourceWord": "Hello", "targetWord": "Hola", "category": "phrases" },
-        { "sourceWord": "Good morning", "targetWord": "Buenos días", "category": "phrases" },
-        { "sourceWord": "Good afternoon", "targetWord": "Buenas tardes", "category": "phrases" },
-        { "sourceWord": "Good evening / Good night", "targetWord": "Buenas noches", "category": "phrases" },
-        { "sourceWord": "Goodbye", "targetWord": "Adiós", "category": "phrases" },
-        { "sourceWord": "See you later", "targetWord": "Hasta luego", "category": "phrases" },
-        { "sourceWord": "Please", "targetWord": "Por favor", "category": "phrases" },
-        { "sourceWord": "Thank you", "targetWord": "Gracias", "category": "phrases" },
-        { "sourceWord": "You're welcome", "targetWord": "De nada", "category": "phrases" },
-        { "sourceWord": "I'm sorry", "targetWord": "Lo siento", "category": "phrases" }
+        {
+          "sourceWord": "to eat",
+          "targetWord": "comer",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to drink",
+          "targetWord": "beber",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to cook",
+          "targetWord": "cocinar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to cut",
+          "targetWord": "cortar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to peel",
+          "targetWord": "pelar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to fry",
+          "targetWord": "freír",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to bake",
+          "targetWord": "hornear",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to mix",
+          "targetWord": "mezclar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to taste",
+          "targetWord": "probar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to season",
+          "targetWord": "sazonar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to buy",
+          "targetWord": "comprar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to sell",
+          "targetWord": "vender",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to prepare",
+          "targetWord": "preparar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to wash",
+          "targetWord": "lavar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to change",
+          "targetWord": "cambiar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to serve",
+          "targetWord": "servir",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to do",
+          "targetWord": "hacer",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to clean",
+          "targetWord": "limpiar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to help",
+          "targetWord": "ayudar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to need",
+          "targetWord": "necesitar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "bread",
+          "targetWord": "pan",
+          "category": "food"
+        },
+        {
+          "sourceWord": "cheese",
+          "targetWord": "queso",
+          "category": "food"
+        },
+        {
+          "sourceWord": "milk",
+          "targetWord": "leche",
+          "category": "food"
+        },
+        {
+          "sourceWord": "egg",
+          "targetWord": "huevo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "meat",
+          "targetWord": "carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "fish",
+          "targetWord": "pescado",
+          "category": "food"
+        },
+        {
+          "sourceWord": "chicken",
+          "targetWord": "pollo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "rice",
+          "targetWord": "arroz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "beans",
+          "targetWord": "frijoles",
+          "category": "food"
+        },
+        {
+          "sourceWord": "potatoes",
+          "targetWord": "papas",
+          "category": "food"
+        },
+        {
+          "sourceWord": "strawberries",
+          "targetWord": "fresas",
+          "category": "food"
+        },
+        {
+          "sourceWord": "apple",
+          "targetWord": "manzana",
+          "category": "food"
+        },
+        {
+          "sourceWord": "banana",
+          "targetWord": "plátano",
+          "category": "food"
+        },
+        {
+          "sourceWord": "orange",
+          "targetWord": "naranja",
+          "category": "food"
+        },
+        {
+          "sourceWord": "grape",
+          "targetWord": "uva",
+          "category": "food"
+        },
+        {
+          "sourceWord": "watermelon",
+          "targetWord": "sandía",
+          "category": "food"
+        },
+        {
+          "sourceWord": "lemon",
+          "targetWord": "limón",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carrot",
+          "targetWord": "zanahoria",
+          "category": "food"
+        },
+        {
+          "sourceWord": "lettuce",
+          "targetWord": "lechuga",
+          "category": "food"
+        },
+        {
+          "sourceWord": "tomato",
+          "targetWord": "tomate",
+          "category": "food"
+        },
+        {
+          "sourceWord": "mother",
+          "targetWord": "madre",
+          "category": "family"
+        },
+        {
+          "sourceWord": "father",
+          "targetWord": "padre",
+          "category": "family"
+        },
+        {
+          "sourceWord": "son",
+          "targetWord": "hijo",
+          "category": "family"
+        },
+        {
+          "sourceWord": "daughter",
+          "targetWord": "hija",
+          "category": "family"
+        },
+        {
+          "sourceWord": "brother",
+          "targetWord": "hermano",
+          "category": "family"
+        },
+        {
+          "sourceWord": "sister",
+          "targetWord": "hermana",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandfather",
+          "targetWord": "abuelo",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandmother",
+          "targetWord": "abuela",
+          "category": "family"
+        },
+        {
+          "sourceWord": "uncle",
+          "targetWord": "tío",
+          "category": "family"
+        },
+        {
+          "sourceWord": "aunt",
+          "targetWord": "tía",
+          "category": "family"
+        },
+        {
+          "sourceWord": "cousin (male)",
+          "targetWord": "primo",
+          "category": "family"
+        },
+        {
+          "sourceWord": "cousin (female)",
+          "targetWord": "prima",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandson",
+          "targetWord": "nieto",
+          "category": "family"
+        },
+        {
+          "sourceWord": "granddaughter",
+          "targetWord": "nieta",
+          "category": "family"
+        },
+        {
+          "sourceWord": "husband",
+          "targetWord": "esposo",
+          "category": "family"
+        },
+        {
+          "sourceWord": "wife",
+          "targetWord": "esposa",
+          "category": "family"
+        },
+        {
+          "sourceWord": "father-in-law",
+          "targetWord": "suegro",
+          "category": "family"
+        },
+        {
+          "sourceWord": "mother-in-law",
+          "targetWord": "suegra",
+          "category": "family"
+        },
+        {
+          "sourceWord": "brother-in-law",
+          "targetWord": "cuñado",
+          "category": "family"
+        },
+        {
+          "sourceWord": "sister-in-law",
+          "targetWord": "cuñada",
+          "category": "family"
+        },
+        {
+          "sourceWord": "red",
+          "targetWord": "rojo",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "blue",
+          "targetWord": "azul",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "green",
+          "targetWord": "verde",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "yellow",
+          "targetWord": "amarillo",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "orange",
+          "targetWord": "naranja",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "purple",
+          "targetWord": "morado",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "pink",
+          "targetWord": "rosa",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "black",
+          "targetWord": "negro",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "white",
+          "targetWord": "blanco",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "gray",
+          "targetWord": "gris",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "brown",
+          "targetWord": "marrón",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "turquoise",
+          "targetWord": "turquesa",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "sky blue",
+          "targetWord": "celeste",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "golden",
+          "targetWord": "dorado",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "silver",
+          "targetWord": "plateado",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "uno",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "dos",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "tres",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "cuatro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "cinco",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "seis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "siete",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "ocho",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "nueve",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "diez",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Hello",
+          "targetWord": "Hola",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "Buenos días",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good afternoon",
+          "targetWord": "Buenas tardes",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening / Good night",
+          "targetWord": "Buenas noches",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "Adiós",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "See you later",
+          "targetWord": "Hasta luego",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "Por favor",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "Gracias",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "You're welcome",
+          "targetWord": "De nada",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "Lo siento",
+          "category": "phrases"
+        }
       ]
     },
     {
@@ -118,81 +493,356 @@
         "target": "French"
       },
       "pairs": [
-        { "sourceWord": "to eat", "targetWord": "manger", "category": "verb" },
-        { "sourceWord": "to drink", "targetWord": "boire", "category": "verb" },
-        { "sourceWord": "to cook", "targetWord": "cuisiner", "category": "verb" },
-        { "sourceWord": "to cut", "targetWord": "couper", "category": "verb" },
-        { "sourceWord": "to peel", "targetWord": "peler", "category": "verb" },
-        { "sourceWord": "to fry", "targetWord": "frire", "category": "verb" },
-        { "sourceWord": "to bake", "targetWord": "cuire au four", "category": "verb" },
-        { "sourceWord": "to mix", "targetWord": "mélanger", "category": "verb" },
-        { "sourceWord": "to taste", "targetWord": "goûter", "category": "verb" },
-        { "sourceWord": "to season", "targetWord": "assaisonner", "category": "verb" },
-        { "sourceWord": "to buy", "targetWord": "acheter", "category": "verb" },
-        { "sourceWord": "to sell", "targetWord": "vendre", "category": "verb" },
-        { "sourceWord": "to prepare", "targetWord": "préparer", "category": "verb" },
-        { "sourceWord": "to wash", "targetWord": "laver", "category": "verb" },
-        { "sourceWord": "to change", "targetWord": "changer", "category": "verb" },
-        
-        { "sourceWord": "bread", "targetWord": "pain", "category": "food" },
-        { "sourceWord": "cheese", "targetWord": "fromage", "category": "food" },
-        { "sourceWord": "milk", "targetWord": "lait", "category": "food" },
-        { "sourceWord": "egg", "targetWord": "œuf", "category": "food" },
-        { "sourceWord": "meat", "targetWord": "viande", "category": "food" },
-        { "sourceWord": "fish", "targetWord": "poisson", "category": "food" },
-        { "sourceWord": "chicken", "targetWord": "poulet", "category": "food" },
-        { "sourceWord": "rice", "targetWord": "riz", "category": "food" },
-        { "sourceWord": "beans", "targetWord": "haricots", "category": "food" },
-        { "sourceWord": "potatoes", "targetWord": "pommes de terre", "category": "food" },
-        { "sourceWord": "apple", "targetWord": "pomme", "category": "food" },
-        { "sourceWord": "banana", "targetWord": "banane", "category": "food" },
-        { "sourceWord": "orange", "targetWord": "orange", "category": "food" },
-        { "sourceWord": "grape", "targetWord": "raisin", "category": "food" },
-        { "sourceWord": "watermelon", "targetWord": "pastèque", "category": "food" },
-        
-        { "sourceWord": "mother", "targetWord": "mère", "category": "family" },
-        { "sourceWord": "father", "targetWord": "père", "category": "family" },
-        { "sourceWord": "son", "targetWord": "fils", "category": "family" },
-        { "sourceWord": "daughter", "targetWord": "fille", "category": "family" },
-        { "sourceWord": "brother", "targetWord": "frère", "category": "family" },
-        { "sourceWord": "sister", "targetWord": "sœur", "category": "family" },
-        { "sourceWord": "grandfather", "targetWord": "grand-père", "category": "family" },
-        { "sourceWord": "grandmother", "targetWord": "grand-mère", "category": "family" },
-        { "sourceWord": "uncle", "targetWord": "oncle", "category": "family" },
-        { "sourceWord": "aunt", "targetWord": "tante", "category": "family" },
-        
-        { "sourceWord": "red", "targetWord": "rouge", "category": "colors" },
-        { "sourceWord": "blue", "targetWord": "bleu", "category": "colors" },
-        { "sourceWord": "green", "targetWord": "vert", "category": "colors" },
-        { "sourceWord": "yellow", "targetWord": "jaune", "category": "colors" },
-        { "sourceWord": "orange", "targetWord": "orange", "category": "colors" },
-        { "sourceWord": "purple", "targetWord": "violet", "category": "colors" },
-        { "sourceWord": "pink", "targetWord": "rose", "category": "colors" },
-        { "sourceWord": "black", "targetWord": "noir", "category": "colors" },
-        { "sourceWord": "white", "targetWord": "blanc", "category": "colors" },
-        { "sourceWord": "gray", "targetWord": "gris", "category": "colors" },
-        
-        { "sourceWord": "one", "targetWord": "un", "category": "numbers" },
-        { "sourceWord": "two", "targetWord": "deux", "category": "numbers" },
-        { "sourceWord": "three", "targetWord": "trois", "category": "numbers" },
-        { "sourceWord": "four", "targetWord": "quatre", "category": "numbers" },
-        { "sourceWord": "five", "targetWord": "cinq", "category": "numbers" },
-        { "sourceWord": "six", "targetWord": "six", "category": "numbers" },
-        { "sourceWord": "seven", "targetWord": "sept", "category": "numbers" },
-        { "sourceWord": "eight", "targetWord": "huit", "category": "numbers" },
-        { "sourceWord": "nine", "targetWord": "neuf", "category": "numbers" },
-        { "sourceWord": "ten", "targetWord": "dix", "category": "numbers" },
-        
-        { "sourceWord": "Hello", "targetWord": "Bonjour", "category": "phrases" },
-        { "sourceWord": "Good morning", "targetWord": "Bonjour", "category": "phrases" },
-        { "sourceWord": "Good afternoon", "targetWord": "Bonjour", "category": "phrases" },
-        { "sourceWord": "Good evening / Good night", "targetWord": "Bonsoir / Bonne nuit", "category": "phrases" },
-        { "sourceWord": "Goodbye", "targetWord": "Au revoir", "category": "phrases" },
-        { "sourceWord": "See you later", "targetWord": "À plus tard", "category": "phrases" },
-        { "sourceWord": "Please", "targetWord": "S'il vous plaît", "category": "phrases" },
-        { "sourceWord": "Thank you", "targetWord": "Merci", "category": "phrases" },
-        { "sourceWord": "You're welcome", "targetWord": "De rien", "category": "phrases" },
-        { "sourceWord": "I'm sorry", "targetWord": "Je suis désolé(e)", "category": "phrases" }
+        {
+          "sourceWord": "to eat",
+          "targetWord": "manger",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to drink",
+          "targetWord": "boire",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to cook",
+          "targetWord": "cuisiner",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to cut",
+          "targetWord": "couper",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to peel",
+          "targetWord": "peler",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to fry",
+          "targetWord": "frire",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to bake",
+          "targetWord": "cuire au four",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to mix",
+          "targetWord": "mélanger",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to taste",
+          "targetWord": "goûter",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to season",
+          "targetWord": "assaisonner",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to buy",
+          "targetWord": "acheter",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to sell",
+          "targetWord": "vendre",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to prepare",
+          "targetWord": "préparer",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to wash",
+          "targetWord": "laver",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to change",
+          "targetWord": "changer",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "bread",
+          "targetWord": "pain",
+          "category": "food"
+        },
+        {
+          "sourceWord": "cheese",
+          "targetWord": "fromage",
+          "category": "food"
+        },
+        {
+          "sourceWord": "milk",
+          "targetWord": "lait",
+          "category": "food"
+        },
+        {
+          "sourceWord": "egg",
+          "targetWord": "œuf",
+          "category": "food"
+        },
+        {
+          "sourceWord": "meat",
+          "targetWord": "viande",
+          "category": "food"
+        },
+        {
+          "sourceWord": "fish",
+          "targetWord": "poisson",
+          "category": "food"
+        },
+        {
+          "sourceWord": "chicken",
+          "targetWord": "poulet",
+          "category": "food"
+        },
+        {
+          "sourceWord": "rice",
+          "targetWord": "riz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "beans",
+          "targetWord": "haricots",
+          "category": "food"
+        },
+        {
+          "sourceWord": "potatoes",
+          "targetWord": "pommes de terre",
+          "category": "food"
+        },
+        {
+          "sourceWord": "apple",
+          "targetWord": "pomme",
+          "category": "food"
+        },
+        {
+          "sourceWord": "banana",
+          "targetWord": "banane",
+          "category": "food"
+        },
+        {
+          "sourceWord": "orange",
+          "targetWord": "orange",
+          "category": "food"
+        },
+        {
+          "sourceWord": "grape",
+          "targetWord": "raisin",
+          "category": "food"
+        },
+        {
+          "sourceWord": "watermelon",
+          "targetWord": "pastèque",
+          "category": "food"
+        },
+        {
+          "sourceWord": "mother",
+          "targetWord": "mère",
+          "category": "family"
+        },
+        {
+          "sourceWord": "father",
+          "targetWord": "père",
+          "category": "family"
+        },
+        {
+          "sourceWord": "son",
+          "targetWord": "fils",
+          "category": "family"
+        },
+        {
+          "sourceWord": "daughter",
+          "targetWord": "fille",
+          "category": "family"
+        },
+        {
+          "sourceWord": "brother",
+          "targetWord": "frère",
+          "category": "family"
+        },
+        {
+          "sourceWord": "sister",
+          "targetWord": "sœur",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandfather",
+          "targetWord": "grand-père",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandmother",
+          "targetWord": "grand-mère",
+          "category": "family"
+        },
+        {
+          "sourceWord": "uncle",
+          "targetWord": "oncle",
+          "category": "family"
+        },
+        {
+          "sourceWord": "aunt",
+          "targetWord": "tante",
+          "category": "family"
+        },
+        {
+          "sourceWord": "red",
+          "targetWord": "rouge",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "blue",
+          "targetWord": "bleu",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "green",
+          "targetWord": "vert",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "yellow",
+          "targetWord": "jaune",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "orange",
+          "targetWord": "orange",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "purple",
+          "targetWord": "violet",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "pink",
+          "targetWord": "rose",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "black",
+          "targetWord": "noir",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "white",
+          "targetWord": "blanc",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "gray",
+          "targetWord": "gris",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "un",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "deux",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "trois",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "quatre",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "cinq",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "six",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "sept",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "huit",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "neuf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "dix",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Hello",
+          "targetWord": "Bonjour",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "Bonjour",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good afternoon",
+          "targetWord": "Bonjour",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening / Good night",
+          "targetWord": "Bonsoir / Bonne nuit",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "Au revoir",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "See you later",
+          "targetWord": "À plus tard",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "S'il vous plaît",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "Merci",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "You're welcome",
+          "targetWord": "De rien",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "Je suis désolé(e)",
+          "category": "phrases"
+        }
       ]
     },
     {
@@ -203,38 +853,156 @@
         "target": "German"
       },
       "pairs": [
-        { "sourceWord": "Hello", "targetWord": "Hallo", "category": "phrases" },
-        { "sourceWord": "Good morning", "targetWord": "Guten Morgen", "category": "phrases" },
-        { "sourceWord": "Good afternoon", "targetWord": "Guten Tag", "category": "phrases" },
-        { "sourceWord": "Good evening", "targetWord": "Guten Abend", "category": "phrases" },
-        { "sourceWord": "Goodbye", "targetWord": "Auf Wiedersehen", "category": "phrases" },
-        { "sourceWord": "Please", "targetWord": "Bitte", "category": "phrases" },
-        { "sourceWord": "Thank you", "targetWord": "Danke", "category": "phrases" },
-        { "sourceWord": "You're welcome", "targetWord": "Bitte schön", "category": "phrases" },
-        { "sourceWord": "I'm sorry", "targetWord": "Es tut mir leid", "category": "phrases" },
-        { "sourceWord": "Excuse me", "targetWord": "Entschuldigung", "category": "phrases" },
-        
-        { "sourceWord": "bread", "targetWord": "Brot", "category": "food" },
-        { "sourceWord": "cheese", "targetWord": "Käse", "category": "food" },
-        { "sourceWord": "milk", "targetWord": "Milch", "category": "food" },
-        { "sourceWord": "water", "targetWord": "Wasser", "category": "food" },
-        { "sourceWord": "coffee", "targetWord": "Kaffee", "category": "food" },
-        { "sourceWord": "beer", "targetWord": "Bier", "category": "food" },
-        { "sourceWord": "apple", "targetWord": "Apfel", "category": "food" },
-        { "sourceWord": "potato", "targetWord": "Kartoffel", "category": "food" },
-        { "sourceWord": "sausage", "targetWord": "Wurst", "category": "food" },
-        { "sourceWord": "chocolate", "targetWord": "Schokolade", "category": "food" },
-        
-        { "sourceWord": "one", "targetWord": "eins", "category": "numbers" },
-        { "sourceWord": "two", "targetWord": "zwei", "category": "numbers" },
-        { "sourceWord": "three", "targetWord": "drei", "category": "numbers" },
-        { "sourceWord": "four", "targetWord": "vier", "category": "numbers" },
-        { "sourceWord": "five", "targetWord": "fünf", "category": "numbers" },
-        { "sourceWord": "six", "targetWord": "sechs", "category": "numbers" },
-        { "sourceWord": "seven", "targetWord": "sieben", "category": "numbers" },
-        { "sourceWord": "eight", "targetWord": "acht", "category": "numbers" },
-        { "sourceWord": "nine", "targetWord": "neun", "category": "numbers" },
-        { "sourceWord": "ten", "targetWord": "zehn", "category": "numbers" }
+        {
+          "sourceWord": "Hello",
+          "targetWord": "Hallo",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "Guten Morgen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good afternoon",
+          "targetWord": "Guten Tag",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening",
+          "targetWord": "Guten Abend",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "Auf Wiedersehen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "Bitte",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "Danke",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "You're welcome",
+          "targetWord": "Bitte schön",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "Es tut mir leid",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Excuse me",
+          "targetWord": "Entschuldigung",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "bread",
+          "targetWord": "Brot",
+          "category": "food"
+        },
+        {
+          "sourceWord": "cheese",
+          "targetWord": "Käse",
+          "category": "food"
+        },
+        {
+          "sourceWord": "milk",
+          "targetWord": "Milch",
+          "category": "food"
+        },
+        {
+          "sourceWord": "water",
+          "targetWord": "Wasser",
+          "category": "food"
+        },
+        {
+          "sourceWord": "coffee",
+          "targetWord": "Kaffee",
+          "category": "food"
+        },
+        {
+          "sourceWord": "beer",
+          "targetWord": "Bier",
+          "category": "food"
+        },
+        {
+          "sourceWord": "apple",
+          "targetWord": "Apfel",
+          "category": "food"
+        },
+        {
+          "sourceWord": "potato",
+          "targetWord": "Kartoffel",
+          "category": "food"
+        },
+        {
+          "sourceWord": "sausage",
+          "targetWord": "Wurst",
+          "category": "food"
+        },
+        {
+          "sourceWord": "chocolate",
+          "targetWord": "Schokolade",
+          "category": "food"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "eins",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "zwei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "drei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "vier",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "fünf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "sechs",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "sieben",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "acht",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "neun",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "zehn",
+          "category": "numbers"
+        }
       ]
     },
     {
@@ -245,39 +1013,1332 @@
         "target": "Japanese"
       },
       "pairs": [
-        { "sourceWord": "Hello", "targetWord": "こんにちは (Konnichiwa)", "category": "phrases" },
-        { "sourceWord": "Good morning", "targetWord": "おはようございます (Ohayou gozaimasu)", "category": "phrases" },
-        { "sourceWord": "Good evening", "targetWord": "こんばんは (Konbanwa)", "category": "phrases" },
-        { "sourceWord": "Goodbye", "targetWord": "さようなら (Sayounara)", "category": "phrases" },
-        { "sourceWord": "Thank you", "targetWord": "ありがとう (Arigatou)", "category": "phrases" },
-        { "sourceWord": "Please", "targetWord": "お願いします (Onegaishimasu)", "category": "phrases" },
-        { "sourceWord": "Excuse me", "targetWord": "すみません (Sumimasen)", "category": "phrases" },
-        { "sourceWord": "I'm sorry", "targetWord": "ごめんなさい (Gomen nasai)", "category": "phrases" },
-        { "sourceWord": "Yes", "targetWord": "はい (Hai)", "category": "phrases" },
-        { "sourceWord": "No", "targetWord": "いいえ (Iie)", "category": "phrases" },
-        
-        { "sourceWord": "rice", "targetWord": "ご飯 (Gohan)", "category": "food" },
-        { "sourceWord": "fish", "targetWord": "魚 (Sakana)", "category": "food" },
-        { "sourceWord": "meat", "targetWord": "肉 (Niku)", "category": "food" },
-        { "sourceWord": "water", "targetWord": "水 (Mizu)", "category": "food" },
-        { "sourceWord": "tea", "targetWord": "お茶 (Ocha)", "category": "food" },
-        { "sourceWord": "sushi", "targetWord": "寿司 (Sushi)", "category": "food" },
-        { "sourceWord": "ramen", "targetWord": "ラーメン (Ramen)", "category": "food" },
-        { "sourceWord": "bread", "targetWord": "パン (Pan)", "category": "food" },
-        { "sourceWord": "vegetable", "targetWord": "野菜 (Yasai)", "category": "food" },
-        { "sourceWord": "fruit", "targetWord": "果物 (Kudamono)", "category": "food" },
-        
-        { "sourceWord": "one", "targetWord": "一 (Ichi)", "category": "numbers" },
-        { "sourceWord": "two", "targetWord": "二 (Ni)", "category": "numbers" },
-        { "sourceWord": "three", "targetWord": "三 (San)", "category": "numbers" },
-        { "sourceWord": "four", "targetWord": "四 (Shi/Yon)", "category": "numbers" },
-        { "sourceWord": "five", "targetWord": "五 (Go)", "category": "numbers" },
-        { "sourceWord": "six", "targetWord": "六 (Roku)", "category": "numbers" },
-        { "sourceWord": "seven", "targetWord": "七 (Shichi/Nana)", "category": "numbers" },
-        { "sourceWord": "eight", "targetWord": "八 (Hachi)", "category": "numbers" },
-        { "sourceWord": "nine", "targetWord": "九 (Kyuu/Ku)", "category": "numbers" },
-        { "sourceWord": "ten", "targetWord": "十 (Juu)", "category": "numbers" }
+        {
+          "sourceWord": "Hello",
+          "targetWord": "こんにちは (Konnichiwa)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "おはようございます (Ohayou gozaimasu)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening",
+          "targetWord": "こんばんは (Konbanwa)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "さようなら (Sayounara)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "ありがとう (Arigatou)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "お願いします (Onegaishimasu)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Excuse me",
+          "targetWord": "すみません (Sumimasen)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "ごめんなさい (Gomen nasai)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Yes",
+          "targetWord": "はい (Hai)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "No",
+          "targetWord": "いいえ (Iie)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "rice",
+          "targetWord": "ご飯 (Gohan)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "fish",
+          "targetWord": "魚 (Sakana)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "meat",
+          "targetWord": "肉 (Niku)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "water",
+          "targetWord": "水 (Mizu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "tea",
+          "targetWord": "お茶 (Ocha)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "sushi",
+          "targetWord": "寿司 (Sushi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ramen",
+          "targetWord": "ラーメン (Ramen)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "bread",
+          "targetWord": "パン (Pan)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "vegetable",
+          "targetWord": "野菜 (Yasai)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "fruit",
+          "targetWord": "果物 (Kudamono)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "一 (Ichi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "二 (Ni)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "三 (San)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "四 (Shi/Yon)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "五 (Go)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "六 (Roku)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "七 (Shichi/Nana)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "八 (Hachi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "九 (Kyuu/Ku)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "十 (Juu)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "en",
+      "target": "it",
+      "name": {
+        "source": "English",
+        "target": "Italian"
+      },
+      "pairs": [
+        {
+          "sourceWord": "Hello",
+          "targetWord": "Ciao",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "Buongiorno",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good afternoon",
+          "targetWord": "Buon pomeriggio",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening",
+          "targetWord": "Buonasera",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "Arrivederci",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "Per favore",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "Grazie",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "You're welcome",
+          "targetWord": "Prego",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "Mi dispiace",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Excuse me",
+          "targetWord": "Scusa",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "bread",
+          "targetWord": "pane",
+          "category": "food"
+        },
+        {
+          "sourceWord": "cheese",
+          "targetWord": "formaggio",
+          "category": "food"
+        },
+        {
+          "sourceWord": "milk",
+          "targetWord": "latte",
+          "category": "food"
+        },
+        {
+          "sourceWord": "water",
+          "targetWord": "acqua",
+          "category": "food"
+        },
+        {
+          "sourceWord": "coffee",
+          "targetWord": "caffè",
+          "category": "food"
+        },
+        {
+          "sourceWord": "wine",
+          "targetWord": "vino",
+          "category": "food"
+        },
+        {
+          "sourceWord": "pasta",
+          "targetWord": "pasta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "pizza",
+          "targetWord": "pizza",
+          "category": "food"
+        },
+        {
+          "sourceWord": "gelato",
+          "targetWord": "gelato",
+          "category": "food"
+        },
+        {
+          "sourceWord": "tomato",
+          "targetWord": "pomodoro",
+          "category": "food"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "uno",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "due",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "tre",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "quattro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "cinque",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "sei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "sette",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "otto",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "nove",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "dieci",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "name": {
+        "source": "English",
+        "target": "Chinese"
+      },
+      "pairs": [
+        {
+          "sourceWord": "Hello",
+          "targetWord": "你好 (Nǐ hǎo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "早上好 (Zǎoshang hǎo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good afternoon",
+          "targetWord": "下午好 (Xiàwǔ hǎo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening",
+          "targetWord": "晚上好 (Wǎnshang hǎo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "再见 (Zàijiàn)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "谢谢 (Xièxiè)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "请 (Qǐng)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "You're welcome",
+          "targetWord": "不客气 (Bù kèqì)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "对不起 (Duìbùqǐ)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Excuse me",
+          "targetWord": "打扰一下 (Dǎrǎo yīxià)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "rice",
+          "targetWord": "米饭 (Mǐfàn)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "noodles",
+          "targetWord": "面条 (Miàntiáo)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "tea",
+          "targetWord": "茶 (Chá)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "water",
+          "targetWord": "水 (Shuǐ)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "meat",
+          "targetWord": "肉 (Ròu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "vegetable",
+          "targetWord": "蔬菜 (Shūcài)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "fruit",
+          "targetWord": "水果 (Shuǐguǒ)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "dumpling",
+          "targetWord": "饺子 (Jiǎozi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "tofu",
+          "targetWord": "豆腐 (Dòufu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "soup",
+          "targetWord": "汤 (Tāng)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "一 (Yī)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "二 (Èr)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "三 (Sān)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "四 (Sì)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "五 (Wǔ)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "六 (Liù)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "七 (Qī)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "八 (Bā)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "九 (Jiǔ)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "十 (Shí)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "en",
+      "target": "ko",
+      "name": {
+        "source": "English",
+        "target": "Korean"
+      },
+      "pairs": [
+        {
+          "sourceWord": "Hello",
+          "targetWord": "안녕하세요 (Annyeonghaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "좋은 아침 (Joeun achim)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good afternoon",
+          "targetWord": "안녕하세요 (Annyeonghaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening",
+          "targetWord": "안녕하세요 (Annyeonghaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "안녕히 가세요 (Annyeonghi gaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "감사합니다 (Gamsahamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "주세요 (Juseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "You're welcome",
+          "targetWord": "천만에요 (Cheonmaneyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "죄송합니다 (Joesonghamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Excuse me",
+          "targetWord": "실례합니다 (Sillyehamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "rice",
+          "targetWord": "밥 (Bap)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "noodles",
+          "targetWord": "국수 (Guksu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "tea",
+          "targetWord": "차 (Cha)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "water",
+          "targetWord": "물 (Mul)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "meat",
+          "targetWord": "고기 (Gogi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "vegetable",
+          "targetWord": "야채 (Yachae)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "fruit",
+          "targetWord": "과일 (Gwail)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "kimchi",
+          "targetWord": "김치 (Kimchi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "bibimbap",
+          "targetWord": "비빔밥 (Bibimbap)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "soup",
+          "targetWord": "국 (Guk)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "하나 (Hana)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "둘 (Dul)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "셋 (Set)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "넷 (Net)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "다섯 (Daseot)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "여섯 (Yeoseot)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "일곱 (Ilgop)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "여덟 (Yeodeol)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "아홉 (Ahop)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "열 (Yeol)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "en",
+      "target": "ht",
+      "name": {
+        "source": "English",
+        "target": "Haitian Creole"
+      },
+      "pairs": [
+        {
+          "sourceWord": "Hello",
+          "targetWord": "Bonjou",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "Bonjou",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good afternoon",
+          "targetWord": "Bonswa",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening",
+          "targetWord": "Bonswa",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "Orevwa",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "Souple",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "Mèsi",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "You're welcome",
+          "targetWord": "Pa gen pwoblèm",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "Mwen regret",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Excuse me",
+          "targetWord": "Eskize mwen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "bread",
+          "targetWord": "pen",
+          "category": "food"
+        },
+        {
+          "sourceWord": "rice",
+          "targetWord": "diri",
+          "category": "food"
+        },
+        {
+          "sourceWord": "beans",
+          "targetWord": "pwa",
+          "category": "food"
+        },
+        {
+          "sourceWord": "water",
+          "targetWord": "dlo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "meat",
+          "targetWord": "vyann",
+          "category": "food"
+        },
+        {
+          "sourceWord": "fish",
+          "targetWord": "pwason",
+          "category": "food"
+        },
+        {
+          "sourceWord": "chicken",
+          "targetWord": "poul",
+          "category": "food"
+        },
+        {
+          "sourceWord": "banana",
+          "targetWord": "bannann",
+          "category": "food"
+        },
+        {
+          "sourceWord": "plantain",
+          "targetWord": "bannann peze",
+          "category": "food"
+        },
+        {
+          "sourceWord": "avocado",
+          "targetWord": "zaboka",
+          "category": "food"
+        },
+        {
+          "sourceWord": "mother",
+          "targetWord": "manman",
+          "category": "family"
+        },
+        {
+          "sourceWord": "father",
+          "targetWord": "papa",
+          "category": "family"
+        },
+        {
+          "sourceWord": "son",
+          "targetWord": "pitit gason",
+          "category": "family"
+        },
+        {
+          "sourceWord": "daughter",
+          "targetWord": "pitit fi",
+          "category": "family"
+        },
+        {
+          "sourceWord": "brother",
+          "targetWord": "frè",
+          "category": "family"
+        },
+        {
+          "sourceWord": "sister",
+          "targetWord": "sè",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandmother",
+          "targetWord": "grann",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandfather",
+          "targetWord": "granpapa",
+          "category": "family"
+        },
+        {
+          "sourceWord": "aunt",
+          "targetWord": "matant",
+          "category": "family"
+        },
+        {
+          "sourceWord": "uncle",
+          "targetWord": "tonton",
+          "category": "family"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "en",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "de",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "twa",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "kat",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "senk",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "sis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "sèt",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "wit",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "nèf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "dis",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "en",
+      "target": "pt",
+      "name": {
+        "source": "English",
+        "target": "Portuguese"
+      },
+      "pairs": [
+        {
+          "sourceWord": "to eat",
+          "targetWord": "comer",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to drink",
+          "targetWord": "beber",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to cook",
+          "targetWord": "cozinhar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to cut",
+          "targetWord": "cortar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to peel",
+          "targetWord": "descascar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to fry",
+          "targetWord": "fritar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to bake",
+          "targetWord": "assar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to mix",
+          "targetWord": "misturar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to taste",
+          "targetWord": "provar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to season",
+          "targetWord": "temperar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to buy",
+          "targetWord": "comprar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to sell",
+          "targetWord": "vender",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to prepare",
+          "targetWord": "preparar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to wash",
+          "targetWord": "lavar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to change",
+          "targetWord": "cambiar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to serve",
+          "targetWord": "servir",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to do",
+          "targetWord": "hacer",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to clean",
+          "targetWord": "limpiar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to help",
+          "targetWord": "ayudar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "to need",
+          "targetWord": "necesitar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "bread",
+          "targetWord": "pão",
+          "category": "food"
+        },
+        {
+          "sourceWord": "cheese",
+          "targetWord": "queijo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "milk",
+          "targetWord": "leite",
+          "category": "food"
+        },
+        {
+          "sourceWord": "egg",
+          "targetWord": "ovo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "meat",
+          "targetWord": "carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "fish",
+          "targetWord": "peixe",
+          "category": "food"
+        },
+        {
+          "sourceWord": "chicken",
+          "targetWord": "frango",
+          "category": "food"
+        },
+        {
+          "sourceWord": "rice",
+          "targetWord": "arroz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "beans",
+          "targetWord": "feijão",
+          "category": "food"
+        },
+        {
+          "sourceWord": "potatoes",
+          "targetWord": "batatas",
+          "category": "food"
+        },
+        {
+          "sourceWord": "strawberries",
+          "targetWord": "fresas",
+          "category": "food"
+        },
+        {
+          "sourceWord": "apple",
+          "targetWord": "manzana",
+          "category": "food"
+        },
+        {
+          "sourceWord": "banana",
+          "targetWord": "plátano",
+          "category": "food"
+        },
+        {
+          "sourceWord": "orange",
+          "targetWord": "laranja",
+          "category": "food"
+        },
+        {
+          "sourceWord": "grape",
+          "targetWord": "uva",
+          "category": "food"
+        },
+        {
+          "sourceWord": "watermelon",
+          "targetWord": "sandía",
+          "category": "food"
+        },
+        {
+          "sourceWord": "lemon",
+          "targetWord": "limón",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carrot",
+          "targetWord": "zanahoria",
+          "category": "food"
+        },
+        {
+          "sourceWord": "lettuce",
+          "targetWord": "lechuga",
+          "category": "food"
+        },
+        {
+          "sourceWord": "tomato",
+          "targetWord": "tomate",
+          "category": "food"
+        },
+        {
+          "sourceWord": "mother",
+          "targetWord": "mãe",
+          "category": "family"
+        },
+        {
+          "sourceWord": "father",
+          "targetWord": "pai",
+          "category": "family"
+        },
+        {
+          "sourceWord": "son",
+          "targetWord": "filho",
+          "category": "family"
+        },
+        {
+          "sourceWord": "daughter",
+          "targetWord": "filha",
+          "category": "family"
+        },
+        {
+          "sourceWord": "brother",
+          "targetWord": "irmão",
+          "category": "family"
+        },
+        {
+          "sourceWord": "sister",
+          "targetWord": "irmã",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandfather",
+          "targetWord": "avô",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandmother",
+          "targetWord": "avó",
+          "category": "family"
+        },
+        {
+          "sourceWord": "uncle",
+          "targetWord": "tio",
+          "category": "family"
+        },
+        {
+          "sourceWord": "aunt",
+          "targetWord": "tia",
+          "category": "family"
+        },
+        {
+          "sourceWord": "cousin (male)",
+          "targetWord": "primo",
+          "category": "family"
+        },
+        {
+          "sourceWord": "cousin (female)",
+          "targetWord": "prima",
+          "category": "family"
+        },
+        {
+          "sourceWord": "grandson",
+          "targetWord": "nieto",
+          "category": "family"
+        },
+        {
+          "sourceWord": "granddaughter",
+          "targetWord": "nieta",
+          "category": "family"
+        },
+        {
+          "sourceWord": "husband",
+          "targetWord": "esposo",
+          "category": "family"
+        },
+        {
+          "sourceWord": "wife",
+          "targetWord": "esposa",
+          "category": "family"
+        },
+        {
+          "sourceWord": "father-in-law",
+          "targetWord": "suegro",
+          "category": "family"
+        },
+        {
+          "sourceWord": "mother-in-law",
+          "targetWord": "suegra",
+          "category": "family"
+        },
+        {
+          "sourceWord": "brother-in-law",
+          "targetWord": "cuñado",
+          "category": "family"
+        },
+        {
+          "sourceWord": "sister-in-law",
+          "targetWord": "cuñada",
+          "category": "family"
+        },
+        {
+          "sourceWord": "red",
+          "targetWord": "vermelho",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "blue",
+          "targetWord": "azul",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "green",
+          "targetWord": "verde",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "yellow",
+          "targetWord": "amarelo",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "orange",
+          "targetWord": "laranja",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "purple",
+          "targetWord": "roxo",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "pink",
+          "targetWord": "rosa",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "black",
+          "targetWord": "preto",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "white",
+          "targetWord": "branco",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "gray",
+          "targetWord": "cinza",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "brown",
+          "targetWord": "marrón",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "turquoise",
+          "targetWord": "turquesa",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "sky blue",
+          "targetWord": "celeste",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "golden",
+          "targetWord": "dorado",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "silver",
+          "targetWord": "plateado",
+          "category": "colors"
+        },
+        {
+          "sourceWord": "one",
+          "targetWord": "um",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "two",
+          "targetWord": "dois",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "three",
+          "targetWord": "três",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "four",
+          "targetWord": "quatro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "five",
+          "targetWord": "cinco",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "six",
+          "targetWord": "seis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seven",
+          "targetWord": "sete",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "eight",
+          "targetWord": "oito",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nine",
+          "targetWord": "nove",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "ten",
+          "targetWord": "dez",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Hello",
+          "targetWord": "Olá",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good morning",
+          "targetWord": "Bom dia",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good afternoon",
+          "targetWord": "Boa tarde",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Good evening / Good night",
+          "targetWord": "Boa noite",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Goodbye",
+          "targetWord": "Adeus",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "See you later",
+          "targetWord": "Hasta luego",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Please",
+          "targetWord": "Por favor",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Thank you",
+          "targetWord": "Obrigado",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "You're welcome",
+          "targetWord": "De nada",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "I'm sorry",
+          "targetWord": "Sinto muito",
+          "category": "phrases"
+        }
       ]
     }
   ]
-} 
+}

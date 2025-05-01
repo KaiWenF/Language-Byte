@@ -26,28 +26,23 @@ struct QuizView: View {
     @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
-        // Simpler layout structure with fewer nested containers
-        ZStack {
-            // Main content - use VStack with spacer for proper element distribution
-            VStack(spacing: 0) {
-                // Top bar with title and feedback
+        NavigationStack {
+            VStack {
+                // Score display
                 HStack {
-                    Spacer()
-                    
-                    Text("Quiz Mode Score")
-                        .font(.footnote)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                    Text("Quiz Mode")
+                        .font(.headline)
                     
                     Spacer()
                     
                     Text("\(correctAnswers)/\(totalAttempts)")
-                        .font(.system(size: 16))
-                        .foregroundColor(.primary)
+                        .font(.callout)
+                        .foregroundColor(.secondary)
                 }
-                .padding(.horizontal, 16)
-                .padding(.top, 16)
+                .padding(.horizontal)
+                .padding(.top, 8)
                 
-                // Word display - centered with proper spacing
+                // Quiz content
                 if let question = currentQuestion {
                     Spacer()
                     
@@ -64,9 +59,11 @@ struct QuizView: View {
                     VStack(spacing: 8) {
                         ForEach(question.choices, id: \.self) { choice in
                             Button(action: {
+                                // Update quiz statistics
                                 totalAttempts += 1
                                 selectedChoice = choice
                                 isCorrect = (choice == question.correctAnswer)
+                                
                                 if isCorrect {
                                     correctAnswers += 1
                                     currentStreak += 1
@@ -76,6 +73,13 @@ struct QuizView: View {
                                 } else {
                                     currentStreak = 0
                                 }
+                                
+                                // Update UserDefaults directly to ensure values are saved
+                                UserDefaults.standard.set(totalAttempts, forKey: "quiz_totalAttempts")
+                                UserDefaults.standard.set(correctAnswers, forKey: "quiz_correctAnswers")
+                                UserDefaults.standard.set(bestStreak, forKey: "quiz_bestStreak")
+                                UserDefaults.standard.synchronize()
+                                
                                 showFeedback = true
                                 
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
@@ -104,6 +108,8 @@ struct QuizView: View {
             .padding(.horizontal, 8)
         }
         .onAppear {
+            // Ensure existing UserDefaults values are loaded
+            loadSavedStats()
             generateNewQuestion()
         }
         .confirmationDialog(
@@ -112,7 +118,7 @@ struct QuizView: View {
             titleVisibility: .visible
         ) {
             Button("Leave", role: .destructive) {
-                resetQuiz()
+                saveQuizStats() // Ensure stats are saved before leaving
                 presentationMode.wrappedValue.dismiss()
             }
             Button("Stay", role: .cancel) { }
@@ -132,6 +138,23 @@ struct QuizView: View {
         }
     }
     
+    // Load saved statistics from UserDefaults
+    private func loadSavedStats() {
+        totalAttempts = UserDefaults.standard.integer(forKey: "quiz_totalAttempts")
+        correctAnswers = UserDefaults.standard.integer(forKey: "quiz_correctAnswers")
+        bestStreak = UserDefaults.standard.integer(forKey: "quiz_bestStreak")
+        print("📊 Loaded quiz stats: \(correctAnswers)/\(totalAttempts) attempts, \(bestStreak) best streak")
+    }
+    
+    // Save quiz statistics to UserDefaults
+    private func saveQuizStats() {
+        UserDefaults.standard.set(totalAttempts, forKey: "quiz_totalAttempts")
+        UserDefaults.standard.set(correctAnswers, forKey: "quiz_correctAnswers")
+        UserDefaults.standard.set(bestStreak, forKey: "quiz_bestStreak")
+        UserDefaults.standard.synchronize()
+        print("📊 Saved quiz stats: \(correctAnswers)/\(totalAttempts) attempts, \(bestStreak) best streak")
+    }
+    
     // Reset the quiz state for a fresh start next time
     private func resetQuiz() {
         // Reset current session state
@@ -141,12 +164,11 @@ struct QuizView: View {
         currentQuestion = nil
         currentStreak = 0
         
-        // Reset score counters
-        correctAnswers = 0
-        totalAttempts = 0
+        // Keep the statistics in place
+        // We don't reset correctAnswers, totalAttempts or bestStreak anymore
         
-        // Note: We keep the bestStreak in AppStorage as a high score record
-        // but reset all other variables
+        // Save the current state
+        saveQuizStats()
     }
     
     // STEP 4: Define a local function to generate a quiz question

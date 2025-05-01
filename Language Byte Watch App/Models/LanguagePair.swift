@@ -43,9 +43,12 @@ struct Language: Codable, Equatable, Hashable {
     static let italian = Language(code: "it", name: "Italian", speechCode: "it-IT")
     static let japanese = Language(code: "ja", name: "Japanese", speechCode: "ja-JP")
     static let chinese = Language(code: "zh", name: "Chinese", speechCode: "zh-CN")
+    static let korean = Language(code: "ko", name: "Korean", speechCode: "ko-KR")
+    static let haitianCreole = Language(code: "ht", name: "Haitian Creole", speechCode: "ht-HT")
+    static let portuguese = Language(code: "pt", name: "Portuguese", speechCode: "pt-BR")
     
     // All supported languages
     static let allLanguages: [Language] = [
-        .english, .spanish, .french, .german, .italian, .japanese, .chinese
+        .english, .spanish, .french, .german, .italian, .japanese, .chinese, .korean, .haitianCreole, .portuguese
     ]
 } 

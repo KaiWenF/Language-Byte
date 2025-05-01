@@ -1,12 +1,19 @@
 import SwiftUI
-
-// Import the models module where AchievementManager is defined
 import Foundation
 
+// Local achievement struct that matches the one from AchievementManager
+fileprivate struct QuizAchievement: Identifiable {
+    let id: String
+    let title: String
+    let description: String
+    let iconName: String
+}
+
 struct QuizStatsView: View {
-    @AppStorage("quiz_totalAttempts") var totalAttempts: Int = 0
-    @AppStorage("quiz_correctAnswers") var correctAnswers: Int = 0
-    @AppStorage("quiz_bestStreak") var bestStreak: Int = 0
+    // Use State variables instead of AppStorage to ensure refreshing
+    @State private var totalAttempts: Int = 0
+    @State private var correctAnswers: Int = 0
+    @State private var bestStreak: Int = 0
     
     var body: some View {
         ScrollView {
@@ -17,68 +24,217 @@ struct QuizStatsView: View {
                     .padding(.bottom, 8)
 
                 if totalAttempts > 0 {
-                    Text("Questions Attempted: \(totalAttempts)")
-                    Text("Correct Answers: \(correctAnswers)")
-                    Text("Incorrect Answers: \(totalAttempts - correctAnswers)")
-                    Text("Accuracy: \(Int(Double(correctAnswers) / Double(totalAttempts) * 100))%")
-                    Text("Best Streak: \(bestStreak)")
+                    Group {
+                        HStack {
+                            Text("Questions Attempted:")
+                            Spacer()
+                            Text("\(totalAttempts)")
+                                .bold()
+                        }
+                        
+                        HStack {
+                            Text("Correct Answers:")
+                            Spacer()
+                            Text("\(correctAnswers)")
+                                .bold()
+                                .foregroundColor(.green)
+                        }
+                        
+                        HStack {
+                            Text("Incorrect Answers:")
+                            Spacer()
+                            Text("\(totalAttempts - correctAnswers)")
+                                .bold()
+                                .foregroundColor(.red)
+                        }
+                        
+                        HStack {
+                            Text("Accuracy:")
+                            Spacer()
+                            Text("\(calculateAccuracy())%")
+                                .bold()
+                                .foregroundColor(.blue)
+                        }
+                        
+                        HStack {
+                            Text("Best Streak:")
+                            Spacer()
+                            Text("\(bestStreak)")
+                                .bold()
+                                .foregroundColor(.orange)
+                        }
+                    }
+                    .padding(.vertical, 4)
+                    
+                    // Achievement section
+                    achievementsSection
                 } else {
                     Text("No quiz data yet. Try Quiz Mode to get started!")
+                        .foregroundColor(.secondary)
+                        .padding(.vertical, 8)
                 }
-                
-                achievementsSection
             }
             .padding()
         }
         .navigationTitle("Quiz Stats")
+        .onAppear {
+            refreshQuizStats()
+        }
     }
     
-    private var achievementsSection: some View {
-        let achievements = AchievementManager.unlockedAchievements(
-            correctAnswers: correctAnswers,
-            bestStreak: bestStreak
-        )
-        
-        return VStack(alignment: .leading, spacing: 10) {
-            Text("🏅 Achievements")
+    // Helper function to calculate accuracy with protection against division by zero
+    private func calculateAccuracy() -> Int {
+        guard totalAttempts > 0 else { return 0 }
+        return Int(Double(correctAnswers) / Double(totalAttempts) * 100)
+    }
+    
+    // Helper function to refresh quiz stats from UserDefaults
+    private func refreshQuizStats() {
+        totalAttempts = UserDefaults.standard.integer(forKey: "quiz_totalAttempts")
+        correctAnswers = UserDefaults.standard.integer(forKey: "quiz_correctAnswers")
+        bestStreak = UserDefaults.standard.integer(forKey: "quiz_bestStreak")
+        print("📊 Refreshed quiz stats in QuizStatsView: \(correctAnswers)/\(totalAttempts) attempts, \(bestStreak) best streak")
+    }
+    
+    // MARK: - Achievements Section
+    
+    var achievementsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("🏆 Achievements")
                 .font(.headline)
-                .padding(.top, 16)
-                .id("achievementsSection")
-
-            ForEach(achievements) { badge in
-                HStack(spacing: 12) {
-                    // Achievement icon with background
-                    ZStack {
-                        Circle()
-                            .fill(badge.unlocked ? Color.blue.opacity(0.2) : Color.gray.opacity(0.1))
-                            .frame(width: 40, height: 40)
+                .padding(.top, 12)
+            
+            let unlockedAchievements = getUnlockedAchievements()
+            
+            if unlockedAchievements.isEmpty {
+                Text("No achievements unlocked yet")
+                    .foregroundColor(.secondary)
+                    .padding(.vertical, 4)
+            } else {
+                ForEach(unlockedAchievements) { achievement in
+                    HStack {
+                        Image(systemName: achievement.iconName)
+                            .font(.headline)
+                            .foregroundColor(getColorForIcon(achievement.id))
                         
-                        Image(systemName: badge.unlocked ? badge.iconName : "lock.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 22, height: 22)
-                            .foregroundColor(badge.unlocked ? getColorForIcon(badge.id) : .gray)
-                            .id("achievementIcon-\(badge.id)")
+                        VStack(alignment: .leading) {
+                            Text(achievement.title)
+                                .fontWeight(.medium)
+                            Text(achievement.description)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        Spacer()
+                        
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundColor(.green)
                     }
-
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(badge.title)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                        Text(badge.description)
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
-                    }
+                    .padding(.vertical, 4)
                 }
-                .padding(.vertical, 4)
-                .opacity(badge.unlocked ? 1.0 : 0.4) // Dim locked badges
-                .id("achievementRow-\(badge.id)")
             }
         }
-        .padding(.top, 12)
     }
     
-    // Helper function to get color for each achievement type
+    private func getUnlockedAchievements() -> [QuizAchievement] {
+        let accuracy = calculateAccuracy()
+        
+        let allAchievements: [QuizAchievement] = [
+            // Beginner achievements
+            QuizAchievement(
+                id: "starter",
+                title: "Quiz Novice",
+                description: "Answered 10 questions",
+                iconName: "1.circle"
+            ),
+            QuizAchievement(
+                id: "beginner",
+                title: "Language Apprentice",
+                description: "Answered 25 questions",
+                iconName: "books.vertical"
+            ),
+            
+            // Streak achievements
+            QuizAchievement(
+                id: "hotstreak",
+                title: "On Fire",
+                description: "5 correct answers in a row",
+                iconName: "flame"
+            ),
+            QuizAchievement(
+                id: "inferno",
+                title: "Unstoppable",
+                description: "10 correct answers in a row",
+                iconName: "flame.fill"
+            ),
+            
+            // Accuracy achievements
+            QuizAchievement(
+                id: "accurate",
+                title: "Sharp Mind",
+                description: "80% accuracy with at least 20 attempts",
+                iconName: "brain"
+            ),
+            QuizAchievement(
+                id: "brainiac",
+                title: "Brainiac",
+                description: "90% accuracy over 50 questions",
+                iconName: "graduationcap"
+            ),
+            QuizAchievement(
+                id: "perfect",
+                title: "Perfect Recall",
+                description: "100% accuracy with at least 15 attempts",
+                iconName: "checkmark.seal.fill"
+            ),
+            
+            // Mastery achievements
+            QuizAchievement(
+                id: "dedicated",
+                title: "Dedicated Scholar",
+                description: "Completed 100 quiz questions",
+                iconName: "books.vertical.fill"
+            ),
+            QuizAchievement(
+                id: "master",
+                title: "Language Master",
+                description: "Answered 250 questions with 85%+ accuracy",
+                iconName: "crown.fill"
+            ),
+            
+            // Special achievements
+            QuizAchievement(
+                id: "comeback",
+                title: "Comeback Kid",
+                description: "Get a question right after 3 wrong answers",
+                iconName: "arrow.up.heart"
+            ),
+            QuizAchievement(
+                id: "speedster",
+                title: "Quick Thinker",
+                description: "Answer 10 questions in under 2 minutes",
+                iconName: "bolt.fill"
+            )
+        ]
+        
+        return allAchievements.filter { achievement in
+            switch achievement.id {
+                case "starter": return correctAnswers >= 10
+                case "beginner": return correctAnswers >= 25
+                case "hotstreak": return bestStreak >= 5
+                case "inferno": return bestStreak >= 10
+                case "accurate": return accuracy >= 80 && totalAttempts >= 20
+                case "brainiac": return accuracy >= 90 && totalAttempts >= 50
+                case "perfect": return correctAnswers >= 15 && correctAnswers == totalAttempts
+                case "dedicated": return totalAttempts >= 100
+                case "master": return totalAttempts >= 250 && Double(correctAnswers) / Double(totalAttempts) >= 0.85
+                case "comeback": return UserDefaults.standard.bool(forKey: "quiz_comeback")
+                case "speedster": return UserDefaults.standard.bool(forKey: "quiz_speedster")
+                default: return false
+            }
+        }
+    }
+    
     private func getColorForIcon(_ id: String) -> Color {
         switch id {
             case "starter", "beginner": return .green
