@@ -1,5 +1,10 @@
 import SwiftUI
 
+// Local achievement struct for calculating badge progress
+fileprivate struct DashboardAchievement: Identifiable {
+    let id: String
+}
+
 struct DailyDashboardView: View {
     @EnvironmentObject private var viewModel: WordViewModel
     
@@ -7,11 +12,14 @@ struct DailyDashboardView: View {
     @State private var totalAttempts: Int = 0
     @State private var correctAnswers: Int = 0
     @State private var bestStreak: Int = 0
+    @State private var unlockedBadges: Int = 0
+    @State private var totalBadges: Int = 11 // Total number of available badges
     
     @State private var showQuizStats = false
     @State private var showCategorySelection = false
     @State private var showResetConfirmation = false
     @State private var showResetSuccessMessage = false
+    @State private var showAchievements = false
     
     var body: some View {
         NavigationStack {
@@ -39,6 +47,47 @@ struct DailyDashboardView: View {
                     
                     Divider()
                     
+                    // Achievements Summary Section
+                    VStack(spacing: 8) {
+                        HStack {
+                            Text("🏅 Achievements")
+                                .font(.headline)
+                            Spacer()
+                        }
+                        
+                        HStack {
+                            Text("🔓 \(unlockedBadges) of \(totalBadges) Badges Unlocked")
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
+                            Spacer()
+                        }
+                        
+                        // Progress bar for badges
+                        ProgressView(value: Double(unlockedBadges), total: Double(totalBadges))
+                            .tint(.yellow)
+                            .frame(height: 4)
+                            .padding(.bottom, 4)
+                    }
+                    .padding(.horizontal, 4)
+                    
+                    Button(action: {
+                        // Refresh stats before showing achievements view
+                        refreshQuizStats()
+                        calculateUnlockedBadges()
+                        showAchievements = true
+                    }) {
+                        HStack {
+                            Image(systemName: "trophy.fill")
+                            Text("View Achievements")
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.orange)
+                    
+                    Divider()
+                    
                     // Quiz Stats Section - Improved with better visibility
                     VStack(alignment: .leading, spacing: 6) {
                         HStack {
@@ -50,6 +99,7 @@ struct DailyDashboardView: View {
                             // Add a refresh button
                             Button(action: {
                                 refreshQuizStats()
+                                calculateUnlockedBadges()
                             }) {
                                 Image(systemName: "arrow.clockwise")
                                     .font(.caption)
@@ -78,6 +128,7 @@ struct DailyDashboardView: View {
                     Button(action: {
                         // Refresh stats before showing detailed view
                         refreshQuizStats()
+                        calculateUnlockedBadges()
                         showQuizStats = true
                     }) {
                         HStack {
@@ -196,11 +247,18 @@ struct DailyDashboardView: View {
                 // Refresh all data when view appears
                 DispatchQueue.main.async {
                     refreshQuizStats()
+                    calculateUnlockedBadges()
                     self.viewModel.updateWordOfTheDayIfNeeded()
                 }
             }
             .navigationDestination(isPresented: $showQuizStats) {
                 QuizStatsView()
+            }
+            .navigationDestination(isPresented: $showAchievements) {
+                AchievementsView()
+            }
+            .navigationDestination(isPresented: $showCategorySelection) {
+                CategorySelectionView().environmentObject(viewModel)
             }
         }
     }
@@ -217,6 +275,28 @@ struct DailyDashboardView: View {
         correctAnswers = UserDefaults.standard.integer(forKey: "quiz_correctAnswers")
         bestStreak = UserDefaults.standard.integer(forKey: "quiz_bestStreak")
         print("📊 Refreshed quiz stats: \(correctAnswers)/\(totalAttempts) attempts, \(bestStreak) best streak")
+    }
+    
+    // Calculate unlocked badges count using logic similar to QuizStatsView
+    private func calculateUnlockedBadges() {
+        let accuracy = calculateAccuracy()
+        
+        var unlockedCount = 0
+        
+        // Check each achievement condition
+        if correctAnswers >= 10 { unlockedCount += 1 } // starter
+        if correctAnswers >= 25 { unlockedCount += 1 } // beginner
+        if bestStreak >= 5 { unlockedCount += 1 } // hotstreak
+        if bestStreak >= 10 { unlockedCount += 1 } // inferno
+        if accuracy >= 80 && totalAttempts >= 20 { unlockedCount += 1 } // accurate
+        if accuracy >= 90 && totalAttempts >= 50 { unlockedCount += 1 } // brainiac
+        if correctAnswers >= 15 && correctAnswers == totalAttempts { unlockedCount += 1 } // perfect
+        if totalAttempts >= 100 { unlockedCount += 1 } // dedicated
+        if totalAttempts >= 250 && Double(correctAnswers) / Double(totalAttempts) >= 0.85 { unlockedCount += 1 } // master
+        if UserDefaults.standard.bool(forKey: "quiz_comeback") { unlockedCount += 1 } // comeback
+        if UserDefaults.standard.bool(forKey: "quiz_speedster") { unlockedCount += 1 } // speedster
+        
+        unlockedBadges = unlockedCount
     }
 }
 

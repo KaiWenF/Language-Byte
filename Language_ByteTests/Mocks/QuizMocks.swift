@@ -1,8 +1,8 @@
 import SwiftUI
 @testable import Language_Byte_Watch_App
 
-// Mock QuizView for testing
-class MockQuizView {
+// Mock QuizView for testing - renamed to avoid redeclaration
+class QuizViewTestMock {
     var correctAnswers: Int = 0
     var totalAttempts: Int = 0
     var currentStreak: Int = 0
@@ -70,8 +70,8 @@ class MockQuizView {
     }
 }
 
-// Mock DashboardView
-class MockDashboardView {
+// Mock DashboardView - renamed to avoid redeclaration
+class DashboardViewTestMock {
     var totalAttempts: Int = 0
     var correctAnswers: Int = 0
     var bestStreak: Int = 0
