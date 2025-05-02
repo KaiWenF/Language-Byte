@@ -138,6 +138,8 @@ struct QuizStatsView: View {
     
     private func getUnlockedAchievements() -> [QuizAchievement] {
         let accuracy = calculateAccuracy()
+        let totalXP = UserDefaults.standard.integer(forKey: "xp_total")
+        let userLevel = UserDefaults.standard.integer(forKey: "user_level")
         
         let allAchievements: [QuizAchievement] = [
             // Beginner achievements
@@ -214,6 +216,38 @@ struct QuizStatsView: View {
                 title: "Quick Thinker",
                 description: "Answer 10 questions in under 2 minutes",
                 iconName: "bolt.fill"
+            ),
+            
+            // XP-based achievements
+            QuizAchievement(
+                id: "level_5",
+                title: "Level 5 Reached",
+                description: "Earn 500 XP total",
+                iconName: "star.fill"
+            ),
+            QuizAchievement(
+                id: "level_10",
+                title: "Dedicated Learner",
+                description: "Earn 1,000 XP total",
+                iconName: "flame.fill"
+            ),
+            QuizAchievement(
+                id: "xp_milestone_100",
+                title: "First Steps",
+                description: "Earn your first 100 XP",
+                iconName: "figure.walk"
+            ),
+            QuizAchievement(
+                id: "xp_milestone_2500",
+                title: "XP Champion",
+                description: "Accumulate 2,500 XP",
+                iconName: "trophy.fill"
+            ),
+            QuizAchievement(
+                id: "word_master",
+                title: "Word Master",
+                description: "Reach level 15",
+                iconName: "crown.fill"
             )
         ]
         
@@ -230,6 +264,12 @@ struct QuizStatsView: View {
                 case "master": return totalAttempts >= 250 && Double(correctAnswers) / Double(totalAttempts) >= 0.85
                 case "comeback": return UserDefaults.standard.bool(forKey: "quiz_comeback")
                 case "speedster": return UserDefaults.standard.bool(forKey: "quiz_speedster")
+                // XP-based achievements
+                case "level_5": return userLevel >= 5 || totalXP >= 500
+                case "level_10": return userLevel >= 10 || totalXP >= 1000
+                case "xp_milestone_100": return totalXP >= 100
+                case "xp_milestone_2500": return totalXP >= 2500
+                case "word_master": return userLevel >= 15
                 default: return false
             }
         }
@@ -243,6 +283,10 @@ struct QuizStatsView: View {
             case "dedicated", "master": return .purple
             case "comeback": return .red
             case "speedster": return .yellow
+            // XP-based achievement colors
+            case "level_5", "level_10": return .yellow
+            case "xp_milestone_100": return .green
+            case "xp_milestone_2500", "word_master": return .purple
             default: return .blue
         }
     }

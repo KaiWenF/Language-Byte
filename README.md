@@ -11,6 +11,14 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - Persistent language selection across app launches
 - Comprehensive vocabulary across different categories
 
+### Experience Points (XP) System
+- Gamified learning experience with XP rewards for activities
+- Level progression system with dynamic level titles
+- XP statistics with detailed progress tracking
+- Level-up celebrations with animations and confetti effects
+- Streak bonuses for consistent correct answers
+- Visual progress indicators showing path to next level
+
 ### Quiz and Achievements
 - Comprehensive quiz system with score tracking and persistence
 - Streak counting and best streak tracking
@@ -21,6 +29,7 @@ A watchOS application for learning vocabulary in multiple languages with a clean
   * Accuracy-based achievements (Sharp Mind, Brainiac)
   * Mastery achievements (Dedicated Scholar, Language Master)
   * Special achievements (Comeback Kid, Quick Thinker)
+  * XP-based achievements (Level 5 Reached, Dedicated Learner, First Steps, XP Champion, Word Master)
 - Detailed quiz statistics and progress tracking
 - Achievement display with custom icons and colors
 - Exit confirmation to prevent accidental navigation
@@ -37,6 +46,8 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - Intelligent display that only scrolls text when necessary
 - Scrollable main view with quick access to all features
 - Clear language indicator showing current selection
+- Dedicated level view with detailed XP statistics
+- Progress bars and visual indicators for level advancement
 
 ### Learning Tools
 - Mark words as favorites for focused study
@@ -95,6 +106,7 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - `DailyDashboardView`: Track progress and view Word of the Day
 - `QuizView`: Interactive quiz mode with scoring and achievements
 - `QuizStatsView`: Detailed quiz statistics and achievements display
+- `LevelView`: Display XP progress, level information, and statistics
 
 ### View Models
 - `WordViewModel`: Central data model managing words and app state
@@ -104,6 +116,7 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - `NotificationManager`: Handles scheduling of daily notifications
 - `LanguageDataManager`: Manages language data loading and formatting
 - `AchievementManager`: Manages achievement tracking and unlocking
+- `XPManager`: Manages XP calculation, level progression, and notifications
 
 ### Tests
 - `ModelTests`: Tests for data models and their behavior
@@ -121,16 +134,21 @@ The app uses a JSON structure for language data:
 
 ## Recent Improvements
 
-- Implemented comprehensive quiz system with achievement tracking
-- Added persistent score and streak counting functionality
-- Created achievement system with multiple categories and custom icons
-- Enhanced DailyDashboardView with quiz statistics integration
-- Improved UI consistency across all views with standardized styling
-- Optimized button placement and navigation flow
-- Added exit confirmation for quiz mode to prevent accidental exits
-- Enhanced visual feedback for user interactions
-- Fixed quiz score reset functionality and state management
+- Implemented comprehensive XP system with level progression
+- Added XP-based achievements to reward learning milestones
+- Created dedicated LevelView with detailed XP statistics
+- Implemented level-up celebrations with animations and visual feedback
+- Added streak bonuses for consistent correct answers in quizzes
 - Previous improvements:
+  * Implemented comprehensive quiz system with achievement tracking
+  * Added persistent score and streak counting functionality
+  * Created achievement system with multiple categories and custom icons
+  * Enhanced DailyDashboardView with quiz statistics integration
+  * Improved UI consistency across all views with standardized styling
+  * Optimized button placement and navigation flow
+  * Added exit confirmation for quiz mode to prevent accidental exits
+  * Enhanced visual feedback for user interactions
+  * Fixed quiz score reset functionality and state management
   * Enhanced text scrolling mechanism to display long words without truncation
   * Optimized animation cycles for faster text return when scrolling long content
   * Implemented context-aware text display that adapts to content length
@@ -146,7 +164,7 @@ The app uses a JSON structure for language data:
 ## Future Development
 
 Planned enhancements:
-- Gamification features with points and streaks for daily learning
+- Advanced gamification features with season passes and premium achievements
 - Enhanced statistics tracking with progress visualization
 - Multiple Words of the Day with difficulty levels
 - AI-powered adaptive learning based on user performance

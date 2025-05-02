@@ -11,6 +11,9 @@ struct QuizView: View {
     // STEP 1: Use EnvironmentObject for WordViewModel (reuse the words already loaded)
     @EnvironmentObject var viewModel: WordViewModel
     
+    // XP Manager for streak bonuses
+    @StateObject private var xpManager = XPManager()
+    
     // STEP 2: Create state variables to hold the current quiz question and feedback state
     @State private var currentQuestion: QuizQuestion? = nil
     @State private var showFeedback: Bool = false
@@ -24,6 +27,12 @@ struct QuizView: View {
     @State private var currentStreak: Int = 0
     @State private var showExitConfirmation: Bool = false
     @Environment(\.presentationMode) private var presentationMode
+    
+    // Streak milestone tracking with AppStorage
+    @AppStorage("streak_milestone_5_awarded") private var streakMilestone5Awarded = false
+    @AppStorage("streak_milestone_10_awarded") private var streakMilestone10Awarded = false  
+    @AppStorage("streak_milestone_15_awarded") private var streakMilestone15Awarded = false
+    @AppStorage("streak_milestone_date") private var streakMilestoneDate = ""
     
     var body: some View {
         NavigationStack {
@@ -67,6 +76,13 @@ struct QuizView: View {
                                 if isCorrect {
                                     correctAnswers += 1
                                     currentStreak += 1
+                                    
+                                    // Award 10 XP for each correct answer
+                                    xpManager.addXP(10)
+                                    
+                                    // Check for streak milestones
+                                    checkStreakMilestones()
+                                    
                                     if currentStreak > bestStreak {
                                         bestStreak = currentStreak
                                     }
@@ -111,6 +127,15 @@ struct QuizView: View {
             // Ensure existing UserDefaults values are loaded
             loadSavedStats()
             generateNewQuestion()
+            
+            // Reset streak milestones if it's a new day
+            let today = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .none)
+            if streakMilestoneDate != today {
+                streakMilestone5Awarded = false
+                streakMilestone10Awarded = false
+                streakMilestone15Awarded = false
+                streakMilestoneDate = today
+            }
         }
         .confirmationDialog(
             "Leave Quiz?",
@@ -136,6 +161,35 @@ struct QuizView: View {
                 }
             }
         }
+        .overlay(
+            // Streak milestone toast
+            ZStack {
+                if showStreakToast {
+                    VStack {
+                        Spacer()
+                        
+                        HStack {
+                            Image(systemName: "flame.fill")
+                                .foregroundColor(.orange)
+                            
+                            Text(streakMilestoneMessage)
+                                .font(.callout)
+                                .bold()
+                                .foregroundColor(.primary)
+                        }
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.orange.opacity(0.2))
+                                .shadow(radius: 2)
+                        )
+                        .padding(.bottom, 20)
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                        .animation(.spring(), value: showStreakToast)
+                    }
+                }
+            }
+        )
     }
     
     // Load saved statistics from UserDefaults
@@ -190,6 +244,50 @@ struct QuizView: View {
         )
         showFeedback = false
         selectedChoice = ""
+    }
+    
+    // Check and award XP bonuses for streak milestones
+    private func checkStreakMilestones() {
+        // First, check if we need to reset milestone tracking (new day)
+        let today = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .none)
+        if streakMilestoneDate != today {
+            // It's a new day, reset all milestone flags
+            streakMilestone5Awarded = false
+            streakMilestone10Awarded = false
+            streakMilestone15Awarded = false
+            streakMilestoneDate = today
+        }
+        
+        // Check if any milestone has been reached and not yet awarded today
+        if currentStreak == 5 && !streakMilestone5Awarded {
+            xpManager.addXP(20)
+            streakMilestone5Awarded = true
+            showStreakMilestoneMessage("5-Answer Streak! +20 XP")
+        } else if currentStreak == 10 && !streakMilestone10Awarded {
+            xpManager.addXP(35)
+            streakMilestone10Awarded = true
+            showStreakMilestoneMessage("10-Answer Streak! +35 XP")
+        } else if currentStreak == 15 && !streakMilestone15Awarded {
+            xpManager.addXP(50)
+            streakMilestone15Awarded = true
+            showStreakMilestoneMessage("15-Answer Streak! +50 XP")
+        }
+    }
+    
+    // Show a toast message for streak milestones
+    @State private var streakMilestoneMessage = ""
+    @State private var showStreakToast = false
+    
+    private func showStreakMilestoneMessage(_ message: String) {
+        streakMilestoneMessage = message
+        showStreakToast = true
+        
+        // Hide the toast after 3 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            withAnimation {
+                showStreakToast = false
+            }
+        }
     }
 }
 

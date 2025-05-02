@@ -7,6 +7,7 @@ fileprivate struct DashboardAchievement: Identifiable {
 
 struct DailyDashboardView: View {
     @EnvironmentObject private var viewModel: WordViewModel
+    @StateObject private var xpManager = XPManager()
     
     // Use State rather than AppStorage to ensure values are refreshed on view appear
     @State private var totalAttempts: Int = 0
@@ -25,6 +26,34 @@ struct DailyDashboardView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 20) {
+                    // XP and Level Section
+                    VStack(spacing: 8) {
+                        HStack {
+                            Text("🧠 Level \(xpManager.userLevel)")
+                                .font(.headline)
+                            Spacer()
+                            Text(xpManager.getLevelTitle())
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        ProgressView(value: xpManager.getLevelProgress(), total: 1.0)
+                            .tint(.blue)
+                            .frame(height: 6)
+                        
+                        HStack {
+                            Text("\(xpManager.xpTotal) XP total • \(xpManager.xpToNextLevel()) XP to next level")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                            Spacer()
+                        }
+                    }
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.blue.opacity(0.1))
+                    )
+                    
                     // Word of the Day Section
                     VStack(spacing: 10) {
                         Text("Today's Word")
@@ -246,6 +275,7 @@ struct DailyDashboardView: View {
             .onAppear {
                 // Refresh all data when view appears
                 DispatchQueue.main.async {
+                    refreshXPValues()
                     refreshQuizStats()
                     calculateUnlockedBadges()
                     self.viewModel.updateWordOfTheDayIfNeeded()
@@ -259,6 +289,17 @@ struct DailyDashboardView: View {
             }
             .navigationDestination(isPresented: $showCategorySelection) {
                 CategorySelectionView().environmentObject(viewModel)
+            }
+            // Listen for XP update notifications
+            .onReceive(NotificationCenter.default.publisher(for: XPManager.xpUpdatedNotification)) { _ in
+                // Just trigger a view refresh - XPManager already updates its values
+            }
+            // Listen for level-up notifications to show feedback
+            .onReceive(NotificationCenter.default.publisher(for: XPManager.levelUpNotification)) { notification in
+                if let newLevel = notification.userInfo?["newLevel"] as? Int {
+                    // You could trigger a level-up animation or alert here
+                    print("Leveled up to \(newLevel)!")
+                }
             }
         }
     }
@@ -297,6 +338,14 @@ struct DailyDashboardView: View {
         if UserDefaults.standard.bool(forKey: "quiz_speedster") { unlockedCount += 1 } // speedster
         
         unlockedBadges = unlockedCount
+    }
+    
+    // Helper function to refresh XP values
+    private func refreshXPValues() {
+        // XPManager automatically loads values from UserDefaults
+        // This is just to trigger a UI refresh if needed
+        _ = xpManager.xpTotal
+        _ = xpManager.userLevel
     }
 }
 

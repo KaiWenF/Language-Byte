@@ -12,6 +12,8 @@ struct AchievementManager {
     static func unlockedAchievements(correctAnswers: Int, bestStreak: Int) -> [Achievement] {
         let totalAttempts = UserDefaults.standard.integer(forKey: "quiz_totalAttempts")
         let accuracy = totalAttempts > 0 ? Double(correctAnswers) / Double(totalAttempts) : 0
+        let totalXP = UserDefaults.standard.integer(forKey: "xp_total")
+        let userLevel = UserDefaults.standard.integer(forKey: "user_level")
         
         return [
             // Beginner achievements
@@ -44,7 +46,19 @@ struct AchievementManager {
             Achievement(id: "comeback", title: "Comeback Kid", description: "Get a question right after 3 wrong answers", 
                 unlocked: UserDefaults.standard.bool(forKey: "quiz_comeback"), iconName: "arrow.up.heart"),
             Achievement(id: "speedster", title: "Quick Thinker", description: "Answer 10 questions in under 2 minutes", 
-                unlocked: UserDefaults.standard.bool(forKey: "quiz_speedster"), iconName: "bolt.fill")
+                unlocked: UserDefaults.standard.bool(forKey: "quiz_speedster"), iconName: "bolt.fill"),
+            
+            // XP-based achievements
+            Achievement(id: "level_5", title: "Level 5 Reached", description: "Earn 500 XP total", 
+                unlocked: userLevel >= 5 || totalXP >= 500, iconName: "star.fill"),
+            Achievement(id: "level_10", title: "Dedicated Learner", description: "Earn 1,000 XP total", 
+                unlocked: userLevel >= 10 || totalXP >= 1000, iconName: "flame.fill"),
+            Achievement(id: "xp_milestone_100", title: "First Steps", description: "Earn your first 100 XP", 
+                unlocked: totalXP >= 100, iconName: "figure.walk"),
+            Achievement(id: "xp_milestone_2500", title: "XP Champion", description: "Accumulate 2,500 XP", 
+                unlocked: totalXP >= 2500, iconName: "trophy.fill"),
+            Achievement(id: "word_master", title: "Word Master", description: "Reach level 15", 
+                unlocked: userLevel >= 15, iconName: "crown.fill")
         ]
     }
 } 

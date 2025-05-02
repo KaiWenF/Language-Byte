@@ -43,7 +43,14 @@ struct AchievementsView: View {
         
         // Special achievements
         AchievementItem(id: "comeback", title: "Comeback Kid", description: "Get a question right after 3 wrong answers", iconName: "arrow.up.heart"),
-        AchievementItem(id: "speedster", title: "Quick Thinker", description: "Answer 10 questions in under 2 minutes", iconName: "bolt.fill")
+        AchievementItem(id: "speedster", title: "Quick Thinker", description: "Answer 10 questions in under 2 minutes", iconName: "bolt.fill"),
+        
+        // XP-based achievements
+        AchievementItem(id: "level_5", title: "Level 5 Reached", description: "Earn 500 XP total", iconName: "star.fill"),
+        AchievementItem(id: "level_10", title: "Dedicated Learner", description: "Earn 1,000 XP total", iconName: "flame.fill"),
+        AchievementItem(id: "xp_milestone_100", title: "First Steps", description: "Earn your first 100 XP", iconName: "figure.walk"),
+        AchievementItem(id: "xp_milestone_2500", title: "XP Champion", description: "Accumulate 2,500 XP", iconName: "trophy.fill"),
+        AchievementItem(id: "word_master", title: "Word Master", description: "Reach level 15", iconName: "crown.fill")
     ]
     
     var body: some View {
@@ -130,6 +137,9 @@ struct AchievementsView: View {
     
     // Calculate progress value (0.0 to 1.0) for each achievement
     private func progressValue(for id: String) -> Double {
+        let totalXP = UserDefaults.standard.integer(forKey: "xp_total")
+        let userLevel = UserDefaults.standard.integer(forKey: "user_level")
+        
         switch id {
             case "starter":
                 return min(Double(correctAnswers) / 10.0, 1.0)
@@ -180,6 +190,22 @@ struct AchievementsView: View {
                 // Could potentially use a UserDefault tracking partial progress
                 let speedProgress = UserDefaults.standard.double(forKey: "quiz_speedster_progress")
                 return speedProgress > 0 ? speedProgress : 0.0
+                
+            // XP-based achievements
+            case "level_5":
+                return min(Double(totalXP) / 500.0, 1.0)
+                
+            case "level_10":
+                return min(Double(totalXP) / 1000.0, 1.0)
+                
+            case "xp_milestone_100":
+                return min(Double(totalXP) / 100.0, 1.0)
+                
+            case "xp_milestone_2500":
+                return min(Double(totalXP) / 2500.0, 1.0)
+                
+            case "word_master":
+                return min(Double(userLevel) / 15.0, 1.0)
                 
             default:
                 return 0.0
@@ -297,6 +323,8 @@ struct AchievementsView: View {
     // Reuse logic from QuizStatsView but with our own achievement type
     private func getUnlockedAchievements() -> [AchievementItem] {
         let accuracy = totalAttempts > 0 ? Double(correctAnswers) / Double(totalAttempts) * 100 : 0
+        let totalXP = UserDefaults.standard.integer(forKey: "xp_total")
+        let userLevel = UserDefaults.standard.integer(forKey: "user_level")
         
         return allAchievements.filter { achievement in
             switch achievement.id {
@@ -311,6 +339,12 @@ struct AchievementsView: View {
                 case "master": return totalAttempts >= 250 && Double(correctAnswers) / Double(totalAttempts) >= 0.85
                 case "comeback": return UserDefaults.standard.bool(forKey: "quiz_comeback")
                 case "speedster": return UserDefaults.standard.bool(forKey: "quiz_speedster")
+                // XP-based achievements
+                case "level_5": return userLevel >= 5 || totalXP >= 500
+                case "level_10": return userLevel >= 10 || totalXP >= 1000
+                case "xp_milestone_100": return totalXP >= 100
+                case "xp_milestone_2500": return totalXP >= 2500
+                case "word_master": return userLevel >= 15
                 default: return false
             }
         }
@@ -324,6 +358,11 @@ struct AchievementsView: View {
             case "dedicated", "master": return .purple
             case "comeback": return .red
             case "speedster": return .yellow
+            case "level_5": return .yellow
+            case "level_10": return .orange
+            case "xp_milestone_100": return .green
+            case "xp_milestone_2500": return .purple
+            case "word_master": return .purple
             default: return .blue
         }
     }
