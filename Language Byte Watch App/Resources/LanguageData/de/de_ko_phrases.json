@@ -1,0 +1,162 @@
+{
+  "source": "de",
+  "target": "ko",
+  "name": {
+    "source": "German",
+    "target": "Korean"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_de_ko",
+  "pairs": [
+    {
+      "sourceWord": "Hallo",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Morgen",
+      "targetWord": "좋은 아침 (Joeun achim)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Tag",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Abend",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Auf Wiedersehen",
+      "targetWord": "안녕히 가세요 (Annyeonghi gaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Danke",
+      "targetWord": "감사합니다 (Gamsahamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bitte",
+      "targetWord": "주세요 (Juseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bitte schön",
+      "targetWord": "천만에요 (Cheonmaneyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Es tut mir leid",
+      "targetWord": "죄송합니다 (Joesonghamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Entschuldigung",
+      "targetWord": "실례합니다 (Sillyehamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Reis",
+      "targetWord": "밥 (Bap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Nudeln",
+      "targetWord": "국수 (Guksu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Tee",
+      "targetWord": "차 (Cha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Wasser",
+      "targetWord": "물 (Mul)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fleisch",
+      "targetWord": "고기 (Gogi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Gemüse",
+      "targetWord": "야채 (Yachae)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Obst",
+      "targetWord": "과일 (Gwail)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Kimchi",
+      "targetWord": "김치 (Kimchi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Bibimbap",
+      "targetWord": "비빔밥 (Bibimbap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Suppe",
+      "targetWord": "국 (Guk)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "eins",
+      "targetWord": "하나 (Hana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "zwei",
+      "targetWord": "둘 (Dul)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "drei",
+      "targetWord": "셋 (Set)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "vier",
+      "targetWord": "넷 (Net)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "fünf",
+      "targetWord": "다섯 (Daseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sechs",
+      "targetWord": "여섯 (Yeoseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sieben",
+      "targetWord": "일곱 (Ilgop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "acht",
+      "targetWord": "여덟 (Yeodeol)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "neun",
+      "targetWord": "아홉 (Ahop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "zehn",
+      "targetWord": "열 (Yeol)",
+      "category": "numbers"
+    }
+  ]
+}

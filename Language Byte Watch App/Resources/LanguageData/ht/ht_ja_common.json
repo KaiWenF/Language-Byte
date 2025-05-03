@@ -1,0 +1,152 @@
+{
+  "source": "ht",
+  "target": "ja",
+  "name": {
+    "source": "Haitian Creole",
+    "target": "Japanese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ht_ja",
+  "pairs": [
+    {
+      "sourceWord": "Bonjou",
+      "targetWord": "こんにちは (Konnichiwa)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonswa",
+      "targetWord": "こんばんは (Konbanwa)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Orevwa",
+      "targetWord": "さようなら (Sayounara)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mèsi",
+      "targetWord": "ありがとう (Arigatou)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Tanpri",
+      "targetWord": "お願いします (Onegaishimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Padekwa",
+      "targetWord": "どういたしまして (Douitashimashite)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mwen regrèt",
+      "targetWord": "すみません (Sumimasen)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Eskize mwen",
+      "targetWord": "失礼します (Shitsurei shimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Diri",
+      "targetWord": "ご飯 (Gohan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Nouil",
+      "targetWord": "麺 (Men)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Te",
+      "targetWord": "お茶 (Ocha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Dlo",
+      "targetWord": "水 (Mizu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Vyann",
+      "targetWord": "肉 (Niku)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Legim",
+      "targetWord": "野菜 (Yasai)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwi",
+      "targetWord": "果物 (Kudamono)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Soup",
+      "targetWord": "スープ (Sūpu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Pen",
+      "targetWord": "パン (Pan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwomaj",
+      "targetWord": "チーズ (Chīzu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "En",
+      "targetWord": "一 (Ichi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "De",
+      "targetWord": "二 (Ni)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Twa",
+      "targetWord": "三 (San)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Kat",
+      "targetWord": "四 (Shi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Senk",
+      "targetWord": "五 (Go)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sis",
+      "targetWord": "六 (Roku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sèt",
+      "targetWord": "七 (Shichi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Wit",
+      "targetWord": "八 (Hachi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Nèf",
+      "targetWord": "九 (Kyuu)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Dis",
+      "targetWord": "十 (Juu)",
+      "category": "numbers"
+    }
+  ]
+}

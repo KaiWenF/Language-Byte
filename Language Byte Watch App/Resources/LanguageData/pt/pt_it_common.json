@@ -1,0 +1,162 @@
+{
+  "source": "pt",
+  "target": "it",
+  "name": {
+    "source": "Portuguese",
+    "target": "Italian"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_pt_it",
+  "pairs": [
+    {
+      "sourceWord": "comer",
+      "targetWord": "mangiare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "beber",
+      "targetWord": "bere",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cozinhar",
+      "targetWord": "cucinare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cortar",
+      "targetWord": "tagliare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "descascar",
+      "targetWord": "sbucciare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "fritar",
+      "targetWord": "friggere",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "assar",
+      "targetWord": "cuocere al forno",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "misturar",
+      "targetWord": "mescolare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "provar",
+      "targetWord": "assaggiare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "temperar",
+      "targetWord": "condire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pão",
+      "targetWord": "pane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "queijo",
+      "targetWord": "formaggio",
+      "category": "food"
+    },
+    {
+      "sourceWord": "leite",
+      "targetWord": "latte",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ovo",
+      "targetWord": "uovo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "peixe",
+      "targetWord": "pesce",
+      "category": "food"
+    },
+    {
+      "sourceWord": "frango",
+      "targetWord": "pollo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "riso",
+      "category": "food"
+    },
+    {
+      "sourceWord": "feijão",
+      "targetWord": "fagioli",
+      "category": "food"
+    },
+    {
+      "sourceWord": "batatas",
+      "targetWord": "patate",
+      "category": "food"
+    },
+    {
+      "sourceWord": "um",
+      "targetWord": "uno",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dois",
+      "targetWord": "due",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "três",
+      "targetWord": "tre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quatro",
+      "targetWord": "quattro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "cinque",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "sei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sete",
+      "targetWord": "sette",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "oito",
+      "targetWord": "otto",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nove",
+      "targetWord": "nove",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dez",
+      "targetWord": "dieci",
+      "category": "numbers"
+    }
+  ]
+}

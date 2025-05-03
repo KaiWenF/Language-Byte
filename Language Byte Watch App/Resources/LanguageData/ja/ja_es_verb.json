@@ -1,0 +1,487 @@
+{
+  "source": "ja",
+  "target": "es",
+  "name": {
+    "source": "Japanese",
+    "target": "Spanish"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ja_es",
+  "pairs": [
+    {
+      "sourceWord": "食べる",
+      "targetWord": "comer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "飲む",
+      "targetWord": "beber",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "料理する",
+      "targetWord": "cocinar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "切る",
+      "targetWord": "cortar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "皮をむく",
+      "targetWord": "pelar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "揚げる",
+      "targetWord": "freír",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "焼く",
+      "targetWord": "hornear",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "混ぜる",
+      "targetWord": "mezclar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "味わう",
+      "targetWord": "probar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "味付けする",
+      "targetWord": "sazonar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "買う",
+      "targetWord": "comprar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "売る",
+      "targetWord": "vender",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "準備する",
+      "targetWord": "preparar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "洗う",
+      "targetWord": "lavar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "変える",
+      "targetWord": "cambiar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "サービスする",
+      "targetWord": "servir",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "する",
+      "targetWord": "hacer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "掃除する",
+      "targetWord": "limpiar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "手伝う",
+      "targetWord": "ayudar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "必要とする",
+      "targetWord": "necesitar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "パン",
+      "targetWord": "pan",
+      "category": "food"
+    },
+    {
+      "sourceWord": "チーズ",
+      "targetWord": "queso",
+      "category": "food"
+    },
+    {
+      "sourceWord": "牛乳",
+      "targetWord": "leche",
+      "category": "food"
+    },
+    {
+      "sourceWord": "卵",
+      "targetWord": "huevo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "魚",
+      "targetWord": "pescado",
+      "category": "food"
+    },
+    {
+      "sourceWord": "鶏肉",
+      "targetWord": "pollo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "米",
+      "targetWord": "arroz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "豆",
+      "targetWord": "frijoles",
+      "category": "food"
+    },
+    {
+      "sourceWord": "じゃがいも",
+      "targetWord": "papas",
+      "category": "food"
+    },
+    {
+      "sourceWord": "いちご",
+      "targetWord": "fresas",
+      "category": "food"
+    },
+    {
+      "sourceWord": "りんご",
+      "targetWord": "manzana",
+      "category": "food"
+    },
+    {
+      "sourceWord": "バナナ",
+      "targetWord": "plátano",
+      "category": "food"
+    },
+    {
+      "sourceWord": "オレンジ",
+      "targetWord": "naranja",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ぶどう",
+      "targetWord": "uva",
+      "category": "food"
+    },
+    {
+      "sourceWord": "スイカ",
+      "targetWord": "sandía",
+      "category": "food"
+    },
+    {
+      "sourceWord": "レモン",
+      "targetWord": "limón",
+      "category": "food"
+    },
+    {
+      "sourceWord": "にんじん",
+      "targetWord": "zanahoria",
+      "category": "food"
+    },
+    {
+      "sourceWord": "レタス",
+      "targetWord": "lechuga",
+      "category": "food"
+    },
+    {
+      "sourceWord": "トマト",
+      "targetWord": "tomate",
+      "category": "food"
+    },
+    {
+      "sourceWord": "母",
+      "targetWord": "madre",
+      "category": "family"
+    },
+    {
+      "sourceWord": "父",
+      "targetWord": "padre",
+      "category": "family"
+    },
+    {
+      "sourceWord": "息子",
+      "targetWord": "hijo",
+      "category": "family"
+    },
+    {
+      "sourceWord": "娘",
+      "targetWord": "hija",
+      "category": "family"
+    },
+    {
+      "sourceWord": "兄弟",
+      "targetWord": "hermano",
+      "category": "family"
+    },
+    {
+      "sourceWord": "姉妹",
+      "targetWord": "hermana",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖父",
+      "targetWord": "abuelo",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖母",
+      "targetWord": "abuela",
+      "category": "family"
+    },
+    {
+      "sourceWord": "叔父",
+      "targetWord": "tío",
+      "category": "family"
+    },
+    {
+      "sourceWord": "叔母",
+      "targetWord": "tía",
+      "category": "family"
+    },
+    {
+      "sourceWord": "いとこ",
+      "targetWord": "primo",
+      "category": "family"
+    },
+    {
+      "sourceWord": "いとこ",
+      "targetWord": "prima",
+      "category": "family"
+    },
+    {
+      "sourceWord": "孫",
+      "targetWord": "nieto",
+      "category": "family"
+    },
+    {
+      "sourceWord": "孫",
+      "targetWord": "nieta",
+      "category": "family"
+    },
+    {
+      "sourceWord": "夫",
+      "targetWord": "esposo",
+      "category": "family"
+    },
+    {
+      "sourceWord": "妻",
+      "targetWord": "esposa",
+      "category": "family"
+    },
+    {
+      "sourceWord": "義父",
+      "targetWord": "suegro",
+      "category": "family"
+    },
+    {
+      "sourceWord": "義母",
+      "targetWord": "suegra",
+      "category": "family"
+    },
+    {
+      "sourceWord": "義兄弟",
+      "targetWord": "cuñado",
+      "category": "family"
+    },
+    {
+      "sourceWord": "義姉妹",
+      "targetWord": "cuñada",
+      "category": "family"
+    },
+    {
+      "sourceWord": "赤",
+      "targetWord": "rojo",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "青",
+      "targetWord": "azul",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "緑",
+      "targetWord": "verde",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黄色",
+      "targetWord": "amarillo",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "オレンジ",
+      "targetWord": "naranja",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "紫",
+      "targetWord": "morado",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "ピンク",
+      "targetWord": "rosa",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黒",
+      "targetWord": "negro",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "白",
+      "targetWord": "blanco",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "灰色",
+      "targetWord": "gris",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "茶色",
+      "targetWord": "marrón",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "ターコイズ",
+      "targetWord": "turquesa",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "水色",
+      "targetWord": "celeste",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "金色",
+      "targetWord": "dorado",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "銀色",
+      "targetWord": "plateado",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "uno",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "dos",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "tres",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "cuatro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "cinco",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "seis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "siete",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "ocho",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "nueve",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "diez",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "こんにちは",
+      "targetWord": "Hola",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "おはようございます",
+      "targetWord": "Buenos días",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "こんにちは",
+      "targetWord": "Buenas tardes",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "こんばんは",
+      "targetWord": "Buenas noches",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "さようなら",
+      "targetWord": "Adiós",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "またね",
+      "targetWord": "Hasta luego",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "お願いします",
+      "targetWord": "Por favor",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "ありがとう",
+      "targetWord": "Gracias",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "どういたしまして",
+      "targetWord": "De nada",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "すみません",
+      "targetWord": "Lo siento",
+      "category": "phrases"
+    }
+  ]
+}

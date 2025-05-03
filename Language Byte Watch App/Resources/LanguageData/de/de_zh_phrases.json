@@ -1,0 +1,162 @@
+{
+  "source": "de",
+  "target": "zh",
+  "name": {
+    "source": "German",
+    "target": "Chinese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_de_zh",
+  "pairs": [
+    {
+      "sourceWord": "Hallo",
+      "targetWord": "你好 (Nǐ hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Morgen",
+      "targetWord": "早上好 (Zǎoshang hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Tag",
+      "targetWord": "下午好 (Xiàwǔ hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Abend",
+      "targetWord": "晚上好 (Wǎnshang hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Auf Wiedersehen",
+      "targetWord": "再见 (Zàijiàn)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Danke",
+      "targetWord": "谢谢 (Xièxiè)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bitte",
+      "targetWord": "请 (Qǐng)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bitte schön",
+      "targetWord": "不客气 (Bù kèqì)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Es tut mir leid",
+      "targetWord": "对不起 (Duìbùqǐ)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Entschuldigung",
+      "targetWord": "打扰一下 (Dǎrǎo yīxià)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Reis",
+      "targetWord": "米饭 (Mǐfàn)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Nudeln",
+      "targetWord": "面条 (Miàntiáo)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Tee",
+      "targetWord": "茶 (Chá)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Wasser",
+      "targetWord": "水 (Shuǐ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fleisch",
+      "targetWord": "肉 (Ròu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Gemüse",
+      "targetWord": "蔬菜 (Shūcài)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Obst",
+      "targetWord": "水果 (Shuǐguǒ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Jiaozi",
+      "targetWord": "饺子 (Jiǎozi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Tofu",
+      "targetWord": "豆腐 (Dòufu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Suppe",
+      "targetWord": "汤 (Tāng)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "eins",
+      "targetWord": "一 (Yī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "zwei",
+      "targetWord": "二 (Èr)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "drei",
+      "targetWord": "三 (Sān)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "vier",
+      "targetWord": "四 (Sì)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "fünf",
+      "targetWord": "五 (Wǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sechs",
+      "targetWord": "六 (Liù)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sieben",
+      "targetWord": "七 (Qī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "acht",
+      "targetWord": "八 (Bā)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "neun",
+      "targetWord": "九 (Jiǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "zehn",
+      "targetWord": "十 (Shí)",
+      "category": "numbers"
+    }
+  ]
+}

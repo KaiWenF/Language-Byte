@@ -1,0 +1,152 @@
+{
+  "source": "ko",
+  "target": "ht",
+  "name": {
+    "source": "Korean",
+    "target": "Haitian Creole"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ko_ht",
+  "pairs": [
+    {
+      "sourceWord": "안녕하세요",
+      "targetWord": "Bonjou",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "좋은 아침",
+      "targetWord": "Bonjou",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "안녕히 가세요",
+      "targetWord": "Orevwa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "감사합니다",
+      "targetWord": "Mèsi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "주세요",
+      "targetWord": "Tanpri",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "천만에요",
+      "targetWord": "Padekwa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "죄송합니다",
+      "targetWord": "Mwen regrèt",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "실례합니다",
+      "targetWord": "Eskize mwen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "밥",
+      "targetWord": "Diri",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국수",
+      "targetWord": "Nouil",
+      "category": "food"
+    },
+    {
+      "sourceWord": "차",
+      "targetWord": "Te",
+      "category": "food"
+    },
+    {
+      "sourceWord": "물",
+      "targetWord": "Dlo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "고기",
+      "targetWord": "Vyann",
+      "category": "food"
+    },
+    {
+      "sourceWord": "야채",
+      "targetWord": "Legim",
+      "category": "food"
+    },
+    {
+      "sourceWord": "과일",
+      "targetWord": "Fwi",
+      "category": "food"
+    },
+    {
+      "sourceWord": "김치",
+      "targetWord": "Kimchi",
+      "category": "food"
+    },
+    {
+      "sourceWord": "비빔밥",
+      "targetWord": "Bibimbap",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국",
+      "targetWord": "Soup",
+      "category": "food"
+    },
+    {
+      "sourceWord": "하나",
+      "targetWord": "En",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "둘",
+      "targetWord": "De",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "셋",
+      "targetWord": "Twa",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "넷",
+      "targetWord": "Kat",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "다섯",
+      "targetWord": "Senk",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여섯",
+      "targetWord": "Sis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "일곱",
+      "targetWord": "Sèt",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여덟",
+      "targetWord": "Wit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "아홉",
+      "targetWord": "Nèf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "열",
+      "targetWord": "Dis",
+      "category": "numbers"
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "source": "es",
+  "target": "fr",
+  "name": {
+    "source": "Spanish",
+    "target": "French"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_es_fr",
+  "pairs": [
+    {
+      "sourceWord": "comer",
+      "targetWord": "manger",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "beber",
+      "targetWord": "boire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cocinar",
+      "targetWord": "cuisiner",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cortar",
+      "targetWord": "couper",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pelar",
+      "targetWord": "peler",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "freír",
+      "targetWord": "frire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "hornear",
+      "targetWord": "cuire au four",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "mezclar",
+      "targetWord": "mélanger",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "probar",
+      "targetWord": "goûter",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "sazonar",
+      "targetWord": "assaisonner",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "comprar",
+      "targetWord": "acheter",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "vender",
+      "targetWord": "vendre",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "preparar",
+      "targetWord": "préparer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "lavar",
+      "targetWord": "laver",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cambiar",
+      "targetWord": "changer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pan",
+      "targetWord": "pain",
+      "category": "food"
+    },
+    {
+      "sourceWord": "queso",
+      "targetWord": "fromage",
+      "category": "food"
+    },
+    {
+      "sourceWord": "leche",
+      "targetWord": "lait",
+      "category": "food"
+    },
+    {
+      "sourceWord": "huevo",
+      "targetWord": "œuf",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "viande",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pescado",
+      "targetWord": "poisson",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pollo",
+      "targetWord": "poulet",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "riz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "frijoles",
+      "targetWord": "haricots",
+      "category": "food"
+    },
+    {
+      "sourceWord": "papas",
+      "targetWord": "pommes de terre",
+      "category": "food"
+    },
+    {
+      "sourceWord": "manzana",
+      "targetWord": "pomme",
+      "category": "food"
+    },
+    {
+      "sourceWord": "plátano",
+      "targetWord": "banane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "naranja",
+      "targetWord": "orange",
+      "category": "food"
+    },
+    {
+      "sourceWord": "grape",
+      "targetWord": "raisin",
+      "category": "food"
+    },
+    {
+      "sourceWord": "watermelon",
+      "targetWord": "pastèque",
+      "category": "food"
+    },
+    {
+      "sourceWord": "madre",
+      "targetWord": "mère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "padre",
+      "targetWord": "père",
+      "category": "family"
+    },
+    {
+      "sourceWord": "hijo",
+      "targetWord": "fils",
+      "category": "family"
+    },
+    {
+      "sourceWord": "hija",
+      "targetWord": "fille",
+      "category": "family"
+    },
+    {
+      "sourceWord": "hermano",
+      "targetWord": "frère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "hermana",
+      "targetWord": "sœur",
+      "category": "family"
+    },
+    {
+      "sourceWord": "abuelo",
+      "targetWord": "grand-père",
+      "category": "family"
+    },
+    {
+      "sourceWord": "abuela",
+      "targetWord": "grand-mère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "tío",
+      "targetWord": "oncle",
+      "category": "family"
+    },
+    {
+      "sourceWord": "tía",
+      "targetWord": "tante",
+      "category": "family"
+    },
+    {
+      "sourceWord": "rojo",
+      "targetWord": "rouge",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "azul",
+      "targetWord": "bleu",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "verde",
+      "targetWord": "vert",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "amarillo",
+      "targetWord": "jaune",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "naranja",
+      "targetWord": "orange",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "morado",
+      "targetWord": "violet",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "rosa",
+      "targetWord": "rose",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "negro",
+      "targetWord": "noir",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "blanco",
+      "targetWord": "blanc",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "gris",
+      "targetWord": "gris",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "uno",
+      "targetWord": "un",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dos",
+      "targetWord": "deux",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "tres",
+      "targetWord": "trois",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cuatro",
+      "targetWord": "quatre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "cinq",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "six",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "siete",
+      "targetWord": "sept",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "ocho",
+      "targetWord": "huit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nueve",
+      "targetWord": "neuf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "diez",
+      "targetWord": "dix",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Hola",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenos días",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenas tardes",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenas noches",
+      "targetWord": "Bonsoir / Bonne nuit",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Adiós",
+      "targetWord": "Au revoir",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "See you later",
+      "targetWord": "À plus tard",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Please",
+      "targetWord": "S'il vous plaît",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Gracias",
+      "targetWord": "Merci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "De nada",
+      "targetWord": "De rien",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Lo siento",
+      "targetWord": "Je suis désolé(e)",
+      "category": "phrases"
+    }
+  ]
+}

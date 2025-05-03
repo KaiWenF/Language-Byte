@@ -1,0 +1,162 @@
+{
+  "source": "pt",
+  "target": "en",
+  "name": {
+    "source": "Portuguese",
+    "target": "English"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_pt_en",
+  "pairs": [
+    {
+      "sourceWord": "comer",
+      "targetWord": "to eat",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "beber",
+      "targetWord": "to drink",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cozinhar",
+      "targetWord": "to cook",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cortar",
+      "targetWord": "to cut",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "descascar",
+      "targetWord": "to peel",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "fritar",
+      "targetWord": "to fry",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "assar",
+      "targetWord": "to bake",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "misturar",
+      "targetWord": "to mix",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "provar",
+      "targetWord": "to taste",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "temperar",
+      "targetWord": "to season",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pão",
+      "targetWord": "bread",
+      "category": "food"
+    },
+    {
+      "sourceWord": "queijo",
+      "targetWord": "cheese",
+      "category": "food"
+    },
+    {
+      "sourceWord": "leite",
+      "targetWord": "milk",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ovo",
+      "targetWord": "egg",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "meat",
+      "category": "food"
+    },
+    {
+      "sourceWord": "peixe",
+      "targetWord": "fish",
+      "category": "food"
+    },
+    {
+      "sourceWord": "frango",
+      "targetWord": "chicken",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "rice",
+      "category": "food"
+    },
+    {
+      "sourceWord": "feijão",
+      "targetWord": "beans",
+      "category": "food"
+    },
+    {
+      "sourceWord": "batatas",
+      "targetWord": "potatoes",
+      "category": "food"
+    },
+    {
+      "sourceWord": "um",
+      "targetWord": "one",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dois",
+      "targetWord": "two",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "três",
+      "targetWord": "three",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quatro",
+      "targetWord": "four",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "five",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "six",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sete",
+      "targetWord": "seven",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "oito",
+      "targetWord": "eight",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nove",
+      "targetWord": "nine",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dez",
+      "targetWord": "ten",
+      "category": "numbers"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "source": "ja",
+  "target": "zh",
+  "name": {
+    "source": "Japanese",
+    "target": "Chinese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ja_zh",
+  "pairs": [
+    {
+      "sourceWord": "食べる",
+      "targetWord": "吃 (Chī)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "飲む",
+      "targetWord": "喝 (Hē)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "料理する",
+      "targetWord": "做饭 (Zuò fàn)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "切る",
+      "targetWord": "切 (Qiē)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "読む",
+      "targetWord": "读 (Dú)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "書く",
+      "targetWord": "写 (Xiě)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "話す",
+      "targetWord": "说 (Shuō)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "買う",
+      "targetWord": "买 (Mǎi)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "売る",
+      "targetWord": "卖 (Mài)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "見る",
+      "targetWord": "看 (Kàn)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "ご飯",
+      "targetWord": "米饭 (Mǐfàn)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "麺",
+      "targetWord": "面条 (Miàntiáo)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "お茶",
+      "targetWord": "茶 (Chá)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "水 (Shuǐ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "肉 (Ròu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "野菜",
+      "targetWord": "蔬菜 (Shūcài)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "果物",
+      "targetWord": "水果 (Shuǐguǒ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "餃子",
+      "targetWord": "饺子 (Jiǎozi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "豆腐",
+      "targetWord": "豆腐 (Dòufu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "スープ",
+      "targetWord": "汤 (Tāng)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "母",
+      "targetWord": "妈妈 (Māma)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "父",
+      "targetWord": "爸爸 (Bàba)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "息子",
+      "targetWord": "儿子 (Érzi)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "娘",
+      "targetWord": "女儿 (Nǚ'ér)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "兄弟",
+      "targetWord": "兄弟 (Xiōngdì)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "姉妹",
+      "targetWord": "姐妹 (Jiěmèi)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖父",
+      "targetWord": "爷爷 (Yéye)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖母",
+      "targetWord": "奶奶 (Nǎinai)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "赤",
+      "targetWord": "红色 (Hóngsè)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "青",
+      "targetWord": "蓝色 (Lánsè)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黄色",
+      "targetWord": "黄色 (Huángsè)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "緑",
+      "targetWord": "绿色 (Lǜsè)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黒",
+      "targetWord": "黑色 (Hēisè)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "白",
+      "targetWord": "白色 (Báisè)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "一 (Yī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "二 (Èr)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "三 (Sān)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "四 (Sì)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "五 (Wǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "六 (Liù)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "七 (Qī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "八 (Bā)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "九 (Jiǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "十 (Shí)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "こんにちは",
+      "targetWord": "你好 (Nǐ hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "おはようございます",
+      "targetWord": "早上好 (Zǎoshang hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "こんばんは",
+      "targetWord": "晚上好 (Wǎnshang hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "さようなら",
+      "targetWord": "再见 (Zàijiàn)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "お願いします",
+      "targetWord": "请 (Qǐng)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "ありがとう",
+      "targetWord": "谢谢 (Xièxiè)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "どういたしまして",
+      "targetWord": "不客气 (Bù kèqì)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "すみません",
+      "targetWord": "对不起 (Duìbùqǐ)",
+      "category": "phrases"
+    }
+  ]
+}

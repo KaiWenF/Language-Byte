@@ -1,0 +1,152 @@
+{
+  "source": "zh",
+  "target": "de",
+  "name": {
+    "source": "Chinese",
+    "target": "German"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_zh_de",
+  "pairs": [
+    {
+      "sourceWord": "你好",
+      "targetWord": "Hallo",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "早上好",
+      "targetWord": "Guten Morgen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "晚上好",
+      "targetWord": "Guten Abend",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "再见",
+      "targetWord": "Auf Wiedersehen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "谢谢",
+      "targetWord": "Danke",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "请",
+      "targetWord": "Bitte",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "不客气",
+      "targetWord": "Gern geschehen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "对不起",
+      "targetWord": "Es tut mir leid",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "打扰一下",
+      "targetWord": "Entschuldigung",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "米饭",
+      "targetWord": "Reis",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面条",
+      "targetWord": "Nudeln",
+      "category": "food"
+    },
+    {
+      "sourceWord": "茶",
+      "targetWord": "Tee",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "Wasser",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "Fleisch",
+      "category": "food"
+    },
+    {
+      "sourceWord": "蔬菜",
+      "targetWord": "Gemüse",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水果",
+      "targetWord": "Obst",
+      "category": "food"
+    },
+    {
+      "sourceWord": "汤",
+      "targetWord": "Suppe",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面包",
+      "targetWord": "Brot",
+      "category": "food"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "Eins",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "Zwei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "Drei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "Vier",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "Fünf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "Sechs",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "Sieben",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "Acht",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "Neun",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "Zehn",
+      "category": "numbers"
+    }
+  ]
+}

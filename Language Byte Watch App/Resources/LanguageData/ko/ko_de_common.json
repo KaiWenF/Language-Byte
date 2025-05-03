@@ -1,0 +1,152 @@
+{
+  "source": "ko",
+  "target": "de",
+  "name": {
+    "source": "Korean",
+    "target": "German"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ko_de",
+  "pairs": [
+    {
+      "sourceWord": "안녕하세요",
+      "targetWord": "Hallo",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "좋은 아침",
+      "targetWord": "Guten Morgen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "안녕히 가세요",
+      "targetWord": "Auf Wiedersehen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "감사합니다",
+      "targetWord": "Danke",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "주세요",
+      "targetWord": "Bitte",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "천만에요",
+      "targetWord": "Gern geschehen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "죄송합니다",
+      "targetWord": "Es tut mir leid",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "실례합니다",
+      "targetWord": "Entschuldigung",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "밥",
+      "targetWord": "Reis",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국수",
+      "targetWord": "Nudeln",
+      "category": "food"
+    },
+    {
+      "sourceWord": "차",
+      "targetWord": "Tee",
+      "category": "food"
+    },
+    {
+      "sourceWord": "물",
+      "targetWord": "Wasser",
+      "category": "food"
+    },
+    {
+      "sourceWord": "고기",
+      "targetWord": "Fleisch",
+      "category": "food"
+    },
+    {
+      "sourceWord": "야채",
+      "targetWord": "Gemüse",
+      "category": "food"
+    },
+    {
+      "sourceWord": "과일",
+      "targetWord": "Obst",
+      "category": "food"
+    },
+    {
+      "sourceWord": "김치",
+      "targetWord": "Kimchi",
+      "category": "food"
+    },
+    {
+      "sourceWord": "비빔밥",
+      "targetWord": "Bibimbap",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국",
+      "targetWord": "Suppe",
+      "category": "food"
+    },
+    {
+      "sourceWord": "하나",
+      "targetWord": "Eins",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "둘",
+      "targetWord": "Zwei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "셋",
+      "targetWord": "Drei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "넷",
+      "targetWord": "Vier",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "다섯",
+      "targetWord": "Fünf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여섯",
+      "targetWord": "Sechs",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "일곱",
+      "targetWord": "Sieben",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여덟",
+      "targetWord": "Acht",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "아홉",
+      "targetWord": "Neun",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "열",
+      "targetWord": "Zehn",
+      "category": "numbers"
+    }
+  ]
+}

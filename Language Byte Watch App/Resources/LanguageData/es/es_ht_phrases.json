@@ -1,0 +1,212 @@
+{
+  "source": "es",
+  "target": "ht",
+  "name": {
+    "source": "Spanish",
+    "target": "Haitian Creole"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_es_ht",
+  "pairs": [
+    {
+      "sourceWord": "Hola",
+      "targetWord": "Bonjou",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenos días",
+      "targetWord": "Bonjou",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenas tardes",
+      "targetWord": "Bonswa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenas noches",
+      "targetWord": "Bonswa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Adiós",
+      "targetWord": "Orevwa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Por favor",
+      "targetWord": "Souple",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Gracias",
+      "targetWord": "Mèsi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "De nada",
+      "targetWord": "Pa gen pwoblèm",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Lo siento",
+      "targetWord": "Mwen regret",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Disculpe",
+      "targetWord": "Eskize mwen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "pan",
+      "targetWord": "pen",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "diri",
+      "category": "food"
+    },
+    {
+      "sourceWord": "beans",
+      "targetWord": "pwa",
+      "category": "food"
+    },
+    {
+      "sourceWord": "water",
+      "targetWord": "dlo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "meat",
+      "targetWord": "vyann",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fish",
+      "targetWord": "pwason",
+      "category": "food"
+    },
+    {
+      "sourceWord": "chicken",
+      "targetWord": "poul",
+      "category": "food"
+    },
+    {
+      "sourceWord": "banana",
+      "targetWord": "bannann",
+      "category": "food"
+    },
+    {
+      "sourceWord": "plantain",
+      "targetWord": "bannann peze",
+      "category": "food"
+    },
+    {
+      "sourceWord": "avocado",
+      "targetWord": "zaboka",
+      "category": "food"
+    },
+    {
+      "sourceWord": "mother",
+      "targetWord": "manman",
+      "category": "family"
+    },
+    {
+      "sourceWord": "father",
+      "targetWord": "papa",
+      "category": "family"
+    },
+    {
+      "sourceWord": "son",
+      "targetWord": "pitit gason",
+      "category": "family"
+    },
+    {
+      "sourceWord": "daughter",
+      "targetWord": "pitit fi",
+      "category": "family"
+    },
+    {
+      "sourceWord": "brother",
+      "targetWord": "frè",
+      "category": "family"
+    },
+    {
+      "sourceWord": "sister",
+      "targetWord": "sè",
+      "category": "family"
+    },
+    {
+      "sourceWord": "grandmother",
+      "targetWord": "grann",
+      "category": "family"
+    },
+    {
+      "sourceWord": "grandfather",
+      "targetWord": "granpapa",
+      "category": "family"
+    },
+    {
+      "sourceWord": "aunt",
+      "targetWord": "matant",
+      "category": "family"
+    },
+    {
+      "sourceWord": "uncle",
+      "targetWord": "tonton",
+      "category": "family"
+    },
+    {
+      "sourceWord": "one",
+      "targetWord": "en",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "two",
+      "targetWord": "de",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "three",
+      "targetWord": "twa",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "four",
+      "targetWord": "kat",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "five",
+      "targetWord": "senk",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "six",
+      "targetWord": "sis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seven",
+      "targetWord": "sèt",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "eight",
+      "targetWord": "wit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nine",
+      "targetWord": "nèf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "ten",
+      "targetWord": "dis",
+      "category": "numbers"
+    }
+  ]
+}

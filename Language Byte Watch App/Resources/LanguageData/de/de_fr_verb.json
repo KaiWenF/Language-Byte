@@ -1,0 +1,362 @@
+{
+  "source": "de",
+  "target": "fr",
+  "name": {
+    "source": "German",
+    "target": "French"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_de_fr",
+  "pairs": [
+    {
+      "sourceWord": "essen",
+      "targetWord": "manger",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "trinken",
+      "targetWord": "boire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "kochen",
+      "targetWord": "cuisiner",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "schneiden",
+      "targetWord": "couper",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "schälen",
+      "targetWord": "peler",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "braten",
+      "targetWord": "frire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "backen",
+      "targetWord": "cuire au four",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "mischen",
+      "targetWord": "mélanger",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "probieren",
+      "targetWord": "goûter",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "würzen",
+      "targetWord": "assaisonner",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "kaufen",
+      "targetWord": "acheter",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "verkaufen",
+      "targetWord": "vendre",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "vorbereiten",
+      "targetWord": "préparer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "waschen",
+      "targetWord": "laver",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "ändern",
+      "targetWord": "changer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "Brot",
+      "targetWord": "pain",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Käse",
+      "targetWord": "fromage",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Milch",
+      "targetWord": "lait",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Ei",
+      "targetWord": "œuf",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fleisch",
+      "targetWord": "viande",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fisch",
+      "targetWord": "poisson",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Huhn",
+      "targetWord": "poulet",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Reis",
+      "targetWord": "riz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Bohnen",
+      "targetWord": "haricots",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Kartoffeln",
+      "targetWord": "pommes de terre",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Apfel",
+      "targetWord": "pomme",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Banane",
+      "targetWord": "banane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Orange",
+      "targetWord": "orange",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Traube",
+      "targetWord": "raisin",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Wassermelone",
+      "targetWord": "pastèque",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Mutter",
+      "targetWord": "mère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Vater",
+      "targetWord": "père",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Sohn",
+      "targetWord": "fils",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Tochter",
+      "targetWord": "fille",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Bruder",
+      "targetWord": "frère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Schwester",
+      "targetWord": "sœur",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Großvater",
+      "targetWord": "grand-père",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Großmutter",
+      "targetWord": "grand-mère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Onkel",
+      "targetWord": "oncle",
+      "category": "family"
+    },
+    {
+      "sourceWord": "Tante",
+      "targetWord": "tante",
+      "category": "family"
+    },
+    {
+      "sourceWord": "rot",
+      "targetWord": "rouge",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "blau",
+      "targetWord": "bleu",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "grün",
+      "targetWord": "vert",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "gelb",
+      "targetWord": "jaune",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "orange",
+      "targetWord": "orange",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "lila",
+      "targetWord": "violet",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "rosa",
+      "targetWord": "rose",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "schwarz",
+      "targetWord": "noir",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "weiß",
+      "targetWord": "blanc",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "grau",
+      "targetWord": "gris",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "eins",
+      "targetWord": "un",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "zwei",
+      "targetWord": "deux",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "drei",
+      "targetWord": "trois",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "vier",
+      "targetWord": "quatre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "fünf",
+      "targetWord": "cinq",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sechs",
+      "targetWord": "six",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sieben",
+      "targetWord": "sept",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "acht",
+      "targetWord": "huit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "neun",
+      "targetWord": "neuf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "zehn",
+      "targetWord": "dix",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Hallo",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Morgen",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Tag",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Guten Abend",
+      "targetWord": "Bonsoir / Bonne nuit",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Auf Wiedersehen",
+      "targetWord": "Au revoir",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bis später",
+      "targetWord": "À plus tard",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bitte",
+      "targetWord": "S'il vous plaît",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Danke",
+      "targetWord": "Merci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bitte schön",
+      "targetWord": "De rien",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Es tut mir leid",
+      "targetWord": "Je suis désolé(e)",
+      "category": "phrases"
+    }
+  ]
+}

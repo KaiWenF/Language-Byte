@@ -1,0 +1,152 @@
+{
+  "source": "ht",
+  "target": "ko",
+  "name": {
+    "source": "Haitian Creole",
+    "target": "Korean"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ht_ko",
+  "pairs": [
+    {
+      "sourceWord": "Bonjou",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonswa",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Orevwa",
+      "targetWord": "안녕히 가세요 (Annyeonghi gaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mèsi",
+      "targetWord": "감사합니다 (Gamsahamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Tanpri",
+      "targetWord": "주세요 (Juseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Padekwa",
+      "targetWord": "천만에요 (Cheonmaneyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mwen regrèt",
+      "targetWord": "죄송합니다 (Joesonghamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Eskize mwen",
+      "targetWord": "실례합니다 (Sillyehamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Diri",
+      "targetWord": "밥 (Bap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Nouil",
+      "targetWord": "국수 (Guksu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Te",
+      "targetWord": "차 (Cha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Dlo",
+      "targetWord": "물 (Mul)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Vyann",
+      "targetWord": "고기 (Gogi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Legim",
+      "targetWord": "야채 (Yachae)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwi",
+      "targetWord": "과일 (Gwail)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Soup",
+      "targetWord": "국 (Guk)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Pen",
+      "targetWord": "빵 (Ppang)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwomaj",
+      "targetWord": "치즈 (Chijeu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "En",
+      "targetWord": "하나 (Hana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "De",
+      "targetWord": "둘 (Dul)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Twa",
+      "targetWord": "셋 (Set)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Kat",
+      "targetWord": "넷 (Net)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Senk",
+      "targetWord": "다섯 (Daseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sis",
+      "targetWord": "여섯 (Yeoseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sèt",
+      "targetWord": "일곱 (Ilgop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Wit",
+      "targetWord": "여덟 (Yeodeol)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Nèf",
+      "targetWord": "아홉 (Ahop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Dis",
+      "targetWord": "열 (Yeol)",
+      "category": "numbers"
+    }
+  ]
+}

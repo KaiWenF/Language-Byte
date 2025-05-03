@@ -1,0 +1,152 @@
+{
+  "source": "ht",
+  "target": "en",
+  "name": {
+    "source": "Haitian Creole",
+    "target": "English"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ht_en",
+  "pairs": [
+    {
+      "sourceWord": "Bonjou",
+      "targetWord": "Hello",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonswa",
+      "targetWord": "Good evening",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Orevwa",
+      "targetWord": "Goodbye",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mèsi",
+      "targetWord": "Thank you",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Tanpri",
+      "targetWord": "Please",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Padekwa",
+      "targetWord": "You're welcome",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mwen regrèt",
+      "targetWord": "I'm sorry",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Eskize mwen",
+      "targetWord": "Excuse me",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Diri",
+      "targetWord": "Rice",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Nouil",
+      "targetWord": "Noodles",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Te",
+      "targetWord": "Tea",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Dlo",
+      "targetWord": "Water",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Vyann",
+      "targetWord": "Meat",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Legim",
+      "targetWord": "Vegetable",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwi",
+      "targetWord": "Fruit",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Soup",
+      "targetWord": "Soup",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Pen",
+      "targetWord": "Bread",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwomaj",
+      "targetWord": "Cheese",
+      "category": "food"
+    },
+    {
+      "sourceWord": "En",
+      "targetWord": "One",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "De",
+      "targetWord": "Two",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Twa",
+      "targetWord": "Three",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Kat",
+      "targetWord": "Four",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Senk",
+      "targetWord": "Five",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sis",
+      "targetWord": "Six",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sèt",
+      "targetWord": "Seven",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Wit",
+      "targetWord": "Eight",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Nèf",
+      "targetWord": "Nine",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Dis",
+      "targetWord": "Ten",
+      "category": "numbers"
+    }
+  ]
+}

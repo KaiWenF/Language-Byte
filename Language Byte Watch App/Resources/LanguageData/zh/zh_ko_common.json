@@ -1,0 +1,152 @@
+{
+  "source": "zh",
+  "target": "ko",
+  "name": {
+    "source": "Chinese",
+    "target": "Korean"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_zh_ko",
+  "pairs": [
+    {
+      "sourceWord": "你好",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "早上好",
+      "targetWord": "좋은 아침 (Joeun achim)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "晚上好",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "再见",
+      "targetWord": "안녕히 가세요 (Annyeonghi gaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "谢谢",
+      "targetWord": "감사합니다 (Gamsahamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "请",
+      "targetWord": "주세요 (Juseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "不客气",
+      "targetWord": "천만에요 (Cheonmaneyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "对不起",
+      "targetWord": "죄송합니다 (Joesonghamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "打扰一下",
+      "targetWord": "실례합니다 (Sillyehamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "米饭",
+      "targetWord": "밥 (Bap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面条",
+      "targetWord": "국수 (Guksu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "茶",
+      "targetWord": "차 (Cha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "물 (Mul)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "고기 (Gogi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "蔬菜",
+      "targetWord": "야채 (Yachae)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水果",
+      "targetWord": "과일 (Gwail)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "汤",
+      "targetWord": "국 (Guk)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面包",
+      "targetWord": "빵 (Ppang)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "하나 (Hana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "둘 (Dul)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "셋 (Set)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "넷 (Net)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "다섯 (Daseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "여섯 (Yeoseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "일곱 (Ilgop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "여덟 (Yeodeol)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "아홉 (Ahop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "열 (Yeol)",
+      "category": "numbers"
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "source": "en",
+  "target": "pt",
+  "name": {
+    "source": "English",
+    "target": "Portuguese"
+  },
+  "pairs": [
+    {
+      "sourceWord": "to eat",
+      "targetWord": "comer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to drink",
+      "targetWord": "beber",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to cook",
+      "targetWord": "cozinhar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to cut",
+      "targetWord": "cortar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to peel",
+      "targetWord": "descascar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to fry",
+      "targetWord": "fritar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to bake",
+      "targetWord": "assar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to mix",
+      "targetWord": "misturar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to taste",
+      "targetWord": "provar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to season",
+      "targetWord": "temperar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to buy",
+      "targetWord": "comprar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to sell",
+      "targetWord": "vender",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to prepare",
+      "targetWord": "preparar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to wash",
+      "targetWord": "lavar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to change",
+      "targetWord": "cambiar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to serve",
+      "targetWord": "servir",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to do",
+      "targetWord": "hacer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to clean",
+      "targetWord": "limpiar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to help",
+      "targetWord": "ayudar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "to need",
+      "targetWord": "necesitar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "bread",
+      "targetWord": "pão",
+      "category": "food"
+    },
+    {
+      "sourceWord": "cheese",
+      "targetWord": "queijo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "milk",
+      "targetWord": "leite",
+      "category": "food"
+    },
+    {
+      "sourceWord": "egg",
+      "targetWord": "ovo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "meat",
+      "targetWord": "carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fish",
+      "targetWord": "peixe",
+      "category": "food"
+    },
+    {
+      "sourceWord": "chicken",
+      "targetWord": "frango",
+      "category": "food"
+    },
+    {
+      "sourceWord": "rice",
+      "targetWord": "arroz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "beans",
+      "targetWord": "feijão",
+      "category": "food"
+    },
+    {
+      "sourceWord": "potatoes",
+      "targetWord": "batatas",
+      "category": "food"
+    },
+    {
+      "sourceWord": "strawberries",
+      "targetWord": "fresas",
+      "category": "food"
+    },
+    {
+      "sourceWord": "apple",
+      "targetWord": "manzana",
+      "category": "food"
+    },
+    {
+      "sourceWord": "banana",
+      "targetWord": "plátano",
+      "category": "food"
+    },
+    {
+      "sourceWord": "orange",
+      "targetWord": "laranja",
+      "category": "food"
+    },
+    {
+      "sourceWord": "grape",
+      "targetWord": "uva",
+      "category": "food"
+    },
+    {
+      "sourceWord": "watermelon",
+      "targetWord": "sandía",
+      "category": "food"
+    },
+    {
+      "sourceWord": "lemon",
+      "targetWord": "limón",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carrot",
+      "targetWord": "zanahoria",
+      "category": "food"
+    },
+    {
+      "sourceWord": "lettuce",
+      "targetWord": "lechuga",
+      "category": "food"
+    },
+    {
+      "sourceWord": "tomato",
+      "targetWord": "tomate",
+      "category": "food"
+    },
+    {
+      "sourceWord": "mother",
+      "targetWord": "mãe",
+      "category": "family"
+    },
+    {
+      "sourceWord": "father",
+      "targetWord": "pai",
+      "category": "family"
+    },
+    {
+      "sourceWord": "son",
+      "targetWord": "filho",
+      "category": "family"
+    },
+    {
+      "sourceWord": "daughter",
+      "targetWord": "filha",
+      "category": "family"
+    },
+    {
+      "sourceWord": "brother",
+      "targetWord": "irmão",
+      "category": "family"
+    },
+    {
+      "sourceWord": "sister",
+      "targetWord": "irmã",
+      "category": "family"
+    },
+    {
+      "sourceWord": "grandfather",
+      "targetWord": "avô",
+      "category": "family"
+    },
+    {
+      "sourceWord": "grandmother",
+      "targetWord": "avó",
+      "category": "family"
+    },
+    {
+      "sourceWord": "uncle",
+      "targetWord": "tio",
+      "category": "family"
+    },
+    {
+      "sourceWord": "aunt",
+      "targetWord": "tia",
+      "category": "family"
+    },
+    {
+      "sourceWord": "cousin (male)",
+      "targetWord": "primo",
+      "category": "family"
+    },
+    {
+      "sourceWord": "cousin (female)",
+      "targetWord": "prima",
+      "category": "family"
+    },
+    {
+      "sourceWord": "grandson",
+      "targetWord": "nieto",
+      "category": "family"
+    },
+    {
+      "sourceWord": "granddaughter",
+      "targetWord": "nieta",
+      "category": "family"
+    },
+    {
+      "sourceWord": "husband",
+      "targetWord": "esposo",
+      "category": "family"
+    },
+    {
+      "sourceWord": "wife",
+      "targetWord": "esposa",
+      "category": "family"
+    },
+    {
+      "sourceWord": "father-in-law",
+      "targetWord": "suegro",
+      "category": "family"
+    },
+    {
+      "sourceWord": "mother-in-law",
+      "targetWord": "suegra",
+      "category": "family"
+    },
+    {
+      "sourceWord": "brother-in-law",
+      "targetWord": "cuñado",
+      "category": "family"
+    },
+    {
+      "sourceWord": "sister-in-law",
+      "targetWord": "cuñada",
+      "category": "family"
+    },
+    {
+      "sourceWord": "rojo",
+      "targetWord": "vermelho",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "azul",
+      "targetWord": "azul",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "verde",
+      "targetWord": "verde",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "amarelo",
+      "targetWord": "amarelo",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "laranja",
+      "targetWord": "laranja",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "roxo",
+      "targetWord": "roxo",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "rosa",
+      "targetWord": "rosa",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "preto",
+      "targetWord": "preto",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "branco",
+      "targetWord": "branco",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "cinza",
+      "targetWord": "cinza",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "marrón",
+      "targetWord": "marrón",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "turquesa",
+      "targetWord": "turquesa",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "celeste",
+      "targetWord": "celeste",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "dorado",
+      "targetWord": "dorado",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "plateado",
+      "targetWord": "plateado",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "um",
+      "targetWord": "um",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dois",
+      "targetWord": "dois",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "três",
+      "targetWord": "três",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quatro",
+      "targetWord": "quatro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "cinco",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "seis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sete",
+      "targetWord": "sete",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "oitenta",
+      "targetWord": "oito",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nove",
+      "targetWord": "nove",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dez",
+      "targetWord": "dez",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Olá",
+      "targetWord": "Hola",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bom dia",
+      "targetWord": "Buenos días",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Boa tarde",
+      "targetWord": "Buenas tardes",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Boa noite",
+      "targetWord": "Buenas noches",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Adeus",
+      "targetWord": "Adiós",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Hasta luego",
+      "targetWord": "See you later",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Por favor",
+      "targetWord": "Por favor",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Obrigado",
+      "targetWord": "Gracias",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "De nada",
+      "targetWord": "De nada",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Sinto muito",
+      "targetWord": "Lo siento",
+      "category": "phrases"
+    }
+  ]
+}

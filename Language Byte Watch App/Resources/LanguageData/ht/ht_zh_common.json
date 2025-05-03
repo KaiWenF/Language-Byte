@@ -1,0 +1,152 @@
+{
+  "source": "ht",
+  "target": "zh",
+  "name": {
+    "source": "Haitian Creole",
+    "target": "Chinese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ht_zh",
+  "pairs": [
+    {
+      "sourceWord": "Bonjou",
+      "targetWord": "你好 (Nǐ hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonswa",
+      "targetWord": "晚上好 (Wǎnshang hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Orevwa",
+      "targetWord": "再见 (Zàijiàn)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mèsi",
+      "targetWord": "谢谢 (Xièxiè)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Tanpri",
+      "targetWord": "请 (Qǐng)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Padekwa",
+      "targetWord": "不客气 (Bù kèqì)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mwen regrèt",
+      "targetWord": "对不起 (Duìbùqǐ)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Eskize mwen",
+      "targetWord": "打扰一下 (Dǎrǎo yīxià)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Diri",
+      "targetWord": "米饭 (Mǐfàn)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Nouil",
+      "targetWord": "面条 (Miàntiáo)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Te",
+      "targetWord": "茶 (Chá)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Dlo",
+      "targetWord": "水 (Shuǐ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Vyann",
+      "targetWord": "肉 (Ròu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Legim",
+      "targetWord": "蔬菜 (Shūcài)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwi",
+      "targetWord": "水果 (Shuǐguǒ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Soup",
+      "targetWord": "汤 (Tāng)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Pen",
+      "targetWord": "面包 (Miànbāo)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwomaj",
+      "targetWord": "奶酪 (Nǎilào)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "En",
+      "targetWord": "一 (Yī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "De",
+      "targetWord": "二 (Èr)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Twa",
+      "targetWord": "三 (Sān)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Kat",
+      "targetWord": "四 (Sì)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Senk",
+      "targetWord": "五 (Wǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sis",
+      "targetWord": "六 (Liù)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sèt",
+      "targetWord": "七 (Qī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Wit",
+      "targetWord": "八 (Bā)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Nèf",
+      "targetWord": "九 (Jiǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Dis",
+      "targetWord": "十 (Shí)",
+      "category": "numbers"
+    }
+  ]
+}

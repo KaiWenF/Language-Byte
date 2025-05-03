@@ -1,0 +1,152 @@
+{
+  "source": "zh",
+  "target": "it",
+  "name": {
+    "source": "Chinese",
+    "target": "Italian"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_zh_it",
+  "pairs": [
+    {
+      "sourceWord": "你好",
+      "targetWord": "Ciao",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "早上好",
+      "targetWord": "Buongiorno",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "晚上好",
+      "targetWord": "Buonasera",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "再见",
+      "targetWord": "Arrivederci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "谢谢",
+      "targetWord": "Grazie",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "请",
+      "targetWord": "Per favore",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "不客气",
+      "targetWord": "Prego",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "对不起",
+      "targetWord": "Mi dispiace",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "打扰一下",
+      "targetWord": "Scusi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "米饭",
+      "targetWord": "Riso",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面条",
+      "targetWord": "Pasta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "茶",
+      "targetWord": "Tè",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "Acqua",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "Carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "蔬菜",
+      "targetWord": "Verdure",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水果",
+      "targetWord": "Frutta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "汤",
+      "targetWord": "Zuppa",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面包",
+      "targetWord": "Pane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "Uno",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "Due",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "Tre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "Quattro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "Cinque",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "Sei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "Sette",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "Otto",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "Nove",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "Dieci",
+      "category": "numbers"
+    }
+  ]
+}

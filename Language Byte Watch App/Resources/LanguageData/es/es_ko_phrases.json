@@ -1,0 +1,162 @@
+{
+  "source": "es",
+  "target": "ko",
+  "name": {
+    "source": "Spanish",
+    "target": "Korean"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_es_ko",
+  "pairs": [
+    {
+      "sourceWord": "Hola",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenos días",
+      "targetWord": "좋은 아침 (Joeun achim)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenas tardes",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buenas noches",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Adiós",
+      "targetWord": "안녕히 가세요 (Annyeonghi gaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Gracias",
+      "targetWord": "감사합니다 (Gamsahamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Por favor",
+      "targetWord": "주세요 (Juseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "De nada",
+      "targetWord": "천만에요 (Cheonmaneyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Lo siento",
+      "targetWord": "죄송합니다 (Joesonghamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Disculpe",
+      "targetWord": "실례합니다 (Sillyehamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "밥 (Bap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fideos",
+      "targetWord": "국수 (Guksu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "té",
+      "targetWord": "차 (Cha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "agua",
+      "targetWord": "물 (Mul)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "고기 (Gogi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "vegetal",
+      "targetWord": "야채 (Yachae)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fruta",
+      "targetWord": "과일 (Gwail)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "kimchi",
+      "targetWord": "김치 (Kimchi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "bibimbap",
+      "targetWord": "비빔밥 (Bibimbap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "sopa",
+      "targetWord": "국 (Guk)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "uno",
+      "targetWord": "하나 (Hana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dos",
+      "targetWord": "둘 (Dul)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "tres",
+      "targetWord": "셋 (Set)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cuatro",
+      "targetWord": "넷 (Net)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "다섯 (Daseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "여섯 (Yeoseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "siete",
+      "targetWord": "일곱 (Ilgop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "ocho",
+      "targetWord": "여덟 (Yeodeol)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nueve",
+      "targetWord": "아홉 (Ahop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "diez",
+      "targetWord": "열 (Yeol)",
+      "category": "numbers"
+    }
+  ]
+}

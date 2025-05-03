@@ -1,0 +1,207 @@
+{
+  "source": "it",
+  "target": "fr",
+  "name": {
+    "source": "Italian",
+    "target": "French"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_it_fr",
+  "pairs": [
+    {
+      "sourceWord": "mangiare",
+      "targetWord": "manger",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "bere",
+      "targetWord": "boire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cucinare",
+      "targetWord": "cuisiner",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "tagliare",
+      "targetWord": "couper",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pelare",
+      "targetWord": "peler",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "friggere",
+      "targetWord": "frire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cuocere al forno",
+      "targetWord": "cuire au four",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "mescolare",
+      "targetWord": "mélanger",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "assaggiare",
+      "targetWord": "goûter",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "condire",
+      "targetWord": "assaisonner",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "comprare",
+      "targetWord": "acheter",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "vendere",
+      "targetWord": "vendre",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "preparare",
+      "targetWord": "préparer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "lavare",
+      "targetWord": "laver",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cambiare",
+      "targetWord": "changer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pane",
+      "targetWord": "pain",
+      "category": "food"
+    },
+    {
+      "sourceWord": "formaggio",
+      "targetWord": "fromage",
+      "category": "food"
+    },
+    {
+      "sourceWord": "latte",
+      "targetWord": "lait",
+      "category": "food"
+    },
+    {
+      "sourceWord": "uovo",
+      "targetWord": "œuf",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "viande",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pesce",
+      "targetWord": "poisson",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pollo",
+      "targetWord": "poulet",
+      "category": "food"
+    },
+    {
+      "sourceWord": "riso",
+      "targetWord": "riz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fagioli",
+      "targetWord": "haricots",
+      "category": "food"
+    },
+    {
+      "sourceWord": "patate",
+      "targetWord": "pommes de terre",
+      "category": "food"
+    },
+    {
+      "sourceWord": "mela",
+      "targetWord": "pomme",
+      "category": "food"
+    },
+    {
+      "sourceWord": "banana",
+      "targetWord": "banane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arancia",
+      "targetWord": "orange",
+      "category": "food"
+    },
+    {
+      "sourceWord": "uva",
+      "targetWord": "raisin",
+      "category": "food"
+    },
+    {
+      "sourceWord": "anguria",
+      "targetWord": "pastèque",
+      "category": "food"
+    },
+    {
+      "sourceWord": "madre",
+      "targetWord": "mère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "padre",
+      "targetWord": "père",
+      "category": "family"
+    },
+    {
+      "sourceWord": "figlio",
+      "targetWord": "fils",
+      "category": "family"
+    },
+    {
+      "sourceWord": "figlia",
+      "targetWord": "fille",
+      "category": "family"
+    },
+    {
+      "sourceWord": "fratello",
+      "targetWord": "frère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "sorella",
+      "targetWord": "sœur",
+      "category": "family"
+    },
+    {
+      "sourceWord": "nonno",
+      "targetWord": "grand-père",
+      "category": "family"
+    },
+    {
+      "sourceWord": "nonna",
+      "targetWord": "grand-mère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "zio",
+      "targetWord": "oncle",
+      "category": "family"
+    }
+  ]
+}

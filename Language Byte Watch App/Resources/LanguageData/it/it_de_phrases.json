@@ -1,0 +1,162 @@
+{
+  "source": "it",
+  "target": "de",
+  "name": {
+    "source": "Italian",
+    "target": "German"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_it_de",
+  "pairs": [
+    {
+      "sourceWord": "Ciao",
+      "targetWord": "Hallo",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buongiorno",
+      "targetWord": "Guten Morgen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buon pomeriggio",
+      "targetWord": "Guten Tag",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Buonasera",
+      "targetWord": "Guten Abend",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Arrivederci",
+      "targetWord": "Auf Wiedersehen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Per favore",
+      "targetWord": "Bitte",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Grazie",
+      "targetWord": "Danke",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Prego",
+      "targetWord": "Bitte schön",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mi dispiace",
+      "targetWord": "Es tut mir leid",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Scusa",
+      "targetWord": "Entschuldigung",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "pane",
+      "targetWord": "Brot",
+      "category": "food"
+    },
+    {
+      "sourceWord": "formaggio",
+      "targetWord": "Käse",
+      "category": "food"
+    },
+    {
+      "sourceWord": "latte",
+      "targetWord": "Milch",
+      "category": "food"
+    },
+    {
+      "sourceWord": "acqua",
+      "targetWord": "Wasser",
+      "category": "food"
+    },
+    {
+      "sourceWord": "caffè",
+      "targetWord": "Kaffee",
+      "category": "food"
+    },
+    {
+      "sourceWord": "vino",
+      "targetWord": "Wein",
+      "category": "food"
+    },
+    {
+      "sourceWord": "mela",
+      "targetWord": "Apfel",
+      "category": "food"
+    },
+    {
+      "sourceWord": "patata",
+      "targetWord": "Kartoffel",
+      "category": "food"
+    },
+    {
+      "sourceWord": "salsiccia",
+      "targetWord": "Wurst",
+      "category": "food"
+    },
+    {
+      "sourceWord": "cioccolato",
+      "targetWord": "Schokolade",
+      "category": "food"
+    },
+    {
+      "sourceWord": "uno",
+      "targetWord": "eins",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "due",
+      "targetWord": "zwei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "tre",
+      "targetWord": "drei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quattro",
+      "targetWord": "vier",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinque",
+      "targetWord": "fünf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sei",
+      "targetWord": "sechs",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sette",
+      "targetWord": "sieben",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "otto",
+      "targetWord": "acht",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nove",
+      "targetWord": "neun",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dieci",
+      "targetWord": "zehn",
+      "category": "numbers"
+    }
+  ]
+}

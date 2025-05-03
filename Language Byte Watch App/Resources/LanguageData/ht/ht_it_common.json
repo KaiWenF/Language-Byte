@@ -1,0 +1,152 @@
+{
+  "source": "ht",
+  "target": "it",
+  "name": {
+    "source": "Haitian Creole",
+    "target": "Italian"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ht_it",
+  "pairs": [
+    {
+      "sourceWord": "Bonjou",
+      "targetWord": "Ciao",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonswa",
+      "targetWord": "Buonasera",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Orevwa",
+      "targetWord": "Arrivederci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mèsi",
+      "targetWord": "Grazie",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Tanpri",
+      "targetWord": "Per favore",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Padekwa",
+      "targetWord": "Prego",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mwen regrèt",
+      "targetWord": "Mi dispiace",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Eskize mwen",
+      "targetWord": "Scusi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Diri",
+      "targetWord": "Riso",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Nouil",
+      "targetWord": "Pasta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Te",
+      "targetWord": "Tè",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Dlo",
+      "targetWord": "Acqua",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Vyann",
+      "targetWord": "Carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Legim",
+      "targetWord": "Verdura",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwi",
+      "targetWord": "Frutta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Soup",
+      "targetWord": "Zuppa",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Pen",
+      "targetWord": "Pane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwomaj",
+      "targetWord": "Formaggio",
+      "category": "food"
+    },
+    {
+      "sourceWord": "En",
+      "targetWord": "Uno",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "De",
+      "targetWord": "Due",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Twa",
+      "targetWord": "Tre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Kat",
+      "targetWord": "Quattro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Senk",
+      "targetWord": "Cinque",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sis",
+      "targetWord": "Sei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sèt",
+      "targetWord": "Sette",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Wit",
+      "targetWord": "Otto",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Nèf",
+      "targetWord": "Nove",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Dis",
+      "targetWord": "Dieci",
+      "category": "numbers"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "source": "ko",
+  "target": "ja",
+  "name": {
+    "source": "Korean",
+    "target": "Japanese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ko_ja",
+  "pairs": [
+    {
+      "sourceWord": "안녕하세요",
+      "targetWord": "こんにちは (Konnichiwa)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "좋은 아침",
+      "targetWord": "おはようございます (Ohayou gozaimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "안녕히 가세요",
+      "targetWord": "さようなら (Sayounara)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "감사합니다",
+      "targetWord": "ありがとうございます (Arigatou gozaimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "주세요",
+      "targetWord": "お願いします (Onegaishimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "천만에요",
+      "targetWord": "どういたしまして (Douitashimashite)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "죄송합니다",
+      "targetWord": "すみません (Sumimasen)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "실례합니다",
+      "targetWord": "失礼します (Shitsurei shimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "밥",
+      "targetWord": "ご飯 (Gohan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국수",
+      "targetWord": "麺 (Men)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "차",
+      "targetWord": "お茶 (Ocha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "물",
+      "targetWord": "水 (Mizu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "고기",
+      "targetWord": "肉 (Niku)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "야채",
+      "targetWord": "野菜 (Yasai)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "과일",
+      "targetWord": "果物 (Kudamono)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "김치",
+      "targetWord": "キムチ (Kimuchi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "비빔밥",
+      "targetWord": "ビビンバ (Bibinba)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국",
+      "targetWord": "スープ (Sūpu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "하나",
+      "targetWord": "一 (Ichi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "둘",
+      "targetWord": "二 (Ni)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "셋",
+      "targetWord": "三 (San)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "넷",
+      "targetWord": "四 (Shi/Yon)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "다섯",
+      "targetWord": "五 (Go)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여섯",
+      "targetWord": "六 (Roku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "일곱",
+      "targetWord": "七 (Shichi/Nana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여덟",
+      "targetWord": "八 (Hachi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "아홉",
+      "targetWord": "九 (Kyuu/Ku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "열",
+      "targetWord": "十 (Juu)",
+      "category": "numbers"
+    }
+  ]
+}

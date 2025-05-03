@@ -1,0 +1,162 @@
+{
+  "source": "es",
+  "target": "zh",
+  "name": {
+    "source": "Spanish",
+    "target": "Chinese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_es_zh",
+  "pairs": [
+    {
+      "sourceWord": "你好 (Nǐ hǎo)",
+      "targetWord": "你好 (Nǐ hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "早上好 (Zǎoshang hǎo)",
+      "targetWord": "早上好 (Zǎoshang hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "下午好 (Xiàwǔ hǎo)",
+      "targetWord": "下午好 (Xiàwǔ hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "晚上好 (Wǎnshang hǎo)",
+      "targetWord": "晚上好 (Wǎnshang hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "再见 (Zàijiàn)",
+      "targetWord": "再见 (Zàijiàn)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "谢谢 (Xièxiè)",
+      "targetWord": "谢谢 (Xièxiè)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "请 (Qǐng)",
+      "targetWord": "请 (Qǐng)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "不客气 (Bù kèqì)",
+      "targetWord": "不客气 (Bù kèqì)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "对不起 (Duìbùqǐ)",
+      "targetWord": "对不起 (Duìbùqǐ)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "打扰一下 (Dǎrǎo yīxià)",
+      "targetWord": "打扰一下 (Dǎrǎo yīxià)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "米饭 (Mǐfàn)",
+      "targetWord": "米饭 (Mǐfàn)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面条 (Miàntiáo)",
+      "targetWord": "面条 (Miàntiáo)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "茶 (Chá)",
+      "targetWord": "茶 (Chá)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水 (Shuǐ)",
+      "targetWord": "水 (Shuǐ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉 (Ròu)",
+      "targetWord": "肉 (Ròu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "蔬菜 (Shūcài)",
+      "targetWord": "蔬菜 (Shūcài)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水果 (Shuǐguǒ)",
+      "targetWord": "水果 (Shuǐguǒ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "饺子 (Jiǎozi)",
+      "targetWord": "饺子 (Jiǎozi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "豆腐 (Dòufu)",
+      "targetWord": "豆腐 (Dòufu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "汤 (Tāng)",
+      "targetWord": "汤 (Tāng)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "一 (Yī)",
+      "targetWord": "一 (Yī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二 (Èr)",
+      "targetWord": "二 (Èr)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三 (Sān)",
+      "targetWord": "三 (Sān)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四 (Sì)",
+      "targetWord": "四 (Sì)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五 (Wǔ)",
+      "targetWord": "五 (Wǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六 (Liù)",
+      "targetWord": "六 (Liù)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七 (Qī)",
+      "targetWord": "七 (Qī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八 (Bā)",
+      "targetWord": "八 (Bā)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九 (Jiǔ)",
+      "targetWord": "九 (Jiǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十 (Shí)",
+      "targetWord": "十 (Shí)",
+      "category": "numbers"
+    }
+  ]
+}

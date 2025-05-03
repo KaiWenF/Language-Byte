@@ -1,0 +1,152 @@
+{
+  "source": "ko",
+  "target": "zh",
+  "name": {
+    "source": "Korean",
+    "target": "Chinese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ko_zh",
+  "pairs": [
+    {
+      "sourceWord": "안녕하세요",
+      "targetWord": "你好 (Nǐ hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "좋은 아침",
+      "targetWord": "早上好 (Zǎoshang hǎo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "안녕히 가세요",
+      "targetWord": "再见 (Zàijiàn)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "감사합니다",
+      "targetWord": "谢谢 (Xièxiè)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "주세요",
+      "targetWord": "请 (Qǐng)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "천만에요",
+      "targetWord": "不客气 (Bù kèqì)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "죄송합니다",
+      "targetWord": "对不起 (Duìbùqǐ)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "실례합니다",
+      "targetWord": "打扰一下 (Dǎrǎo yīxià)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "밥",
+      "targetWord": "米饭 (Mǐfàn)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국수",
+      "targetWord": "面条 (Miàntiáo)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "차",
+      "targetWord": "茶 (Chá)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "물",
+      "targetWord": "水 (Shuǐ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "고기",
+      "targetWord": "肉 (Ròu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "야채",
+      "targetWord": "蔬菜 (Shūcài)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "과일",
+      "targetWord": "水果 (Shuǐguǒ)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "김치",
+      "targetWord": "泡菜 (Pàocài)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "비빔밥",
+      "targetWord": "拌饭 (Bànfàn)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국",
+      "targetWord": "汤 (Tāng)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "하나",
+      "targetWord": "一 (Yī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "둘",
+      "targetWord": "二 (Èr)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "셋",
+      "targetWord": "三 (Sān)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "넷",
+      "targetWord": "四 (Sì)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "다섯",
+      "targetWord": "五 (Wǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여섯",
+      "targetWord": "六 (Liù)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "일곱",
+      "targetWord": "七 (Qī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여덟",
+      "targetWord": "八 (Bā)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "아홉",
+      "targetWord": "九 (Jiǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "열",
+      "targetWord": "十 (Shí)",
+      "category": "numbers"
+    }
+  ]
+}

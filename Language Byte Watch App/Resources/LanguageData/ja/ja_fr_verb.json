@@ -1,0 +1,362 @@
+{
+  "source": "ja",
+  "target": "fr",
+  "name": {
+    "source": "Japanese",
+    "target": "French"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ja_fr",
+  "pairs": [
+    {
+      "sourceWord": "食べる",
+      "targetWord": "manger",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "飲む",
+      "targetWord": "boire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "料理する",
+      "targetWord": "cuisiner",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "切る",
+      "targetWord": "couper",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "皮をむく",
+      "targetWord": "peler",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "揚げる",
+      "targetWord": "frire",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "焼く",
+      "targetWord": "cuire au four",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "混ぜる",
+      "targetWord": "mélanger",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "味わう",
+      "targetWord": "goûter",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "味付けする",
+      "targetWord": "assaisonner",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "買う",
+      "targetWord": "acheter",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "売る",
+      "targetWord": "vendre",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "準備する",
+      "targetWord": "préparer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "洗う",
+      "targetWord": "laver",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "変える",
+      "targetWord": "changer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "パン",
+      "targetWord": "pain",
+      "category": "food"
+    },
+    {
+      "sourceWord": "チーズ",
+      "targetWord": "fromage",
+      "category": "food"
+    },
+    {
+      "sourceWord": "牛乳",
+      "targetWord": "lait",
+      "category": "food"
+    },
+    {
+      "sourceWord": "卵",
+      "targetWord": "œuf",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "viande",
+      "category": "food"
+    },
+    {
+      "sourceWord": "魚",
+      "targetWord": "poisson",
+      "category": "food"
+    },
+    {
+      "sourceWord": "鶏肉",
+      "targetWord": "poulet",
+      "category": "food"
+    },
+    {
+      "sourceWord": "米",
+      "targetWord": "riz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "豆",
+      "targetWord": "haricots",
+      "category": "food"
+    },
+    {
+      "sourceWord": "じゃがいも",
+      "targetWord": "pommes de terre",
+      "category": "food"
+    },
+    {
+      "sourceWord": "りんご",
+      "targetWord": "pomme",
+      "category": "food"
+    },
+    {
+      "sourceWord": "バナナ",
+      "targetWord": "banane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "オレンジ",
+      "targetWord": "orange",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ぶどう",
+      "targetWord": "raisin",
+      "category": "food"
+    },
+    {
+      "sourceWord": "スイカ",
+      "targetWord": "pastèque",
+      "category": "food"
+    },
+    {
+      "sourceWord": "母",
+      "targetWord": "mère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "父",
+      "targetWord": "père",
+      "category": "family"
+    },
+    {
+      "sourceWord": "息子",
+      "targetWord": "fils",
+      "category": "family"
+    },
+    {
+      "sourceWord": "娘",
+      "targetWord": "fille",
+      "category": "family"
+    },
+    {
+      "sourceWord": "兄弟",
+      "targetWord": "frère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "姉妹",
+      "targetWord": "sœur",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖父",
+      "targetWord": "grand-père",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖母",
+      "targetWord": "grand-mère",
+      "category": "family"
+    },
+    {
+      "sourceWord": "叔父",
+      "targetWord": "oncle",
+      "category": "family"
+    },
+    {
+      "sourceWord": "叔母",
+      "targetWord": "tante",
+      "category": "family"
+    },
+    {
+      "sourceWord": "赤",
+      "targetWord": "rouge",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "青",
+      "targetWord": "bleu",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "緑",
+      "targetWord": "vert",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黄色",
+      "targetWord": "jaune",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "オレンジ",
+      "targetWord": "orange",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "紫",
+      "targetWord": "violet",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "ピンク",
+      "targetWord": "rose",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黒",
+      "targetWord": "noir",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "白",
+      "targetWord": "blanc",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "灰色",
+      "targetWord": "gris",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "un",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "deux",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "trois",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "quatre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "cinq",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "six",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "sept",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "huit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "neuf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "dix",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "こんにちは",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "おはようございます",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "こんにちは",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "こんばんは",
+      "targetWord": "Bonsoir / Bonne nuit",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "さようなら",
+      "targetWord": "Au revoir",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "またね",
+      "targetWord": "À plus tard",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "お願いします",
+      "targetWord": "S'il vous plaît",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "ありがとう",
+      "targetWord": "Merci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "どういたしまして",
+      "targetWord": "De rien",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "すみません",
+      "targetWord": "Je suis désolé(e)",
+      "category": "phrases"
+    }
+  ]
+}

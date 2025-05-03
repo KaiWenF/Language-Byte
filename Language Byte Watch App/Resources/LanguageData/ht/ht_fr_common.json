@@ -1,0 +1,152 @@
+{
+  "source": "ht",
+  "target": "fr",
+  "name": {
+    "source": "Haitian Creole",
+    "target": "French"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ht_fr",
+  "pairs": [
+    {
+      "sourceWord": "Bonjou",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonswa",
+      "targetWord": "Bonsoir",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Orevwa",
+      "targetWord": "Au revoir",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mèsi",
+      "targetWord": "Merci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Tanpri",
+      "targetWord": "S'il vous plaît",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Padekwa",
+      "targetWord": "Je vous en prie",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Mwen regrèt",
+      "targetWord": "Je suis désolé",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Eskize mwen",
+      "targetWord": "Excusez-moi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Diri",
+      "targetWord": "Riz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Nouil",
+      "targetWord": "Nouilles",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Te",
+      "targetWord": "Thé",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Dlo",
+      "targetWord": "Eau",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Vyann",
+      "targetWord": "Viande",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Legim",
+      "targetWord": "Légume",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwi",
+      "targetWord": "Fruit",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Soup",
+      "targetWord": "Soupe",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Pen",
+      "targetWord": "Pain",
+      "category": "food"
+    },
+    {
+      "sourceWord": "Fwomaj",
+      "targetWord": "Fromage",
+      "category": "food"
+    },
+    {
+      "sourceWord": "En",
+      "targetWord": "Un",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "De",
+      "targetWord": "Deux",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Twa",
+      "targetWord": "Trois",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Kat",
+      "targetWord": "Quatre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Senk",
+      "targetWord": "Cinq",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sis",
+      "targetWord": "Six",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Sèt",
+      "targetWord": "Sept",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Wit",
+      "targetWord": "Huit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Nèf",
+      "targetWord": "Neuf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "Dis",
+      "targetWord": "Dix",
+      "category": "numbers"
+    }
+  ]
+}

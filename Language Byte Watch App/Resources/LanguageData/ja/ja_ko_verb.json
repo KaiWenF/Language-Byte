@@ -1,0 +1,272 @@
+{
+  "source": "ja",
+  "target": "ko",
+  "name": {
+    "source": "Japanese",
+    "target": "Korean"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ja_ko",
+  "pairs": [
+    {
+      "sourceWord": "食べる",
+      "targetWord": "먹다 (Meokda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "飲む",
+      "targetWord": "마시다 (Masida)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "料理する",
+      "targetWord": "요리하다 (Yorihada)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "切る",
+      "targetWord": "자르다 (Jareuda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "読む",
+      "targetWord": "읽다 (Ikda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "書く",
+      "targetWord": "쓰다 (Sseuda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "話す",
+      "targetWord": "말하다 (Malhada)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "聞く",
+      "targetWord": "듣다 (Deutda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "見る",
+      "targetWord": "보다 (Boda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "行く",
+      "targetWord": "가다 (Gada)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "ご飯",
+      "targetWord": "밥 (Bap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "麺",
+      "targetWord": "국수 (Guksu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "お茶",
+      "targetWord": "차 (Cha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "물 (Mul)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "고기 (Gogi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "野菜",
+      "targetWord": "야채 (Yachae)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "果物",
+      "targetWord": "과일 (Gwail)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "キムチ",
+      "targetWord": "김치 (Kimchi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ビビンバ",
+      "targetWord": "비빔밥 (Bibimbap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "スープ",
+      "targetWord": "국 (Guk)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "母",
+      "targetWord": "어머니 (Eomeoni)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "父",
+      "targetWord": "아버지 (Abeoji)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "息子",
+      "targetWord": "아들 (Adeul)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "娘",
+      "targetWord": "딸 (Ttal)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "兄弟",
+      "targetWord": "형제 (Hyeongje)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "姉妹",
+      "targetWord": "자매 (Jamae)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖父",
+      "targetWord": "할아버지 (Harabeoji)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖母",
+      "targetWord": "할머니 (Halmeoni)",
+      "category": "family"
+    },
+    {
+      "sourceWord": "赤",
+      "targetWord": "빨간색 (Ppalganseok)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "青",
+      "targetWord": "파란색 (Paranseok)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黄色",
+      "targetWord": "노란색 (Noranseok)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "緑",
+      "targetWord": "초록색 (Chorokseok)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黒",
+      "targetWord": "검은색 (Geomenseok)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "白",
+      "targetWord": "흰색 (Huinseok)",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "하나 (Hana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "둘 (Dul)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "셋 (Set)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "넷 (Net)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "다섯 (Daseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "여섯 (Yeoseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "일곱 (Ilgop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "여덟 (Yeodeol)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "아홉 (Ahop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "열 (Yeol)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "こんにちは",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "おはようございます",
+      "targetWord": "좋은 아침이에요 (Joeun achimieyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "こんばんは",
+      "targetWord": "안녕하세요 (Annyeonghaseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "さようなら",
+      "targetWord": "안녕히 계세요 (Annyeonghi gyeseyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "お願いします",
+      "targetWord": "부탁합니다 (Butakhamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "ありがとう",
+      "targetWord": "감사합니다 (Gamsahamnida)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "どういたしまして",
+      "targetWord": "천만에요 (Cheonmaneyo)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "すみません",
+      "targetWord": "죄송합니다 (Joesonghamnida)",
+      "category": "phrases"
+    }
+  ]
+}

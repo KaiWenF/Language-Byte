@@ -1,0 +1,162 @@
+{
+  "source": "pt",
+  "target": "zh",
+  "name": {
+    "source": "Portuguese",
+    "target": "Chinese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_pt_zh",
+  "pairs": [
+    {
+      "sourceWord": "comer",
+      "targetWord": "吃 (Chī)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "beber",
+      "targetWord": "喝 (Hē)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cozinhar",
+      "targetWord": "做饭 (Zuò fàn)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cortar",
+      "targetWord": "切 (Qiē)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "descascar",
+      "targetWord": "剥皮 (Bō pí)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "fritar",
+      "targetWord": "炸 (Zhà)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "assar",
+      "targetWord": "烤 (Kǎo)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "misturar",
+      "targetWord": "混合 (Hùn hé)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "provar",
+      "targetWord": "尝 (Cháng)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "temperar",
+      "targetWord": "调味 (Tiáo wèi)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pão",
+      "targetWord": "面包 (Miàn bāo)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "queijo",
+      "targetWord": "奶酪 (Nǎi lào)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "leite",
+      "targetWord": "牛奶 (Niú nǎi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ovo",
+      "targetWord": "鸡蛋 (Jī dàn)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "肉 (Ròu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "peixe",
+      "targetWord": "鱼 (Yú)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "frango",
+      "targetWord": "鸡肉 (Jī ròu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "米饭 (Mǐ fàn)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "feijão",
+      "targetWord": "豆 (Dòu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "batatas",
+      "targetWord": "土豆 (Tǔ dòu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "um",
+      "targetWord": "一 (Yī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dois",
+      "targetWord": "二 (Èr)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "três",
+      "targetWord": "三 (Sān)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quatro",
+      "targetWord": "四 (Sì)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "五 (Wǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "六 (Liù)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sete",
+      "targetWord": "七 (Qī)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "oito",
+      "targetWord": "八 (Bā)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nove",
+      "targetWord": "九 (Jiǔ)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dez",
+      "targetWord": "十 (Shí)",
+      "category": "numbers"
+    }
+  ]
+}

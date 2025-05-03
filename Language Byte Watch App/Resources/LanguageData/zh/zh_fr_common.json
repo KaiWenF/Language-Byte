@@ -1,0 +1,152 @@
+{
+  "source": "zh",
+  "target": "fr",
+  "name": {
+    "source": "Chinese",
+    "target": "French"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_zh_fr",
+  "pairs": [
+    {
+      "sourceWord": "你好",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "早上好",
+      "targetWord": "Bonjour",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "晚上好",
+      "targetWord": "Bonsoir",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "再见",
+      "targetWord": "Au revoir",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "谢谢",
+      "targetWord": "Merci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "请",
+      "targetWord": "S'il vous plaît",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "不客气",
+      "targetWord": "Je vous en prie",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "对不起",
+      "targetWord": "Je suis désolé",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "打扰一下",
+      "targetWord": "Excusez-moi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "米饭",
+      "targetWord": "Riz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面条",
+      "targetWord": "Nouilles",
+      "category": "food"
+    },
+    {
+      "sourceWord": "茶",
+      "targetWord": "Thé",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "Eau",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "Viande",
+      "category": "food"
+    },
+    {
+      "sourceWord": "蔬菜",
+      "targetWord": "Légumes",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水果",
+      "targetWord": "Fruits",
+      "category": "food"
+    },
+    {
+      "sourceWord": "汤",
+      "targetWord": "Soupe",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面包",
+      "targetWord": "Pain",
+      "category": "food"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "Un",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "Deux",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "Trois",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "Quatre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "Cinq",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "Six",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "Sept",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "Huit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "Neuf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "Dix",
+      "category": "numbers"
+    }
+  ]
+}

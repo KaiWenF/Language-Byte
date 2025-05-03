@@ -1,0 +1,162 @@
+{
+  "source": "pt",
+  "target": "ht",
+  "name": {
+    "source": "Portuguese",
+    "target": "Haitian Creole"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_pt_ht",
+  "pairs": [
+    {
+      "sourceWord": "comer",
+      "targetWord": "manje",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "beber",
+      "targetWord": "bwè",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cozinhar",
+      "targetWord": "kwit",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cortar",
+      "targetWord": "koupe",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "descascar",
+      "targetWord": "kale",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "fritar",
+      "targetWord": "fri",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "assar",
+      "targetWord": "kwit nan fou",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "misturar",
+      "targetWord": "melanje",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "provar",
+      "targetWord": "goute",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "temperar",
+      "targetWord": "asezone",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pão",
+      "targetWord": "pen",
+      "category": "food"
+    },
+    {
+      "sourceWord": "queijo",
+      "targetWord": "fwomaj",
+      "category": "food"
+    },
+    {
+      "sourceWord": "leite",
+      "targetWord": "lèt",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ovo",
+      "targetWord": "ze",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "vyann",
+      "category": "food"
+    },
+    {
+      "sourceWord": "peixe",
+      "targetWord": "pwason",
+      "category": "food"
+    },
+    {
+      "sourceWord": "frango",
+      "targetWord": "poul",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "diri",
+      "category": "food"
+    },
+    {
+      "sourceWord": "feijão",
+      "targetWord": "pwa",
+      "category": "food"
+    },
+    {
+      "sourceWord": "batatas",
+      "targetWord": "pomdetè",
+      "category": "food"
+    },
+    {
+      "sourceWord": "um",
+      "targetWord": "en",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dois",
+      "targetWord": "de",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "três",
+      "targetWord": "twa",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quatro",
+      "targetWord": "kat",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "senk",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "sis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sete",
+      "targetWord": "sèt",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "oito",
+      "targetWord": "wit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nove",
+      "targetWord": "nèf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dez",
+      "targetWord": "dis",
+      "category": "numbers"
+    }
+  ]
+}

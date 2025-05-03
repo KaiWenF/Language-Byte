@@ -1,0 +1,272 @@
+{
+  "source": "ja",
+  "target": "ht",
+  "name": {
+    "source": "Japanese",
+    "target": "Haitian Creole"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ja_ht",
+  "pairs": [
+    {
+      "sourceWord": "食べる",
+      "targetWord": "manje",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "飲む",
+      "targetWord": "bwè",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "料理する",
+      "targetWord": "kwit",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "切る",
+      "targetWord": "koupe",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "買う",
+      "targetWord": "achte",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "売る",
+      "targetWord": "vann",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "洗う",
+      "targetWord": "lave",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "読む",
+      "targetWord": "li",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "書く",
+      "targetWord": "ekri",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "話す",
+      "targetWord": "pale",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "パン",
+      "targetWord": "pen",
+      "category": "food"
+    },
+    {
+      "sourceWord": "米",
+      "targetWord": "diri",
+      "category": "food"
+    },
+    {
+      "sourceWord": "豆",
+      "targetWord": "pwa",
+      "category": "food"
+    },
+    {
+      "sourceWord": "魚",
+      "targetWord": "pwason",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "vyann",
+      "category": "food"
+    },
+    {
+      "sourceWord": "鶏肉",
+      "targetWord": "poul",
+      "category": "food"
+    },
+    {
+      "sourceWord": "野菜",
+      "targetWord": "legim",
+      "category": "food"
+    },
+    {
+      "sourceWord": "果物",
+      "targetWord": "fwi",
+      "category": "food"
+    },
+    {
+      "sourceWord": "バナナ",
+      "targetWord": "bannann",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "dlo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "母",
+      "targetWord": "manman",
+      "category": "family"
+    },
+    {
+      "sourceWord": "父",
+      "targetWord": "papa",
+      "category": "family"
+    },
+    {
+      "sourceWord": "息子",
+      "targetWord": "pitit gason",
+      "category": "family"
+    },
+    {
+      "sourceWord": "娘",
+      "targetWord": "pitit fi",
+      "category": "family"
+    },
+    {
+      "sourceWord": "兄弟",
+      "targetWord": "frè",
+      "category": "family"
+    },
+    {
+      "sourceWord": "姉妹",
+      "targetWord": "sè",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖父",
+      "targetWord": "granpapa",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖母",
+      "targetWord": "granmè",
+      "category": "family"
+    },
+    {
+      "sourceWord": "赤",
+      "targetWord": "wouj",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "青",
+      "targetWord": "ble",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黄色",
+      "targetWord": "jòn",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "緑",
+      "targetWord": "vèt",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黒",
+      "targetWord": "nwa",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "白",
+      "targetWord": "blan",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "youn",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "de",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "twa",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "kat",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "senk",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "sis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "sèt",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "wit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "nèf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "dis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "こんにちは",
+      "targetWord": "Bonjou",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "おはようございます",
+      "targetWord": "Bonjou",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "こんばんは",
+      "targetWord": "Bonswa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "さようなら",
+      "targetWord": "Orevwa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "お願いします",
+      "targetWord": "Tanpri",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "ありがとう",
+      "targetWord": "Mèsi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "どういたしまして",
+      "targetWord": "Padekwa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "すみません",
+      "targetWord": "Eskize mwen",
+      "category": "phrases"
+    }
+  ]
+}

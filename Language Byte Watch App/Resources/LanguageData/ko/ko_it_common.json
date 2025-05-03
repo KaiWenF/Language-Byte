@@ -1,0 +1,152 @@
+{
+  "source": "ko",
+  "target": "it",
+  "name": {
+    "source": "Korean",
+    "target": "Italian"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ko_it",
+  "pairs": [
+    {
+      "sourceWord": "안녕하세요",
+      "targetWord": "Ciao",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "좋은 아침",
+      "targetWord": "Buongiorno",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "안녕히 가세요",
+      "targetWord": "Arrivederci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "감사합니다",
+      "targetWord": "Grazie",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "주세요",
+      "targetWord": "Per favore",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "천만에요",
+      "targetWord": "Prego",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "죄송합니다",
+      "targetWord": "Mi dispiace",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "실례합니다",
+      "targetWord": "Scusi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "밥",
+      "targetWord": "Riso",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국수",
+      "targetWord": "Pasta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "차",
+      "targetWord": "Tè",
+      "category": "food"
+    },
+    {
+      "sourceWord": "물",
+      "targetWord": "Acqua",
+      "category": "food"
+    },
+    {
+      "sourceWord": "고기",
+      "targetWord": "Carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "야채",
+      "targetWord": "Verdura",
+      "category": "food"
+    },
+    {
+      "sourceWord": "과일",
+      "targetWord": "Frutta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "김치",
+      "targetWord": "Kimchi",
+      "category": "food"
+    },
+    {
+      "sourceWord": "비빔밥",
+      "targetWord": "Bibimbap",
+      "category": "food"
+    },
+    {
+      "sourceWord": "국",
+      "targetWord": "Zuppa",
+      "category": "food"
+    },
+    {
+      "sourceWord": "하나",
+      "targetWord": "Uno",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "둘",
+      "targetWord": "Due",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "셋",
+      "targetWord": "Tre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "넷",
+      "targetWord": "Quattro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "다섯",
+      "targetWord": "Cinque",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여섯",
+      "targetWord": "Sei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "일곱",
+      "targetWord": "Sette",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "여덟",
+      "targetWord": "Otto",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "아홉",
+      "targetWord": "Nove",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "열",
+      "targetWord": "Dieci",
+      "category": "numbers"
+    }
+  ]
+}

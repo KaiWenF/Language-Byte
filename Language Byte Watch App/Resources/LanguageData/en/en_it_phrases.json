@@ -1,0 +1,160 @@
+{
+  "source": "en",
+  "target": "it",
+  "name": {
+    "source": "English",
+    "target": "Italian"
+  },
+  "pairs": [
+    {
+      "sourceWord": "Hello",
+      "targetWord": "Ciao",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Good morning",
+      "targetWord": "Buongiorno",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Good afternoon",
+      "targetWord": "Buon pomeriggio",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Good evening",
+      "targetWord": "Buonasera",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Goodbye",
+      "targetWord": "Arrivederci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Please",
+      "targetWord": "Per favore",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Thank you",
+      "targetWord": "Grazie",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "You're welcome",
+      "targetWord": "Prego",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "I'm sorry",
+      "targetWord": "Mi dispiace",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Excuse me",
+      "targetWord": "Scusa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "bread",
+      "targetWord": "pane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "cheese",
+      "targetWord": "formaggio",
+      "category": "food"
+    },
+    {
+      "sourceWord": "milk",
+      "targetWord": "latte",
+      "category": "food"
+    },
+    {
+      "sourceWord": "water",
+      "targetWord": "acqua",
+      "category": "food"
+    },
+    {
+      "sourceWord": "coffee",
+      "targetWord": "caffè",
+      "category": "food"
+    },
+    {
+      "sourceWord": "wine",
+      "targetWord": "vino",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pasta",
+      "targetWord": "pasta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pizza",
+      "targetWord": "pizza",
+      "category": "food"
+    },
+    {
+      "sourceWord": "gelato",
+      "targetWord": "gelato",
+      "category": "food"
+    },
+    {
+      "sourceWord": "tomate",
+      "targetWord": "pomodoro",
+      "category": "food"
+    },
+    {
+      "sourceWord": "one",
+      "targetWord": "uno",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "two",
+      "targetWord": "due",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "three",
+      "targetWord": "tre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "four",
+      "targetWord": "quattro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "five",
+      "targetWord": "cinque",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "six",
+      "targetWord": "sei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seven",
+      "targetWord": "sette",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "eight",
+      "targetWord": "otto",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nine",
+      "targetWord": "nove",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "ten",
+      "targetWord": "dieci",
+      "category": "numbers"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "source": "it",
+  "target": "es",
+  "name": {
+    "source": "Italian",
+    "target": "Spanish"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_it_es",
+  "pairs": [
+    {
+      "sourceWord": "mangiare",
+      "targetWord": "comer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "bere",
+      "targetWord": "beber",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cucinare",
+      "targetWord": "cocinar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "tagliare",
+      "targetWord": "cortar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pelare",
+      "targetWord": "pelar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "friggere",
+      "targetWord": "freír",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cuocere al forno",
+      "targetWord": "hornear",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "mescolare",
+      "targetWord": "mezclar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "assaggiare",
+      "targetWord": "probar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "condire",
+      "targetWord": "sazonar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "comprare",
+      "targetWord": "comprar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "vendere",
+      "targetWord": "vender",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "preparare",
+      "targetWord": "preparar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "lavare",
+      "targetWord": "lavar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cambiare",
+      "targetWord": "cambiar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "servire",
+      "targetWord": "servir",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "fare",
+      "targetWord": "hacer",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pulire",
+      "targetWord": "limpiar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "aiutare",
+      "targetWord": "ayudar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "aver bisogno",
+      "targetWord": "necesitar",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pane",
+      "targetWord": "pan",
+      "category": "food"
+    },
+    {
+      "sourceWord": "formaggio",
+      "targetWord": "queso",
+      "category": "food"
+    },
+    {
+      "sourceWord": "latte",
+      "targetWord": "leche",
+      "category": "food"
+    },
+    {
+      "sourceWord": "uovo",
+      "targetWord": "huevo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pesce",
+      "targetWord": "pescado",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pollo",
+      "targetWord": "pollo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "riso",
+      "targetWord": "arroz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fagioli",
+      "targetWord": "frijoles",
+      "category": "food"
+    },
+    {
+      "sourceWord": "patate",
+      "targetWord": "papas",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fragole",
+      "targetWord": "fresas",
+      "category": "food"
+    },
+    {
+      "sourceWord": "mela",
+      "targetWord": "manzana",
+      "category": "food"
+    },
+    {
+      "sourceWord": "banana",
+      "targetWord": "plátano",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arancia",
+      "targetWord": "naranja",
+      "category": "food"
+    },
+    {
+      "sourceWord": "uva",
+      "targetWord": "uva",
+      "category": "food"
+    },
+    {
+      "sourceWord": "anguria",
+      "targetWord": "sandía",
+      "category": "food"
+    },
+    {
+      "sourceWord": "limone",
+      "targetWord": "limón",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carota",
+      "targetWord": "zanahoria",
+      "category": "food"
+    },
+    {
+      "sourceWord": "lattuga",
+      "targetWord": "lechuga",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pomodoro",
+      "targetWord": "tomate",
+      "category": "food"
+    }
+  ]
+}

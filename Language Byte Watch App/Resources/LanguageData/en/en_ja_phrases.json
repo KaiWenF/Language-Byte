@@ -1,0 +1,160 @@
+{
+  "source": "en",
+  "target": "ja",
+  "name": {
+    "source": "English",
+    "target": "Japanese"
+  },
+  "pairs": [
+    {
+      "sourceWord": "Hello",
+      "targetWord": "こんにちは (Konnichiwa)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Good morning",
+      "targetWord": "おはようございます (Ohayou gozaimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Good evening",
+      "targetWord": "こんばんは (Konbanwa)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Goodbye",
+      "targetWord": "さようなら (Sayounara)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Thank you",
+      "targetWord": "ありがとう (Arigatou)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Please",
+      "targetWord": "お願いします (Onegaishimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Excuse me",
+      "targetWord": "すみません (Sumimasen)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "I'm sorry",
+      "targetWord": "ごめんなさい (Gomen nasai)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Sí",
+      "targetWord": "はい (Hai)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "No",
+      "targetWord": "いいえ (Iie)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "ご飯 (Gohan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pescado",
+      "targetWord": "魚 (Sakana)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "肉 (Niku)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "agua",
+      "targetWord": "水 (Mizu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "té",
+      "targetWord": "お茶 (Ocha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "sushi",
+      "targetWord": "寿司 (Sushi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ramen",
+      "targetWord": "ラーメン (Ramen)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pan",
+      "targetWord": "パン (Pan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "vegetal",
+      "targetWord": "野菜 (Yasai)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fruta",
+      "targetWord": "果物 (Kudamono)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "uno",
+      "targetWord": "一 (Ichi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dos",
+      "targetWord": "二 (Ni)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "tres",
+      "targetWord": "三 (San)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cuatro",
+      "targetWord": "四 (Shi/Yon)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "五 (Go)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "六 (Roku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "siete",
+      "targetWord": "七 (Shichi/Nana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "ocho",
+      "targetWord": "八 (Hachi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nueve",
+      "targetWord": "九 (Kyuu/Ku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "diez",
+      "targetWord": "十 (Juu)",
+      "category": "numbers"
+    }
+  ]
+}

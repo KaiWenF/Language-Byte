@@ -1,0 +1,162 @@
+{
+  "source": "fr",
+  "target": "de",
+  "name": {
+    "source": "French",
+    "target": "German"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_fr_de",
+  "pairs": [
+    {
+      "sourceWord": "Bonjour",
+      "targetWord": "Hallo",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonjour",
+      "targetWord": "Guten Morgen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonjour",
+      "targetWord": "Guten Tag",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Bonsoir",
+      "targetWord": "Guten Abend",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Au revoir",
+      "targetWord": "Auf Wiedersehen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "S'il vous plaît",
+      "targetWord": "Bitte",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Merci",
+      "targetWord": "Danke",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "De rien",
+      "targetWord": "Bitte schön",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Je suis désolé(e)",
+      "targetWord": "Es tut mir leid",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Excusez-moi",
+      "targetWord": "Entschuldigung",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "pain",
+      "targetWord": "Brot",
+      "category": "food"
+    },
+    {
+      "sourceWord": "fromage",
+      "targetWord": "Käse",
+      "category": "food"
+    },
+    {
+      "sourceWord": "lait",
+      "targetWord": "Milch",
+      "category": "food"
+    },
+    {
+      "sourceWord": "eau",
+      "targetWord": "Wasser",
+      "category": "food"
+    },
+    {
+      "sourceWord": "café",
+      "targetWord": "Kaffee",
+      "category": "food"
+    },
+    {
+      "sourceWord": "bière",
+      "targetWord": "Bier",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pomme",
+      "targetWord": "Apfel",
+      "category": "food"
+    },
+    {
+      "sourceWord": "pomme de terre",
+      "targetWord": "Kartoffel",
+      "category": "food"
+    },
+    {
+      "sourceWord": "saucisse",
+      "targetWord": "Wurst",
+      "category": "food"
+    },
+    {
+      "sourceWord": "chocolat",
+      "targetWord": "Schokolade",
+      "category": "food"
+    },
+    {
+      "sourceWord": "un",
+      "targetWord": "eins",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "deux",
+      "targetWord": "zwei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "trois",
+      "targetWord": "drei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quatre",
+      "targetWord": "vier",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinq",
+      "targetWord": "fünf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "six",
+      "targetWord": "sechs",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sept",
+      "targetWord": "sieben",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "huit",
+      "targetWord": "acht",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "neuf",
+      "targetWord": "neun",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dix",
+      "targetWord": "zehn",
+      "category": "numbers"
+    }
+  ]
+}

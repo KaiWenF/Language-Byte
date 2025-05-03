@@ -1,0 +1,162 @@
+{
+  "source": "pt",
+  "target": "ko",
+  "name": {
+    "source": "Portuguese",
+    "target": "Korean"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_pt_ko",
+  "pairs": [
+    {
+      "sourceWord": "comer",
+      "targetWord": "먹다 (Meokda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "beber",
+      "targetWord": "마시다 (Masida)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cozinhar",
+      "targetWord": "요리하다 (Yorihada)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cortar",
+      "targetWord": "자르다 (Jareuda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "descascar",
+      "targetWord": "껍질을 벗기다 (Kkeopjireul beotgida)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "fritar",
+      "targetWord": "튀기다 (Twigida)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "assar",
+      "targetWord": "굽다 (Gupda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "misturar",
+      "targetWord": "섞다 (Seokda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "provar",
+      "targetWord": "맛보다 (Matboda)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "temperar",
+      "targetWord": "양념하다 (Yangnyeomhada)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pão",
+      "targetWord": "빵 (Ppang)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "queijo",
+      "targetWord": "치즈 (Chijeu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "leite",
+      "targetWord": "우유 (Uyu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ovo",
+      "targetWord": "계란 (Gyeran)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "고기 (Gogi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "peixe",
+      "targetWord": "생선 (Saengseon)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "frango",
+      "targetWord": "닭고기 (Dakgogi)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "밥 (Bap)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "feijão",
+      "targetWord": "콩 (Kong)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "batatas",
+      "targetWord": "감자 (Gamja)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "um",
+      "targetWord": "하나 (Hana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dois",
+      "targetWord": "둘 (Dul)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "três",
+      "targetWord": "셋 (Set)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quatro",
+      "targetWord": "넷 (Net)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "다섯 (Daseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "여섯 (Yeoseot)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sete",
+      "targetWord": "일곱 (Ilgop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "oito",
+      "targetWord": "여덟 (Yeodeol)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nove",
+      "targetWord": "아홉 (Ahop)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dez",
+      "targetWord": "열 (Yeol)",
+      "category": "numbers"
+    }
+  ]
+}

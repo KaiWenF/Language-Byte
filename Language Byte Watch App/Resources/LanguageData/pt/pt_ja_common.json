@@ -1,0 +1,162 @@
+{
+  "source": "pt",
+  "target": "ja",
+  "name": {
+    "source": "Portuguese",
+    "target": "Japanese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_pt_ja",
+  "pairs": [
+    {
+      "sourceWord": "comer",
+      "targetWord": "食べる (Taberu)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "beber",
+      "targetWord": "飲む (Nomu)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cozinhar",
+      "targetWord": "料理する (Ryouri suru)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "cortar",
+      "targetWord": "切る (Kiru)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "descascar",
+      "targetWord": "皮をむく (Kawa wo muku)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "fritar",
+      "targetWord": "揚げる (Ageru)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "assar",
+      "targetWord": "焼く (Yaku)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "misturar",
+      "targetWord": "混ぜる (Mazeru)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "provar",
+      "targetWord": "味わう (Ajiwau)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "temperar",
+      "targetWord": "味付けする (Aji-tsuke suru)",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "pão",
+      "targetWord": "パン (Pan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "queijo",
+      "targetWord": "チーズ (Chiizu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "leite",
+      "targetWord": "牛乳 (Gyuunyuu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ovo",
+      "targetWord": "卵 (Tamago)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "carne",
+      "targetWord": "肉 (Niku)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "peixe",
+      "targetWord": "魚 (Sakana)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "frango",
+      "targetWord": "鶏肉 (Toriniku)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "arroz",
+      "targetWord": "ご飯 (Gohan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "feijão",
+      "targetWord": "豆 (Mame)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "batatas",
+      "targetWord": "じゃがいも (Jagaimo)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "um",
+      "targetWord": "一 (Ichi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dois",
+      "targetWord": "二 (Ni)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "três",
+      "targetWord": "三 (San)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "quatro",
+      "targetWord": "四 (Shi/Yon)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "cinco",
+      "targetWord": "五 (Go)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seis",
+      "targetWord": "六 (Roku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "sete",
+      "targetWord": "七 (Shichi/Nana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "oito",
+      "targetWord": "八 (Hachi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nove",
+      "targetWord": "九 (Kyuu/Ku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "dez",
+      "targetWord": "十 (Juu)",
+      "category": "numbers"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "source": "zh",
+  "target": "ja",
+  "name": {
+    "source": "Chinese",
+    "target": "Japanese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_zh_ja",
+  "pairs": [
+    {
+      "sourceWord": "你好",
+      "targetWord": "こんにちは (Konnichiwa)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "早上好",
+      "targetWord": "おはようございます (Ohayou gozaimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "晚上好",
+      "targetWord": "こんばんは (Konbanwa)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "再见",
+      "targetWord": "さようなら (Sayounara)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "谢谢",
+      "targetWord": "ありがとう (Arigatou)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "请",
+      "targetWord": "お願いします (Onegaishimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "不客气",
+      "targetWord": "どういたしまして (Douitashimashite)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "对不起",
+      "targetWord": "すみません (Sumimasen)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "打扰一下",
+      "targetWord": "失礼します (Shitsurei shimasu)",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "米饭",
+      "targetWord": "ご飯 (Gohan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面条",
+      "targetWord": "麺 (Men)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "茶",
+      "targetWord": "お茶 (Ocha)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "水 (Mizu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "肉 (Niku)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "蔬菜",
+      "targetWord": "野菜 (Yasai)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水果",
+      "targetWord": "果物 (Kudamono)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "汤",
+      "targetWord": "スープ (Sūpu)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面包",
+      "targetWord": "パン (Pan)",
+      "category": "food"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "一 (Ichi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "二 (Ni)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "三 (San)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "四 (Shi/Yon)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "五 (Go)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "六 (Roku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "七 (Shichi/Nana)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "八 (Hachi)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "九 (Kyuu/Ku)",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "十 (Juu)",
+      "category": "numbers"
+    }
+  ]
+}

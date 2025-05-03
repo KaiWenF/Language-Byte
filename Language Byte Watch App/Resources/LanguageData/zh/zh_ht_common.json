@@ -1,0 +1,152 @@
+{
+  "source": "zh",
+  "target": "ht",
+  "name": {
+    "source": "Chinese",
+    "target": "Haitian Creole"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_zh_ht",
+  "pairs": [
+    {
+      "sourceWord": "你好",
+      "targetWord": "Bonjou",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "早上好",
+      "targetWord": "Bonjou",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "晚上好",
+      "targetWord": "Bonswa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "再见",
+      "targetWord": "Orevwa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "谢谢",
+      "targetWord": "Mèsi",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "请",
+      "targetWord": "Tanpri",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "不客气",
+      "targetWord": "Padekwa",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "对不起",
+      "targetWord": "Mwen regrèt",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "打扰一下",
+      "targetWord": "Eskize mwen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "米饭",
+      "targetWord": "Diri",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面条",
+      "targetWord": "Nouil",
+      "category": "food"
+    },
+    {
+      "sourceWord": "茶",
+      "targetWord": "Te",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "Dlo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "Vyann",
+      "category": "food"
+    },
+    {
+      "sourceWord": "蔬菜",
+      "targetWord": "Legim",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水果",
+      "targetWord": "Fwi",
+      "category": "food"
+    },
+    {
+      "sourceWord": "汤",
+      "targetWord": "Soup",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面包",
+      "targetWord": "Pen",
+      "category": "food"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "En",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "De",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "Twa",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "Kat",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "Senk",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "Sis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "Sèt",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "Wit",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "Nèf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "Dis",
+      "category": "numbers"
+    }
+  ]
+}

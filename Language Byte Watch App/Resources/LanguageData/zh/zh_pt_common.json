@@ -1,0 +1,152 @@
+{
+  "source": "zh",
+  "target": "pt",
+  "name": {
+    "source": "Chinese",
+    "target": "Portuguese"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_zh_pt",
+  "pairs": [
+    {
+      "sourceWord": "你好",
+      "targetWord": "Olá",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "早上好",
+      "targetWord": "Bom dia",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "晚上好",
+      "targetWord": "Boa noite",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "再见",
+      "targetWord": "Adeus",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "谢谢",
+      "targetWord": "Obrigado",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "请",
+      "targetWord": "Por favor",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "不客气",
+      "targetWord": "De nada",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "对不起",
+      "targetWord": "Desculpe",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "打扰一下",
+      "targetWord": "Com licença",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "米饭",
+      "targetWord": "Arroz",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面条",
+      "targetWord": "Macarrão",
+      "category": "food"
+    },
+    {
+      "sourceWord": "茶",
+      "targetWord": "Chá",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水",
+      "targetWord": "Água",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "Carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "蔬菜",
+      "targetWord": "Vegetais",
+      "category": "food"
+    },
+    {
+      "sourceWord": "水果",
+      "targetWord": "Fruta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "汤",
+      "targetWord": "Sopa",
+      "category": "food"
+    },
+    {
+      "sourceWord": "面包",
+      "targetWord": "Pão",
+      "category": "food"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "Um",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "Dois",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "Três",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "Quatro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "Cinco",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "Seis",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "Sete",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "Oito",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "Nove",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "Dez",
+      "category": "numbers"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "source": "ja",
+  "target": "it",
+  "name": {
+    "source": "Japanese",
+    "target": "Italian"
+  },
+  "requiresUnlock": true,
+  "unlockKey": "langpair_ja_it",
+  "pairs": [
+    {
+      "sourceWord": "食べる",
+      "targetWord": "mangiare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "飲む",
+      "targetWord": "bere",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "料理する",
+      "targetWord": "cucinare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "切る",
+      "targetWord": "tagliare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "皮をむく",
+      "targetWord": "pelare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "揚げる",
+      "targetWord": "friggere",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "焼く",
+      "targetWord": "cuocere al forno",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "混ぜる",
+      "targetWord": "mescolare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "味わう",
+      "targetWord": "assaggiare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "買う",
+      "targetWord": "comprare",
+      "category": "verb"
+    },
+    {
+      "sourceWord": "パン",
+      "targetWord": "pane",
+      "category": "food"
+    },
+    {
+      "sourceWord": "チーズ",
+      "targetWord": "formaggio",
+      "category": "food"
+    },
+    {
+      "sourceWord": "牛乳",
+      "targetWord": "latte",
+      "category": "food"
+    },
+    {
+      "sourceWord": "卵",
+      "targetWord": "uovo",
+      "category": "food"
+    },
+    {
+      "sourceWord": "肉",
+      "targetWord": "carne",
+      "category": "food"
+    },
+    {
+      "sourceWord": "魚",
+      "targetWord": "pesce",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ピザ",
+      "targetWord": "pizza",
+      "category": "food"
+    },
+    {
+      "sourceWord": "パスタ",
+      "targetWord": "pasta",
+      "category": "food"
+    },
+    {
+      "sourceWord": "トマト",
+      "targetWord": "pomodoro",
+      "category": "food"
+    },
+    {
+      "sourceWord": "ジェラート",
+      "targetWord": "gelato",
+      "category": "food"
+    },
+    {
+      "sourceWord": "母",
+      "targetWord": "madre",
+      "category": "family"
+    },
+    {
+      "sourceWord": "父",
+      "targetWord": "padre",
+      "category": "family"
+    },
+    {
+      "sourceWord": "息子",
+      "targetWord": "figlio",
+      "category": "family"
+    },
+    {
+      "sourceWord": "娘",
+      "targetWord": "figlia",
+      "category": "family"
+    },
+    {
+      "sourceWord": "兄弟",
+      "targetWord": "fratello",
+      "category": "family"
+    },
+    {
+      "sourceWord": "姉妹",
+      "targetWord": "sorella",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖父",
+      "targetWord": "nonno",
+      "category": "family"
+    },
+    {
+      "sourceWord": "祖母",
+      "targetWord": "nonna",
+      "category": "family"
+    },
+    {
+      "sourceWord": "赤",
+      "targetWord": "rosso",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "青",
+      "targetWord": "blu",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黄色",
+      "targetWord": "giallo",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "緑",
+      "targetWord": "verde",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "黒",
+      "targetWord": "nero",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "白",
+      "targetWord": "bianco",
+      "category": "colors"
+    },
+    {
+      "sourceWord": "一",
+      "targetWord": "uno",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "二",
+      "targetWord": "due",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "三",
+      "targetWord": "tre",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "四",
+      "targetWord": "quattro",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "五",
+      "targetWord": "cinque",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "六",
+      "targetWord": "sei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "七",
+      "targetWord": "sette",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "八",
+      "targetWord": "otto",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "九",
+      "targetWord": "nove",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "十",
+      "targetWord": "dieci",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "こんにちは",
+      "targetWord": "Ciao",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "おはようございます",
+      "targetWord": "Buongiorno",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "こんばんは",
+      "targetWord": "Buonasera",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "さようなら",
+      "targetWord": "Arrivederci",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "お願いします",
+      "targetWord": "Per favore",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "ありがとう",
+      "targetWord": "Grazie",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "どういたしまして",
+      "targetWord": "Prego",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "すみません",
+      "targetWord": "Mi dispiace",
+      "category": "phrases"
+    }
+  ]
+}

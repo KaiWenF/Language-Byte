@@ -1,0 +1,160 @@
+{
+  "source": "en",
+  "target": "de",
+  "name": {
+    "source": "English",
+    "target": "German"
+  },
+  "pairs": [
+    {
+      "sourceWord": "Hello",
+      "targetWord": "Hallo",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Good morning",
+      "targetWord": "Guten Morgen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Good afternoon",
+      "targetWord": "Guten Tag",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Good evening",
+      "targetWord": "Guten Abend",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Goodbye",
+      "targetWord": "Auf Wiedersehen",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Please",
+      "targetWord": "Bitte",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Thank you",
+      "targetWord": "Danke",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "You're welcome",
+      "targetWord": "Bitte schön",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "I'm sorry",
+      "targetWord": "Es tut mir leid",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "Excuse me",
+      "targetWord": "Entschuldigung",
+      "category": "phrases"
+    },
+    {
+      "sourceWord": "bread",
+      "targetWord": "Brot",
+      "category": "food"
+    },
+    {
+      "sourceWord": "cheese",
+      "targetWord": "Käse",
+      "category": "food"
+    },
+    {
+      "sourceWord": "milk",
+      "targetWord": "Milch",
+      "category": "food"
+    },
+    {
+      "sourceWord": "water",
+      "targetWord": "Wasser",
+      "category": "food"
+    },
+    {
+      "sourceWord": "coffee",
+      "targetWord": "Kaffee",
+      "category": "food"
+    },
+    {
+      "sourceWord": "beer",
+      "targetWord": "Bier",
+      "category": "food"
+    },
+    {
+      "sourceWord": "apple",
+      "targetWord": "Apfel",
+      "category": "food"
+    },
+    {
+      "sourceWord": "potato",
+      "targetWord": "Kartoffel",
+      "category": "food"
+    },
+    {
+      "sourceWord": "sausage",
+      "targetWord": "Wurst",
+      "category": "food"
+    },
+    {
+      "sourceWord": "chocolate",
+      "targetWord": "Schokolade",
+      "category": "food"
+    },
+    {
+      "sourceWord": "one",
+      "targetWord": "eins",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "two",
+      "targetWord": "zwei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "three",
+      "targetWord": "drei",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "four",
+      "targetWord": "vier",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "five",
+      "targetWord": "fünf",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "six",
+      "targetWord": "sechs",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "seven",
+      "targetWord": "sieben",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "eight",
+      "targetWord": "acht",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "nine",
+      "targetWord": "neun",
+      "category": "numbers"
+    },
+    {
+      "sourceWord": "ten",
+      "targetWord": "zehn",
+      "category": "numbers"
+    }
+  ]
+}
