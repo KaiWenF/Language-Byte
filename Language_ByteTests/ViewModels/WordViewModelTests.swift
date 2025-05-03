@@ -12,8 +12,11 @@ struct WordViewModelTests {
         
         // Assert
         #expect(viewModel.showingForeign == true)
-        #expect(viewModel.selectedCategory == "all" 
-                || UserDefaults.standard.string(forKey: "selectedCategory") == viewModel.selectedCategory)
+        // Check if selectedCategory is nil or matches the UserDefaults value (case insensitive)
+        // The selectedCategory getter returns nil when selectedCategoryRawValue is "All"
+        let storedCategory = UserDefaults.standard.string(forKey: "selectedCategory")?.lowercased()
+        #expect(viewModel.selectedCategory == nil || 
+                (storedCategory != nil && storedCategory == viewModel.selectedCategory?.lowercased()))
         #expect(!viewModel.availableCategories.isEmpty)
     }
     

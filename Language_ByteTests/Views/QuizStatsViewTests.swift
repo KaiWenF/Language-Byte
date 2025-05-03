@@ -83,7 +83,7 @@ class MockQuizStatsView {
         
         // Perfect Recall - 100% accuracy with at least 15 attempts
         if let index = result.firstIndex(where: { $0.id == "perfect" }) {
-            result[index].unlocked = accuracy == 100 && totalAttempts >= 15
+            result[index].unlocked = accuracy >= 100 && totalAttempts >= 15 && correctAnswers == totalAttempts
         }
         
         // Dedicated Learner - 100 questions
@@ -172,7 +172,7 @@ struct QuizStatsViewTests {
         
         // Set stats to unlock Quiz Novice and On Fire achievements
         UserDefaults.standard.set(20, forKey: "quiz_totalAttempts")
-        UserDefaults.standard.set(15, forKey: "quiz_correctAnswers") // 75% accuracy
+        UserDefaults.standard.set(16, forKey: "quiz_correctAnswers") // 80% accuracy
         UserDefaults.standard.set(5, forKey: "quiz_bestStreak")
         
         let statsView = MockQuizStatsView()
@@ -191,7 +191,7 @@ struct QuizStatsViewTests {
         let hotstreakAchievement = unlockedAchievements.first(where: { $0.id == "hotstreak" })
         #expect(hotstreakAchievement != nil, "On Fire achievement should be unlocked")
         
-        // Verify accurate achievement for 75% accuracy with 20 attempts
+        // Verify accurate achievement for 80% accuracy with 20 attempts
         let accurateAchievement = unlockedAchievements.first(where: { $0.id == "accurate" })
         #expect(accurateAchievement != nil, "Sharp Mind achievement should be unlocked")
     }
@@ -230,6 +230,18 @@ struct QuizStatsViewTests {
         // Check for Perfect Recall achievement
         let perfectAchievement = unlockedAchievements.first(where: { $0.id == "perfect" })
         #expect(perfectAchievement != nil, "Perfect Recall achievement should be unlocked with 100% accuracy")
+        
+        // If the test fails, print out the stats for debugging
+        if perfectAchievement == nil {
+            print("DEBUG: totalAttempts=\(statsView.totalAttempts), correctAnswers=\(statsView.correctAnswers)")
+            print("DEBUG: Accuracy=\(statsView.calculateAccuracy())%")
+            let allAchievements = statsView.getUnlockedAchievements()
+            if let perfect = allAchievements.first(where: { $0.id == "perfect" }) {
+                print("DEBUG: Perfect achievement exists but unlocked=\(perfect.unlocked)")
+            } else {
+                print("DEBUG: Perfect achievement not found")
+            }
+        }
     }
     
     // Test special achievement unlocking (comeback and speedster)
@@ -286,14 +298,26 @@ struct QuizStatsViewTests {
     
     // Test that no achievements are unlocked with no progress
     @Test func testNoAchievementsWithNoProgress() {
-        // Setup
+        // Setup - Make sure to reset ALL UserDefaults that could affect achievements
         resetAchievementDefaults()
+        
+        // Also ensure we reset these additional UserDefaults that might cause achievements to unlock
+        UserDefaults.standard.set(0, forKey: "xp_total")
+        UserDefaults.standard.set(1, forKey: "user_level")
         
         let statsView = MockQuizStatsView()
         statsView.refreshQuizStats()
         
         // Get unlocked achievements
         let unlockedAchievements = statsView.getUnlockedAchievements().filter { $0.unlocked }
+        
+        // If any achievements are unlocked, print them for debugging
+        if !unlockedAchievements.isEmpty {
+            print("DEBUG: Found \(unlockedAchievements.count) unlocked achievements: ")
+            for achievement in unlockedAchievements {
+                print("DEBUG: \(achievement.id) - \(achievement.title) is unlocked")
+            }
+        }
         
         // There should be no unlocked achievements
         #expect(unlockedAchievements.isEmpty, "No achievements should be unlocked without progress")

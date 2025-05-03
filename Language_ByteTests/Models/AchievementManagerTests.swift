@@ -11,6 +11,8 @@ class AchievementManagerTests: XCTestCase {
         UserDefaults.standard.set(0, forKey: "quiz_bestStreak")
         UserDefaults.standard.set(false, forKey: "quiz_comeback")
         UserDefaults.standard.set(false, forKey: "quiz_speedster")
+        UserDefaults.standard.set(0, forKey: "xp_total")
+        UserDefaults.standard.set(1, forKey: "user_level")
     }
     
     // Test basic achievement unlocking
