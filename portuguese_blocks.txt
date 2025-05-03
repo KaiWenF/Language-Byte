@@ -1,0 +1,1459 @@
+,
+    {
+      "source": "pt",
+      "target": "en",
+      "name": {
+        "source": "Portuguese",
+        "target": "English"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_en",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "to eat",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "to drink",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "to cook",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "to cut",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "to peel",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "to fry",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "to bake",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "to mix",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "to taste",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "to season",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "bread",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "cheese",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "milk",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "egg",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "meat",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "fish",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "chicken",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "rice",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "beans",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "potatoes",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "one",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "two",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "three",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "four",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "five",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "six",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "seven",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "eight",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "nine",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "ten",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "pt",
+      "target": "es",
+      "name": {
+        "source": "Portuguese",
+        "target": "Spanish"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_es",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "comer",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "beber",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "cocinar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "cortar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "pelar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "freír",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "hornear",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "mezclar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "probar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "sazonar",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "pan",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "queso",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "leche",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "huevo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "pescado",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "pollo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "arroz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "frijoles",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "papas",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "uno",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "dos",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "tres",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "cuatro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "cinco",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "seis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "siete",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "ocho",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "nueve",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "diez",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "pt",
+      "target": "fr",
+      "name": {
+        "source": "Portuguese",
+        "target": "French"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_fr",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "manger",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "boire",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "cuisiner",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "couper",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "peler",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "frire",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "cuire au four",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "mélanger",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "goûter",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "assaisonner",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "pain",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "fromage",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "lait",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "œuf",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "viande",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "poisson",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "poulet",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "riz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "haricots",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "pommes de terre",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "un",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "deux",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "trois",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "quatre",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "cinq",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "six",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "sept",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "huit",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "neuf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "dix",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "pt",
+      "target": "de",
+      "name": {
+        "source": "Portuguese",
+        "target": "German"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_de",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "essen",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "trinken",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "kochen",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "schneiden",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "schälen",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "braten",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "backen",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "mischen",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "probieren",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "würzen",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "Brot",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "Käse",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "Milch",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "Ei",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "Fleisch",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "Fisch",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "Huhn",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "Reis",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "Bohnen",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "Kartoffeln",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "eins",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "zwei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "drei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "vier",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "fünf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "sechs",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "sieben",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "acht",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "neun",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "zehn",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "pt",
+      "target": "it",
+      "name": {
+        "source": "Portuguese",
+        "target": "Italian"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_it",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "mangiare",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "bere",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "cucinare",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "tagliare",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "sbucciare",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "friggere",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "cuocere al forno",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "mescolare",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "assaggiare",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "condire",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "pane",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "formaggio",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "latte",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "uovo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "pesce",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "pollo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "riso",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "fagioli",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "patate",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "uno",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "due",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "tre",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "quattro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "cinque",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "sei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "sette",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "otto",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "nove",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "dieci",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "pt",
+      "target": "ja",
+      "name": {
+        "source": "Portuguese",
+        "target": "Japanese"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_ja",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "食べる (Taberu)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "飲む (Nomu)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "料理する (Ryouri suru)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "切る (Kiru)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "皮をむく (Kawa wo muku)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "揚げる (Ageru)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "焼く (Yaku)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "混ぜる (Mazeru)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "味わう (Ajiwau)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "味付けする (Aji-tsuke suru)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "パン (Pan)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "チーズ (Chiizu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "牛乳 (Gyuunyuu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "卵 (Tamago)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "肉 (Niku)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "魚 (Sakana)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "鶏肉 (Toriniku)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "ご飯 (Gohan)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "豆 (Mame)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "じゃがいも (Jagaimo)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "一 (Ichi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "二 (Ni)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "三 (San)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "四 (Shi/Yon)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "五 (Go)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "六 (Roku)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "七 (Shichi/Nana)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "八 (Hachi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "九 (Kyuu/Ku)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "十 (Juu)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "pt",
+      "target": "ko",
+      "name": {
+        "source": "Portuguese",
+        "target": "Korean"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_ko",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "먹다 (Meokda)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "마시다 (Masida)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "요리하다 (Yorihada)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "자르다 (Jareuda)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "껍질을 벗기다 (Kkeopjireul beotgida)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "튀기다 (Twigida)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "굽다 (Gupda)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "섞다 (Seokda)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "맛보다 (Matboda)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "양념하다 (Yangnyeomhada)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "빵 (Ppang)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "치즈 (Chijeu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "우유 (Uyu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "계란 (Gyeran)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "고기 (Gogi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "생선 (Saengseon)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "닭고기 (Dakgogi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "밥 (Bap)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "콩 (Kong)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "감자 (Gamja)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "하나 (Hana)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "둘 (Dul)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "셋 (Set)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "넷 (Net)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "다섯 (Daseot)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "여섯 (Yeoseot)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "일곱 (Ilgop)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "여덟 (Yeodeol)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "아홉 (Ahop)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "열 (Yeol)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "pt",
+      "target": "zh",
+      "name": {
+        "source": "Portuguese",
+        "target": "Chinese"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_zh",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "吃 (Chī)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "喝 (Hē)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "做饭 (Zuò fàn)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "切 (Qiē)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "剥皮 (Bō pí)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "炸 (Zhà)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "烤 (Kǎo)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "混合 (Hùn hé)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "尝 (Cháng)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "调味 (Tiáo wèi)",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "面包 (Miàn bāo)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "奶酪 (Nǎi lào)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "牛奶 (Niú nǎi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "鸡蛋 (Jī dàn)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "肉 (Ròu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "鱼 (Yú)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "鸡肉 (Jī ròu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "米饭 (Mǐ fàn)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "豆 (Dòu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "土豆 (Tǔ dòu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "一 (Yī)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "二 (Èr)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "三 (Sān)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "四 (Sì)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "五 (Wǔ)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "六 (Liù)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "七 (Qī)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "八 (Bā)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "九 (Jiǔ)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "十 (Shí)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "pt",
+      "target": "ht",
+      "name": {
+        "source": "Portuguese",
+        "target": "Haitian Creole"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_pt_ht",
+      "pairs": [
+        {
+          "sourceWord": "comer",
+          "targetWord": "manje",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "beber",
+          "targetWord": "bwè",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cozinhar",
+          "targetWord": "kwit",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "cortar",
+          "targetWord": "koupe",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "descascar",
+          "targetWord": "kale",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "fritar",
+          "targetWord": "fri",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "assar",
+          "targetWord": "kwit nan fou",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "misturar",
+          "targetWord": "melanje",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "provar",
+          "targetWord": "goute",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "temperar",
+          "targetWord": "asezone",
+          "category": "verb"
+        },
+        {
+          "sourceWord": "pão",
+          "targetWord": "pen",
+          "category": "food"
+        },
+        {
+          "sourceWord": "queijo",
+          "targetWord": "fwomaj",
+          "category": "food"
+        },
+        {
+          "sourceWord": "leite",
+          "targetWord": "lèt",
+          "category": "food"
+        },
+        {
+          "sourceWord": "ovo",
+          "targetWord": "ze",
+          "category": "food"
+        },
+        {
+          "sourceWord": "carne",
+          "targetWord": "vyann",
+          "category": "food"
+        },
+        {
+          "sourceWord": "peixe",
+          "targetWord": "pwason",
+          "category": "food"
+        },
+        {
+          "sourceWord": "frango",
+          "targetWord": "poul",
+          "category": "food"
+        },
+        {
+          "sourceWord": "arroz",
+          "targetWord": "diri",
+          "category": "food"
+        },
+        {
+          "sourceWord": "feijão",
+          "targetWord": "pwa",
+          "category": "food"
+        },
+        {
+          "sourceWord": "batatas",
+          "targetWord": "pomdetè",
+          "category": "food"
+        },
+        {
+          "sourceWord": "um",
+          "targetWord": "en",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dois",
+          "targetWord": "de",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "três",
+          "targetWord": "twa",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "quatro",
+          "targetWord": "kat",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "cinco",
+          "targetWord": "senk",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "seis",
+          "targetWord": "sis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "sete",
+          "targetWord": "sèt",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "oito",
+          "targetWord": "wit",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "nove",
+          "targetWord": "nèf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "dez",
+          "targetWord": "dis",
+          "category": "numbers"
+        }
+      ]
+    } 

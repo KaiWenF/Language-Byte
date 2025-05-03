@@ -1,0 +1,1369 @@
+,
+    {
+      "source": "ht",
+      "target": "en",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "English"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_en",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "Hello",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "Good evening",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "Goodbye",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "Thank you",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "Please",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "You're welcome",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "I'm sorry",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "Excuse me",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "Rice",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "Noodles",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "Tea",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "Water",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "Meat",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "Vegetable",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "Fruit",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "Soup",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "Bread",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "Cheese",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "One",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "Two",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "Three",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "Four",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "Five",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "Six",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "Seven",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "Eight",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "Nine",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "Ten",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "ht",
+      "target": "es",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "Spanish"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_es",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "Hola",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "Buenas noches",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "Adiós",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "Gracias",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "Por favor",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "De nada",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "Lo siento",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "Disculpe",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "Arroz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "Fideos",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "Té",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "Agua",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "Carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "Verdura",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "Fruta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "Sopa",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "Pan",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "Queso",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "Uno",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "Dos",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "Tres",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "Cuatro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "Cinco",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "Seis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "Siete",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "Ocho",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "Nueve",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "Diez",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "ht",
+      "target": "fr",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "French"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_fr",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "Bonjour",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "Bonsoir",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "Au revoir",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "Merci",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "S'il vous plaît",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "Je vous en prie",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "Je suis désolé",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "Excusez-moi",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "Riz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "Nouilles",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "Thé",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "Eau",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "Viande",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "Légume",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "Fruit",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "Soupe",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "Pain",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "Fromage",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "Un",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "Deux",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "Trois",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "Quatre",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "Cinq",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "Six",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "Sept",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "Huit",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "Neuf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "Dix",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "ht",
+      "target": "de",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "German"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_de",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "Hallo",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "Guten Abend",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "Auf Wiedersehen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "Danke",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "Bitte",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "Gern geschehen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "Es tut mir leid",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "Entschuldigung",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "Reis",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "Nudeln",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "Tee",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "Wasser",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "Fleisch",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "Gemüse",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "Obst",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "Suppe",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "Brot",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "Käse",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "Eins",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "Zwei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "Drei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "Vier",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "Fünf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "Sechs",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "Sieben",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "Acht",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "Neun",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "Zehn",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "ht",
+      "target": "it",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "Italian"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_it",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "Ciao",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "Buonasera",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "Arrivederci",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "Grazie",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "Per favore",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "Prego",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "Mi dispiace",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "Scusi",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "Riso",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "Pasta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "Tè",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "Acqua",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "Carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "Verdura",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "Frutta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "Zuppa",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "Pane",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "Formaggio",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "Uno",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "Due",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "Tre",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "Quattro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "Cinque",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "Sei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "Sette",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "Otto",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "Nove",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "Dieci",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "ht",
+      "target": "ja",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "Japanese"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_ja",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "こんにちは (Konnichiwa)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "こんばんは (Konbanwa)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "さようなら (Sayounara)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "ありがとう (Arigatou)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "お願いします (Onegaishimasu)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "どういたしまして (Douitashimashite)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "すみません (Sumimasen)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "失礼します (Shitsurei shimasu)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "ご飯 (Gohan)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "麺 (Men)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "お茶 (Ocha)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "水 (Mizu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "肉 (Niku)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "野菜 (Yasai)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "果物 (Kudamono)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "スープ (Sūpu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "パン (Pan)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "チーズ (Chīzu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "一 (Ichi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "二 (Ni)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "三 (San)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "四 (Shi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "五 (Go)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "六 (Roku)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "七 (Shichi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "八 (Hachi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "九 (Kyuu)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "十 (Juu)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "ht",
+      "target": "pt",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "Portuguese"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_pt",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "Olá",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "Boa noite",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "Adeus",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "Obrigado",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "Por favor",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "De nada",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "Sinto muito",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "Com licença",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "Arroz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "Macarrão",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "Chá",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "Água",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "Carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "Legume",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "Fruta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "Sopa",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "Pão",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "Queijo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "Um",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "Dois",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "Três",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "Quatro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "Cinco",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "Seis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "Sete",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "Oito",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "Nove",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "Dez",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "ht",
+      "target": "ko",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "Korean"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_ko",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "안녕하세요 (Annyeonghaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "안녕하세요 (Annyeonghaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "안녕히 가세요 (Annyeonghi gaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "감사합니다 (Gamsahamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "주세요 (Juseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "천만에요 (Cheonmaneyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "죄송합니다 (Joesonghamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "실례합니다 (Sillyehamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "밥 (Bap)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "국수 (Guksu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "차 (Cha)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "물 (Mul)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "고기 (Gogi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "야채 (Yachae)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "과일 (Gwail)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "국 (Guk)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "빵 (Ppang)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "치즈 (Chijeu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "하나 (Hana)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "둘 (Dul)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "셋 (Set)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "넷 (Net)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "다섯 (Daseot)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "여섯 (Yeoseot)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "일곱 (Ilgop)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "여덟 (Yeodeol)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "아홉 (Ahop)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "열 (Yeol)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "ht",
+      "target": "zh",
+      "name": {
+        "source": "Haitian Creole",
+        "target": "Chinese"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_ht_zh",
+      "pairs": [
+        {
+          "sourceWord": "Bonjou",
+          "targetWord": "你好 (Nǐ hǎo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Bonswa",
+          "targetWord": "晚上好 (Wǎnshang hǎo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Orevwa",
+          "targetWord": "再见 (Zàijiàn)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mèsi",
+          "targetWord": "谢谢 (Xièxiè)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Tanpri",
+          "targetWord": "请 (Qǐng)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Padekwa",
+          "targetWord": "不客气 (Bù kèqì)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Mwen regrèt",
+          "targetWord": "对不起 (Duìbùqǐ)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Eskize mwen",
+          "targetWord": "打扰一下 (Dǎrǎo yīxià)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "Diri",
+          "targetWord": "米饭 (Mǐfàn)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Nouil",
+          "targetWord": "面条 (Miàntiáo)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Te",
+          "targetWord": "茶 (Chá)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Dlo",
+          "targetWord": "水 (Shuǐ)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Vyann",
+          "targetWord": "肉 (Ròu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Legim",
+          "targetWord": "蔬菜 (Shūcài)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwi",
+          "targetWord": "水果 (Shuǐguǒ)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Soup",
+          "targetWord": "汤 (Tāng)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Pen",
+          "targetWord": "面包 (Miànbāo)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "Fwomaj",
+          "targetWord": "奶酪 (Nǎilào)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "En",
+          "targetWord": "一 (Yī)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "De",
+          "targetWord": "二 (Èr)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Twa",
+          "targetWord": "三 (Sān)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Kat",
+          "targetWord": "四 (Sì)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Senk",
+          "targetWord": "五 (Wǔ)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sis",
+          "targetWord": "六 (Liù)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Sèt",
+          "targetWord": "七 (Qī)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Wit",
+          "targetWord": "八 (Bā)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Nèf",
+          "targetWord": "九 (Jiǔ)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "Dis",
+          "targetWord": "十 (Shí)",
+          "category": "numbers"
+        }
+      ]
+    } 

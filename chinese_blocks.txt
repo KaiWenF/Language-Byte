@@ -1,0 +1,1369 @@
+,
+    {
+      "source": "zh",
+      "target": "en",
+      "name": {
+        "source": "Chinese",
+        "target": "English"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_en",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "Hello",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "Good morning",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "Good evening",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "Goodbye",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "Thank you",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "Please",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "You're welcome",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "I'm sorry",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "Excuse me",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "Rice",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "Noodles",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "Tea",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "Water",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "Meat",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "Vegetables",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "Fruit",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "Soup",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "Bread",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "One",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "Two",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "Three",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "Four",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "Five",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "Six",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "Seven",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "Eight",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "Nine",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "Ten",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "zh",
+      "target": "es",
+      "name": {
+        "source": "Chinese",
+        "target": "Spanish"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_es",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "Hola",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "Buenos días",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "Buenas noches",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "Adiós",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "Gracias",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "Por favor",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "De nada",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "Lo siento",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "Disculpe",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "Arroz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "Fideos",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "Té",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "Agua",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "Carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "Verduras",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "Fruta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "Sopa",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "Pan",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "Uno",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "Dos",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "Tres",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "Cuatro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "Cinco",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "Seis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "Siete",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "Ocho",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "Nueve",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "Diez",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "zh",
+      "target": "fr",
+      "name": {
+        "source": "Chinese",
+        "target": "French"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_fr",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "Bonjour",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "Bonjour",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "Bonsoir",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "Au revoir",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "Merci",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "S'il vous plaît",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "Je vous en prie",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "Je suis désolé",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "Excusez-moi",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "Riz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "Nouilles",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "Thé",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "Eau",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "Viande",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "Légumes",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "Fruits",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "Soupe",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "Pain",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "Un",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "Deux",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "Trois",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "Quatre",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "Cinq",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "Six",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "Sept",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "Huit",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "Neuf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "Dix",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "zh",
+      "target": "de",
+      "name": {
+        "source": "Chinese",
+        "target": "German"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_de",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "Hallo",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "Guten Morgen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "Guten Abend",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "Auf Wiedersehen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "Danke",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "Bitte",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "Gern geschehen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "Es tut mir leid",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "Entschuldigung",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "Reis",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "Nudeln",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "Tee",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "Wasser",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "Fleisch",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "Gemüse",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "Obst",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "Suppe",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "Brot",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "Eins",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "Zwei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "Drei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "Vier",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "Fünf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "Sechs",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "Sieben",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "Acht",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "Neun",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "Zehn",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "zh",
+      "target": "it",
+      "name": {
+        "source": "Chinese",
+        "target": "Italian"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_it",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "Ciao",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "Buongiorno",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "Buonasera",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "Arrivederci",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "Grazie",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "Per favore",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "Prego",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "Mi dispiace",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "Scusi",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "Riso",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "Pasta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "Tè",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "Acqua",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "Carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "Verdure",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "Frutta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "Zuppa",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "Pane",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "Uno",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "Due",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "Tre",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "Quattro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "Cinque",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "Sei",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "Sette",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "Otto",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "Nove",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "Dieci",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "zh",
+      "target": "ja",
+      "name": {
+        "source": "Chinese",
+        "target": "Japanese"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_ja",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "こんにちは (Konnichiwa)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "おはようございます (Ohayou gozaimasu)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "こんばんは (Konbanwa)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "さようなら (Sayounara)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "ありがとう (Arigatou)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "お願いします (Onegaishimasu)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "どういたしまして (Douitashimashite)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "すみません (Sumimasen)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "失礼します (Shitsurei shimasu)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "ご飯 (Gohan)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "麺 (Men)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "お茶 (Ocha)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "水 (Mizu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "肉 (Niku)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "野菜 (Yasai)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "果物 (Kudamono)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "スープ (Sūpu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "パン (Pan)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "一 (Ichi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "二 (Ni)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "三 (San)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "四 (Shi/Yon)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "五 (Go)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "六 (Roku)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "七 (Shichi/Nana)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "八 (Hachi)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "九 (Kyuu/Ku)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "十 (Juu)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "zh",
+      "target": "ko",
+      "name": {
+        "source": "Chinese",
+        "target": "Korean"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_ko",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "안녕하세요 (Annyeonghaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "좋은 아침 (Joeun achim)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "안녕하세요 (Annyeonghaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "안녕히 가세요 (Annyeonghi gaseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "감사합니다 (Gamsahamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "주세요 (Juseyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "천만에요 (Cheonmaneyo)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "죄송합니다 (Joesonghamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "실례합니다 (Sillyehamnida)",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "밥 (Bap)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "국수 (Guksu)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "차 (Cha)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "물 (Mul)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "고기 (Gogi)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "야채 (Yachae)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "과일 (Gwail)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "국 (Guk)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "빵 (Ppang)",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "하나 (Hana)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "둘 (Dul)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "셋 (Set)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "넷 (Net)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "다섯 (Daseot)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "여섯 (Yeoseot)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "일곱 (Ilgop)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "여덟 (Yeodeol)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "아홉 (Ahop)",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "열 (Yeol)",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "zh",
+      "target": "pt",
+      "name": {
+        "source": "Chinese",
+        "target": "Portuguese"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_pt",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "Olá",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "Bom dia",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "Boa noite",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "Adeus",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "Obrigado",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "Por favor",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "De nada",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "Desculpe",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "Com licença",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "Arroz",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "Macarrão",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "Chá",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "Água",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "Carne",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "Vegetais",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "Fruta",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "Sopa",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "Pão",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "Um",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "Dois",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "Três",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "Quatro",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "Cinco",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "Seis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "Sete",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "Oito",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "Nove",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "Dez",
+          "category": "numbers"
+        }
+      ]
+    },
+    {
+      "source": "zh",
+      "target": "ht",
+      "name": {
+        "source": "Chinese",
+        "target": "Haitian Creole"
+      },
+      "requiresUnlock": true,
+      "unlockKey": "langpair_zh_ht",
+      "pairs": [
+        {
+          "sourceWord": "你好",
+          "targetWord": "Bonjou",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "早上好",
+          "targetWord": "Bonjou",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "晚上好",
+          "targetWord": "Bonswa",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "再见",
+          "targetWord": "Orevwa",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "谢谢",
+          "targetWord": "Mèsi",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "请",
+          "targetWord": "Tanpri",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "不客气",
+          "targetWord": "Padekwa",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "对不起",
+          "targetWord": "Mwen regrèt",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "打扰一下",
+          "targetWord": "Eskize mwen",
+          "category": "phrases"
+        },
+        {
+          "sourceWord": "米饭",
+          "targetWord": "Diri",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面条",
+          "targetWord": "Nouil",
+          "category": "food"
+        },
+        {
+          "sourceWord": "茶",
+          "targetWord": "Te",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水",
+          "targetWord": "Dlo",
+          "category": "food"
+        },
+        {
+          "sourceWord": "肉",
+          "targetWord": "Vyann",
+          "category": "food"
+        },
+        {
+          "sourceWord": "蔬菜",
+          "targetWord": "Legim",
+          "category": "food"
+        },
+        {
+          "sourceWord": "水果",
+          "targetWord": "Fwi",
+          "category": "food"
+        },
+        {
+          "sourceWord": "汤",
+          "targetWord": "Soup",
+          "category": "food"
+        },
+        {
+          "sourceWord": "面包",
+          "targetWord": "Pen",
+          "category": "food"
+        },
+        {
+          "sourceWord": "一",
+          "targetWord": "En",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "二",
+          "targetWord": "De",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "三",
+          "targetWord": "Twa",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "四",
+          "targetWord": "Kat",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "五",
+          "targetWord": "Senk",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "六",
+          "targetWord": "Sis",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "七",
+          "targetWord": "Sèt",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "八",
+          "targetWord": "Wit",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "九",
+          "targetWord": "Nèf",
+          "category": "numbers"
+        },
+        {
+          "sourceWord": "十",
+          "targetWord": "Dis",
+          "category": "numbers"
+        }
+      ]
+    } 
