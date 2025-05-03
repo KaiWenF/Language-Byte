@@ -122,12 +122,25 @@ struct WordStudyView: View {
                         viewModel.speakCurrentWord()
                     }) {
                         HStack {
-                            Image(systemName: "speaker.wave.2.fill")
-                            Text("Speak Word")
+                            // Change icon if voice support isn't available
+                            Image(systemName: viewModel.hasVoiceSupport ? "speaker.wave.2.fill" : "speaker.slash.fill")
+                                .foregroundColor(viewModel.hasVoiceSupport ? .blue : .red)
+                            
+                            // Show different text if voice support isn't available
+                            if viewModel.hasVoiceSupport {
+                                Text("Speak Word")
+                            } else {
+                                Text("No Voice")
+                                    .foregroundColor(.red)
+                            }
                         }
                         .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.bordered)
+                    // Add tooltip explaining fallback if no voice is available
+                    .help(viewModel.hasVoiceSupport ? 
+                          "Hear the word spoken aloud" : 
+                          "No voice available for this language. Will use fallback if possible.")
                     
                     Button(action: {
                         viewModel.toggleFavorite()

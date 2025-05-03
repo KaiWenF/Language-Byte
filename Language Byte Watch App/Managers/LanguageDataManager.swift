@@ -26,13 +26,19 @@ class LanguageDataManager {
     
     /// Loads language data from JSON
     func loadLanguageData() {
-        // Try to load from multilingual_words.json
+        // Try to load from individual JSON files in Resources/LanguageData
+        if let pairs = loadCategoryJSONFiles() {
+            self.languagePairs = pairs
+            return
+        }
+        
+        // Fallback: Try to load from multilingual_words.json
         if let pairs = loadMultilingualWordsJSON() {
             self.languagePairs = pairs
             return
         }
         
-        // Fallback: Convert legacy words.json to a language pair
+        // Second fallback: Convert legacy words.json to a language pair
         if let legacyWords = loadLegacyWordsJSON() {
             // Create a Spanish-English language pair from legacy data
             let spanishEnglish = LanguagePair(
@@ -42,6 +48,133 @@ class LanguageDataManager {
             )
             self.languagePairs = [spanishEnglish]
         }
+    }
+    
+    /// Loads a specific language pair based on source, target, and category
+    func loadLanguagePair(source: String, target: String, category: String) -> LanguagePair? {
+        // Create the file name based on the source, target, and category
+        let safeCategory = category.lowercased().replacingOccurrences(of: " ", with: "_")
+        let fileName = "\(source)_\(target)_\(safeCategory)"
+        
+        // Try to load the specific file
+        return loadLanguagePairFromFile(fileName: fileName)
+    }
+    
+    /// Loads a specific language pair from a JSON file
+    private func loadLanguagePairFromFile(fileName: String) -> LanguagePair? {
+        // Construct the subdirectory path
+        let subdirectory = "LanguageData"
+        
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "json", subdirectory: subdirectory) else {
+            print("⚠️ Could not find \(fileName).json in the \(subdirectory) directory.")
+            return nil
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            
+            // Define the structure for the single language pair JSON
+            struct LanguageData: Codable {
+                let source: String
+                let target: String
+                let name: LanguageName
+                let pairs: [WordPairData]
+                let requiresUnlock: Bool?
+                let unlockKey: String?
+                
+                struct LanguageName: Codable {
+                    let source: String
+                    let target: String
+                }
+                
+                struct WordPairData: Codable {
+                    let sourceWord: String
+                    let targetWord: String
+                    let category: String
+                }
+            }
+            
+            // Decode the JSON
+            let langData = try JSONDecoder().decode(LanguageData.self, from: data)
+            
+            // Create Language objects
+            let sourceLanguage = Language(
+                code: langData.source,
+                name: langData.name.source,
+                speechCode: getSpeechCode(for: langData.source)
+            )
+            
+            let targetLanguage = Language(
+                code: langData.target,
+                name: langData.name.target,
+                speechCode: getSpeechCode(for: langData.target)
+            )
+            
+            // Convert word pairs
+            let wordPairs = langData.pairs.map { pair in
+                WordPair(
+                    foreignWord: pair.targetWord,
+                    translation: pair.sourceWord,
+                    category: pair.category
+                )
+            }
+            
+            // Create and return the language pair
+            let languagePair = LanguagePair(
+                sourceLanguage: sourceLanguage,
+                targetLanguage: targetLanguage,
+                pairs: wordPairs
+            )
+            
+            print("📚 Successfully loaded language pair \(sourceLanguage.name) → \(targetLanguage.name) with \(wordPairs.count) words.")
+            return languagePair
+            
+        } catch {
+            print("❌ Error loading or decoding \(fileName).json: \(error)")
+            return nil
+        }
+    }
+    
+    /// Loads all available category JSON files from Resources/LanguageData directory
+    private func loadCategoryJSONFiles() -> [LanguagePair]? {
+        // Get all language directories in Resources/LanguageData
+        guard let languageDirURLs = Bundle.main.urls(forResourcesWithExtension: nil, subdirectory: "LanguageData") else {
+            print("⚠️ No language directories found in Resources/LanguageData.")
+            return nil
+        }
+        
+        var allLanguagePairs: [LanguagePair] = []
+        
+        // Find all JSON files in each language directory
+        for dirURL in languageDirURLs {
+            let fileManager = FileManager.default
+            
+            do {
+                let fileURLs = try fileManager.contentsOfDirectory(at: dirURL, includingPropertiesForKeys: nil)
+                let jsonFileURLs = fileURLs.filter { $0.pathExtension == "json" }
+                
+                for fileURL in jsonFileURLs {
+                    // Extract the file name without extension
+                    let fileName = fileURL.deletingPathExtension().lastPathComponent
+                    
+                    // Try to load the language pair from this file
+                    if let languagePair = loadLanguagePairFromFile(fileName: fileName) {
+                        allLanguagePairs.append(languagePair)
+                    }
+                }
+            } catch {
+                print("❌ Error reading directory \(dirURL): \(error)")
+                continue
+            }
+        }
+        
+        if allLanguagePairs.isEmpty {
+            print("⚠️ No language pairs found in Resources/LanguageData.")
+            return nil
+        }
+        
+        print("📚 Successfully loaded \(allLanguagePairs.count) language pairs from category JSON files.")
+        return allLanguagePairs
     }
     
     /// Loads legacy words.json format (English-Spanish only)
@@ -79,6 +212,8 @@ class LanguageDataManager {
                     let target: String
                     let name: LanguageName
                     let pairs: [WordPairData]
+                    let requiresUnlock: Bool?
+                    let unlockKey: String?
                     
                     struct LanguageName: Codable {
                         let source: String
@@ -160,6 +295,34 @@ class LanguageDataManager {
     }
     
     // MARK: - Helper Methods
+    
+    /// Returns a specific language pair based on source, target, and category
+    func getLanguagePair(source: String, target: String, category: String) -> LanguagePair? {
+        // First try loading from the individual file for this category
+        let safeCategory = category.lowercased().replacingOccurrences(of: " ", with: "_")
+        if let specificPair = loadLanguagePair(source: source, target: target, category: safeCategory) {
+            return specificPair
+        }
+        
+        // Fall back to getting the full language pair and filtering by category
+        if let fullPair = getLanguagePair(source: source, target: target) {
+            // Filter the pairs by category
+            let filteredPairs = fullPair.pairs.filter { 
+                $0.category.lowercased() == category.lowercased() 
+            }
+            
+            // If we found matching pairs, create a new language pair with just those
+            if !filteredPairs.isEmpty {
+                return LanguagePair(
+                    sourceLanguage: fullPair.sourceLanguage,
+                    targetLanguage: fullPair.targetLanguage,
+                    pairs: filteredPairs
+                )
+            }
+        }
+        
+        return nil
+    }
     
     /// Returns a specific language pair based on source and target language codes
     func getLanguagePair(source: String, target: String) -> LanguagePair? {

@@ -51,6 +51,9 @@ class WordViewModel: ObservableObject {
     @AppStorage("selectedVoiceForTargetLanguage") var selectedVoiceForTargetLanguage: String = ""
     @Published var preventNextSpeak: Bool = false
     
+    // Track whether the current language has voice support
+    @Published var hasVoiceSupport: Bool = true
+    
     // Words from the selected language pair
     @Published var allWords: [WordPair] = []
     
@@ -132,9 +135,27 @@ class WordViewModel: ObservableObject {
             categories.append("Favorites")
         }
 
-        // Add actual word categories from the word data
-        let uniqueCategories = Set(allWords.map { $0.category.lowercased().capitalized })
-        categories.append(contentsOf: uniqueCategories.sorted())
+        // Add dynamic categories from CategoryManager instead of hardcoding
+        if let selectedPair = selectedLanguagePair {
+            let source = selectedPair.sourceLanguage.code
+            let target = selectedPair.targetLanguage.code
+            
+            // Get categories from our new CategoryManager
+            let dynamicCategories = CategoryManager.getAvailableCategories(source: source, target: target)
+            
+            // If no categories found from files, fallback to extracting from loaded words
+            if dynamicCategories.isEmpty {
+                // Fallback to the original approach
+                let uniqueCategories = Set(allWords.map { $0.category.lowercased().capitalized })
+                categories.append(contentsOf: uniqueCategories.sorted())
+            } else {
+                categories.append(contentsOf: dynamicCategories)
+            }
+        } else {
+            // Fallback to the original approach if no language pair is selected
+            let uniqueCategories = Set(allWords.map { $0.category.lowercased().capitalized })
+            categories.append(contentsOf: uniqueCategories.sorted())
+        }
 
         return categories
     }
@@ -365,23 +386,59 @@ class WordViewModel: ObservableObject {
     /// Speaks a word aloud using the correct language.
     func speakWord(_ word: String) {
         guard enableTextToSpeech else { return }
+        
+        // Check if we should prevent speaking (e.g., after a recent language change)
+        if preventNextSpeak {
+            preventNextSpeak = false
+            return
+        }
 
         let utterance = AVSpeechUtterance(string: word)
-
+        var voiceAvailable = true
+        
         // First try to use user-selected voice if available
         if !selectedVoiceForTargetLanguage.isEmpty, 
            let voice = AVSpeechSynthesisVoice(identifier: selectedVoiceForTargetLanguage) {
             utterance.voice = voice
             print("[DEBUG] Using custom voice: \(selectedVoiceForTargetLanguage)")
         } else {
-            // Fall back to system default for the language
-            utterance.voice = AVSpeechSynthesisVoice(language: currentSpeechCode)
-            print("[DEBUG] Using default voice for: \(currentSpeechCode)")
+            // Attempt to use the default voice for the current language code
+            if let voice = AVSpeechSynthesisVoice(language: currentSpeechCode) {
+                utterance.voice = voice
+                print("[DEBUG] Using default voice for: \(currentSpeechCode)")
+            } else {
+                // Language not supported (like Haitian Creole)
+                voiceAvailable = false
+                
+                // Apply language-specific fallbacks
+                if currentSpeechCode.hasPrefix("ht") {
+                    // Fallback for Haitian Creole: use French
+                    if let fallbackVoice = AVSpeechSynthesisVoice(language: "fr-FR") {
+                        utterance.voice = fallbackVoice
+                        print("[DEBUG] Fallback: Using French voice for Haitian Creole")
+                        voiceAvailable = true
+                    }
+                }
+                
+                // General fallback: use English if nothing else works
+                if !voiceAvailable, let englishVoice = AVSpeechSynthesisVoice(language: "en-US") {
+                    utterance.voice = englishVoice
+                    print("[DEBUG] Ultimate fallback: Using English voice")
+                    voiceAvailable = true
+                }
+            }
         }
         
-        utterance.rate = 0.5
-
-        speechSynthesizer.speak(utterance)
+        // Update the voice support status for the UI
+        hasVoiceSupport = voiceAvailable
+        
+        // Only speak if we have a voice
+        if voiceAvailable {
+            utterance.rate = 0.5
+            speechSynthesizer.speak(utterance)
+        } else {
+            print("[ERROR] No voice available for language: \(currentSpeechCode)")
+        }
     }
     
     /// Updates the speech language based on the current display
@@ -395,7 +452,30 @@ class WordViewModel: ObservableObject {
             currentSpeechCode = languagePair.sourceLanguage.speechCode
         }
         
+        // Check if this language has voice support
+        checkVoiceSupport(for: currentSpeechCode)
+        
         print("[DEBUG] Updated speech language: \(currentSpeechCode)")
+    }
+    
+    /// Checks if voice support exists for a given language code
+    private func checkVoiceSupport(for languageCode: String) {
+        // First, consider user-selected voices if applicable
+        if !selectedVoiceForTargetLanguage.isEmpty {
+            // If a specific voice is selected, check if it's available
+            if AVSpeechSynthesisVoice(identifier: selectedVoiceForTargetLanguage) != nil {
+                hasVoiceSupport = true
+                return
+            }
+        }
+        
+        // Then check if the system has a voice for this language
+        hasVoiceSupport = AVSpeechSynthesisVoice(language: languageCode) != nil
+        
+        // Special case for Haitian Creole - check if French fallback is available
+        if !hasVoiceSupport && languageCode.hasPrefix("ht") {
+            hasVoiceSupport = AVSpeechSynthesisVoice(language: "fr-FR") != nil
+        }
     }
 
     // MARK: - Daily Progress Methods
@@ -420,6 +500,23 @@ class WordViewModel: ObservableObject {
     /// Helper function to set/reset the category
     func selectCategory(_ category: String?) {
         selectedCategory = category
+        
+        // If we have a specific category (not "All" or "Favorites"), try to load a category-specific language pair
+        if let category = category, 
+           category.lowercased() != "all" && 
+           category.lowercased() != "favorites",
+           let currentPair = selectedLanguagePair {
+            
+            let source = currentPair.sourceLanguage.code
+            let target = currentPair.targetLanguage.code
+            
+            // Try to get a category-specific language pair
+            if let categoryPair = languageManager.getLanguagePair(source: source, target: target, category: category) {
+                // Just update the word list, not the entire language pair
+                allWords = categoryPair.pairs
+                print("📚 Loaded \(allWords.count) words for category: \(category)")
+            }
+        }
     }
     
     /// Load the saved category from UserDefaults
