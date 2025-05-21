@@ -232,14 +232,14 @@ struct QuizView: View {
         guard allWords.count >= 3 else { return }
         
         let correctPair = allWords[0]
-        let wrongChoices = allWords[1...].prefix(2).map { $0.foreignWord }
+        let wrongChoices = allWords[1...].prefix(2).map { $0.sourceWord }
         
-        var choices = wrongChoices + [correctPair.foreignWord]
+        var choices = wrongChoices + [correctPair.sourceWord]
         choices.shuffle()
         
         currentQuestion = QuizQuestion(
-            sourceWord: correctPair.translation,
-            correctAnswer: correctPair.foreignWord,
+            sourceWord: correctPair.targetWord,
+            correctAnswer: correctPair.sourceWord,
             choices: choices
         )
         showFeedback = false

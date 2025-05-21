@@ -6,15 +6,19 @@
 //
 
 import SwiftUI
-import AVFoundation  // 🔹 Import AVFoundation for voice selection
+import AVFoundation
 import UserNotifications
+import StoreKit
 
 struct SettingsView: View {
     @EnvironmentObject var viewModel: WordViewModel
     @Environment(\.dismiss) private var dismiss
+    @StateObject private var storeManager = StoreKitManager()
     
     // State to track if we need to refresh voice options
     @State private var forceVoiceRefresh: Bool = false
+    @State private var showSubscriptionView = false
+    @State private var showResetConfirmation = false
     
     @AppStorage("enableTextToSpeech") private var enableTextToSpeech = false
     @AppStorage("favoriteColor") private var favoriteColor: String = "yellow"
@@ -38,6 +42,35 @@ struct SettingsView: View {
 
     var body: some View {
         List {
+            // Premium Features Section
+            Section {
+                if storeManager.hasActiveSubscription {
+                    HStack {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.yellow)
+                        Text("Premium Active")
+                        Spacer()
+                        Text("✓")
+                            .foregroundColor(.green)
+                    }
+                } else {
+                    Button {
+                        showSubscriptionView = true
+                    } label: {
+                        HStack {
+                            Image(systemName: "star")
+                                .foregroundColor(.yellow)
+                            Text("Upgrade to Premium")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.gray)
+                        }
+                    }
+                }
+            } header: {
+                Text("Premium Features")
+            }
+            
             Section(header: Text("Text-to-Speech")) {
                 Toggle("Enable Speech", isOn: $enableTextToSpeech)
                     .onChange(of: enableTextToSpeech) { _ in
@@ -183,6 +216,23 @@ struct SettingsView: View {
             if let date = Calendar.current.date(from: components) {
                 notificationTime = date
             }
+        }
+        .sheet(isPresented: $showSubscriptionView) {
+            SubscriptionView()
+        }
+        .alert("Reset Progress", isPresented: $showResetConfirmation) {
+            Button("Cancel", role: .cancel) { }
+            Button("Reset", role: .destructive) {
+                // Reset progress
+                UserDefaults.standard.removeObject(forKey: "xp_total")
+                UserDefaults.standard.removeObject(forKey: "user_level")
+                UserDefaults.standard.removeObject(forKey: "quiz_totalAttempts")
+                UserDefaults.standard.removeObject(forKey: "quiz_correctAnswers")
+                UserDefaults.standard.removeObject(forKey: "quiz_bestStreak")
+                UserDefaults.standard.synchronize()
+            }
+        } message: {
+            Text("Are you sure you want to reset all progress? This cannot be undone.")
         }
     }
     

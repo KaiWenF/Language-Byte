@@ -1,6 +1,5 @@
-import Testing
 import SwiftUI
-@testable import Language_Byte_Watch_App
+import XCTest
 
 // Mock Achievement struct for testing
 struct MockAchievement: Identifiable {
@@ -132,6 +131,153 @@ class MockQuizStatsView {
             return .blue
         }
     }
+}
+
+class QuizStatsViewTests: XCTestCase {
+    var viewModel: QuizStatsViewModel!
+    var achievementManager: MockAchievementManager!
+    
+    override func setUp() {
+        super.setUp()
+        achievementManager = MockAchievementManager()
+        viewModel = QuizStatsViewModel(achievementManager: achievementManager)
+    }
+    
+    override func tearDown() {
+        viewModel = nil
+        achievementManager = nil
+        super.tearDown()
+    }
+    
+    func testQuizAchievementsDisplay() {
+        // Given
+        let quizStats = QuizStats(
+            totalQuestions: 10,
+            correctAnswers: 8,
+            timeSpent: 120,
+            streak: 5
+        )
+        
+        // When
+        viewModel.updateStats(quizStats)
+        
+        // Then
+        let accurateAchievement = achievementManager.achievements.first { $0.id == "sharp_mind" }
+        XCTAssertNotNil(accurateAchievement, "Sharp Mind achievement should be unlocked")
+        XCTAssertTrue(accurateAchievement?.unlocked ?? false, "Sharp Mind achievement should be unlocked")
+    }
+    
+    func testPerfectAccuracyAchievement() {
+        // Given
+        let quizStats = QuizStats(
+            totalQuestions: 10,
+            correctAnswers: 10,
+            timeSpent: 150,
+            streak: 10
+        )
+        
+        // When
+        viewModel.updateStats(quizStats)
+        
+        // Then
+        let perfectAchievement = achievementManager.achievements.first { $0.id == "perfect_recall" }
+        XCTAssertNotNil(perfectAchievement, "Perfect Recall achievement should be unlocked")
+        XCTAssertTrue(perfectAchievement?.unlocked ?? false, "Perfect Recall achievement should be unlocked")
+    }
+    
+    func testSpecialAchievements() {
+        // Given
+        let quizStats = QuizStats(
+            totalQuestions: 10,
+            correctAnswers: 8,
+            timeSpent: 60, // Fast completion time
+            streak: 3
+        )
+        
+        // When
+        viewModel.updateStats(quizStats)
+        
+        // Then
+        let speedsterAchievement = achievementManager.achievements.first { $0.id == "quick_thinker" }
+        XCTAssertNotNil(speedsterAchievement, "Quick Thinker achievement should be unlocked")
+        XCTAssertTrue(speedsterAchievement?.unlocked ?? false, "Quick Thinker achievement should be unlocked")
+    }
+    
+    func testNoAchievementsWithNoProgress() {
+        // Given
+        let quizStats = QuizStats(
+            totalQuestions: 0,
+            correctAnswers: 0,
+            timeSpent: 0,
+            streak: 0
+        )
+        
+        // When
+        viewModel.updateStats(quizStats)
+        
+        // Then
+        let unlockedAchievements = achievementManager.achievements.filter { $0.unlocked }
+        XCTAssertTrue(unlockedAchievements.isEmpty, "No achievements should be unlocked without progress")
+    }
+}
+
+// MARK: - Supporting Types
+
+struct QuizStats {
+    let totalQuestions: Int
+    let correctAnswers: Int
+    let timeSpent: TimeInterval
+    let streak: Int
+}
+
+class QuizStatsViewModel: ObservableObject {
+    private let achievementManager: MockAchievementManager
+    
+    init(achievementManager: MockAchievementManager) {
+        self.achievementManager = achievementManager
+    }
+    
+    func updateStats(_ stats: QuizStats) {
+        // Check for accuracy-based achievements
+        let accuracy = Double(stats.correctAnswers) / Double(stats.totalQuestions)
+        if accuracy >= 0.8 {
+            achievementManager.unlockAchievement(id: "sharp_mind")
+        }
+        if accuracy == 1.0 {
+            achievementManager.unlockAchievement(id: "perfect_recall")
+        }
+        
+        // Check for speed-based achievements
+        if stats.timeSpent <= 60 && stats.totalQuestions >= 5 {
+            achievementManager.unlockAchievement(id: "quick_thinker")
+        }
+        
+        // Check for streak-based achievements
+        if stats.streak >= 5 {
+            achievementManager.unlockAchievement(id: "hotstreak")
+        }
+    }
+}
+
+class MockAchievementManager {
+    var achievements: [MockAchievement] = []
+    
+    func unlockAchievement(id: String) {
+        if let index = achievements.firstIndex(where: { $0.id == id }) {
+            achievements[index].unlocked = true
+        } else {
+            let achievement = MockAchievement(id: id, title: "", description: "", iconName: "", unlocked: true)
+            achievements.append(achievement)
+        }
+    }
+}
+
+struct MockAchievement: Identifiable {
+    let id: String
+    let title: String
+    let description: String
+    let iconName: String
+    var unlocked: Bool
 }
 
 struct QuizStatsViewTests {

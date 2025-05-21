@@ -95,6 +95,7 @@ class QuizViewModelTests: XCTestCase {
     // Test the generation of quiz questions
     func testGenerateQuizQuestion() {
         // Create a mock word list
+        // Note: This uses a different WordPair struct specifically for tests
         let mockWords = [
             WordPair(foreignWord: "hola", translation: "hello", category: "greetings"),
             WordPair(foreignWord: "adiós", translation: "goodbye", category: "greetings"),

@@ -213,9 +213,9 @@ struct LevelViewLegacy: View {
                             .font(.headline)
                             .padding(.top, 10)
                         
-                        AchievementRow(icon: "checkmark.circle.fill", title: "Answer Streak", xp: "+20 XP")
-                        AchievementRow(icon: "flame.fill", title: "Daily Challenge", xp: "+50 XP")
-                        AchievementRow(icon: "star.fill", title: "Perfect Score", xp: "+100 XP")
+                        AchievementRowLegacy(icon: "checkmark.circle.fill", title: "Answer Streak", xp: "+20 XP")
+                        AchievementRowLegacy(icon: "flame.fill", title: "Daily Challenge", xp: "+50 XP")
+                        AchievementRowLegacy(icon: "star.fill", title: "Perfect Score", xp: "+100 XP")
                     }
                     .padding()
                     .background(
@@ -384,7 +384,7 @@ struct LevelViewLegacy: View {
 // MARK: - Helper Views
 
 // Helper view for achievement rows
-struct AchievementRow: View {
+struct AchievementRowLegacy: View {
     let icon: String
     let title: String
     let xp: String

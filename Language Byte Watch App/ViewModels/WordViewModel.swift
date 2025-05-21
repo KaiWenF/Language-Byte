@@ -98,7 +98,7 @@ class WordViewModel: ObservableObject {
     // Computed property to display the current word.
     var displayWord: String {
         guard let current = currentWord else { return "N/A" }
-        return showingForeign ? current.foreignWord : current.translation
+        return showingForeign ? current.sourceWord : current.targetWord
     }
     
     // Computed property that filters words by selectedCategory + language pair
@@ -121,9 +121,11 @@ class WordViewModel: ObservableObject {
     // Computed property to access today's Word of the Day
     var wordOfTheDay: WordPair {
         WordPair(
-            foreignWord: wordOfTheDayTarget,
-            translation: wordOfTheDaySource,
-            category: "Word of the Day"
+            id: UUID().uuidString,
+            sourceWord: wordOfTheDayTarget,
+            targetWord: wordOfTheDaySource,
+            category: "Word of the Day",
+            lastAttempted: nil
         )
     }
 
@@ -260,8 +262,8 @@ class WordViewModel: ObservableObject {
     public func selectNewWordOfTheDay() {
         if !allWords.isEmpty {
             if let randomWord = allWords.randomElement() {
-                wordOfTheDaySource = randomWord.translation
-                wordOfTheDayTarget = randomWord.foreignWord
+                wordOfTheDaySource = randomWord.targetWord
+                wordOfTheDayTarget = randomWord.sourceWord
                 wordOfTheDaySourceLanguage = selectedLanguagePair?.sourceLanguage.code ?? "en"
                 wordOfTheDayTargetLanguage = selectedLanguagePair?.targetLanguage.code ?? "es"
             }
@@ -330,7 +332,7 @@ class WordViewModel: ObservableObject {
         
         // Check if we actually have a current word
         if let current = currentWord {
-            print("✅ Successfully selected word: \(current.foreignWord) = \(current.translation)")
+            print("✅ Successfully selected word: \(current.sourceWord) = \(current.targetWord)")
         } else {
             print("❌ Failed to select a word after language change")
         }
@@ -563,7 +565,7 @@ class WordViewModel: ObservableObject {
         showingForeign = true
         incrementWordsStudied()
         
-        print("📝 Selected word: \(currentWord?.foreignWord ?? "none") (\(currentWord?.category ?? "no category"))")
+        print("📝 Selected word: \(currentWord?.sourceWord ?? "none") (\(currentWord?.category ?? "no category"))")
     }
     
     /// Toggles the favorite status of the current word.

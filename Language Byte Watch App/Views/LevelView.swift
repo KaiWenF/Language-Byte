@@ -57,7 +57,7 @@ struct ConfettiParticle: View {
 }
 
 // MARK: - Confetti View
-struct ConfettiView: View {
+struct LevelConfettiView: View {
     let colors: [Color] = [.red, .blue, .green, .yellow, .pink, .purple, .orange]
     let particleCount = 50
     
@@ -253,7 +253,7 @@ struct LevelViewDetail: View {
             ZStack {
                 // Confetti overlay
                 if showConfetti {
-                    ConfettiView()
+                    LevelConfettiView()
                         .allowsHitTesting(false)
                 }
             }

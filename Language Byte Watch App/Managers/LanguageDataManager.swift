@@ -113,9 +113,11 @@ class LanguageDataManager {
             // Convert word pairs
             let wordPairs = langData.pairs.map { pair in
                 WordPair(
-                    foreignWord: pair.targetWord,
-                    translation: pair.sourceWord,
-                    category: pair.category
+                    id: UUID().uuidString,
+                    sourceWord: pair.sourceWord,
+                    targetWord: pair.targetWord,
+                    category: pair.category,
+                    lastAttempted: nil
                 )
             }
             
@@ -253,9 +255,11 @@ class LanguageDataManager {
                 // Convert word pairs
                 let wordPairs = langData.pairs.map { pair in
                     WordPair(
-                        foreignWord: pair.targetWord,
-                        translation: pair.sourceWord,
-                        category: pair.category
+                        id: UUID().uuidString,
+                        sourceWord: pair.sourceWord,
+                        targetWord: pair.targetWord,
+                        category: pair.category,
+                        lastAttempted: nil
                     )
                 }
                 

@@ -11,7 +11,7 @@ struct FavoritesView: View {
             speechSynthesizer.stopSpeaking(at: .immediate)
         }
         
-        let utterance = AVSpeechUtterance(string: word.foreignWord)
+        let utterance = AVSpeechUtterance(string: word.sourceWord)
         
         // Get the best available voice for the language
         if let voice = AVSpeechSynthesisVoice(language: viewModel.selectedLanguagePair?.targetLanguage.speechCode ?? "en-US") {
@@ -39,10 +39,10 @@ struct FavoritesView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(Array(viewModel.favoriteWordPairs), id: \.foreignWord) { favorite in
+                ForEach(Array(viewModel.favoriteWordPairs), id: \.sourceWord) { favorite in
                     HStack {
                         VStack(alignment: .leading, spacing: 4) {
-                            Text("\(favorite.foreignWord) → \(favorite.translation)")
+                            Text("\(favorite.sourceWord) → \(favorite.targetWord)")
                                 .font(.body)
                             
                             Text(viewModel.selectedLanguagePair?.targetLanguage.name ?? "Target Language")
