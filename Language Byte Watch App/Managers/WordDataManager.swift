@@ -10,6 +10,16 @@ import Foundation
 /// Manages loading and returning a list of word pairs.
 class WordDataManager {
     
+    func loadWords() -> [WordPair]? {
+        // Create some sample words for testing
+        return [
+            WordPair(id: "1", sourceWord: "hello", targetWord: "hola", category: "greetings", lastAttempted: nil),
+            WordPair(id: "2", sourceWord: "goodbye", targetWord: "adiós", category: "greetings", lastAttempted: nil),
+            WordPair(id: "3", sourceWord: "thank you", targetWord: "gracias", category: "greetings", lastAttempted: nil),
+            WordPair(id: "4", sourceWord: "please", targetWord: "por favor", category: "greetings", lastAttempted: nil),
+            WordPair(id: "5", sourceWord: "good morning", targetWord: "buenos días", category: "greetings", lastAttempted: nil)
+        ]
+    }
     
     func loadWordsFromJSON() -> [WordPair] {
         guard let url = Bundle.main.url(forResource: "words", withExtension: "json") else {

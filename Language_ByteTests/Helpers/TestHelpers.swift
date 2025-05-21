@@ -1,4 +1,4 @@
-import Testing
+import XCTest
 import SwiftUI
 @testable import Language_Byte_Watch_App
 
@@ -12,21 +12,21 @@ extension View {
 // Mock data for testing
 struct TestData {
     static let englishSpanishWords: [WordPair] = [
-        WordPair(foreignWord: "hola", translation: "hello", category: "greetings"),
-        WordPair(foreignWord: "adiós", translation: "goodbye", category: "greetings"),
-        WordPair(foreignWord: "gracias", translation: "thank you", category: "courtesy"),
-        WordPair(foreignWord: "por favor", translation: "please", category: "courtesy"),
-        WordPair(foreignWord: "manzana", translation: "apple", category: "food"),
-        WordPair(foreignWord: "agua", translation: "water", category: "drinks")
+        WordPair(id: "es_1", sourceWord: "hola", targetWord: "hello", category: "greetings", lastAttempted: nil),
+        WordPair(id: "es_2", sourceWord: "adiós", targetWord: "goodbye", category: "greetings", lastAttempted: nil),
+        WordPair(id: "es_3", sourceWord: "gracias", targetWord: "thank you", category: "courtesy", lastAttempted: nil),
+        WordPair(id: "es_4", sourceWord: "por favor", targetWord: "please", category: "courtesy", lastAttempted: nil),
+        WordPair(id: "es_5", sourceWord: "manzana", targetWord: "apple", category: "food", lastAttempted: nil),
+        WordPair(id: "es_6", sourceWord: "agua", targetWord: "water", category: "drinks", lastAttempted: nil)
     ]
     
     static let englishFrenchWords: [WordPair] = [
-        WordPair(foreignWord: "bonjour", translation: "hello", category: "greetings"),
-        WordPair(foreignWord: "au revoir", translation: "goodbye", category: "greetings"),
-        WordPair(foreignWord: "merci", translation: "thank you", category: "courtesy"),
-        WordPair(foreignWord: "s'il vous plaît", translation: "please", category: "courtesy"),
-        WordPair(foreignWord: "pomme", translation: "apple", category: "food"),
-        WordPair(foreignWord: "eau", translation: "water", category: "drinks")
+        WordPair(id: "fr_1", sourceWord: "bonjour", targetWord: "hello", category: "greetings", lastAttempted: nil),
+        WordPair(id: "fr_2", sourceWord: "au revoir", targetWord: "goodbye", category: "greetings", lastAttempted: nil),
+        WordPair(id: "fr_3", sourceWord: "merci", targetWord: "thank you", category: "courtesy", lastAttempted: nil),
+        WordPair(id: "fr_4", sourceWord: "s'il vous plaît", targetWord: "please", category: "courtesy", lastAttempted: nil),
+        WordPair(id: "fr_5", sourceWord: "pomme", targetWord: "apple", category: "food", lastAttempted: nil),
+        WordPair(id: "fr_6", sourceWord: "eau", targetWord: "water", category: "drinks", lastAttempted: nil)
     ]
     
     static let spanishEnglishPair = LanguagePair(

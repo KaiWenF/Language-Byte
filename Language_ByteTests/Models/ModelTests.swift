@@ -8,34 +8,40 @@ class ModelTests: XCTestCase {
     
     func testWordPairInitialization() {
         // Arrange
-        let foreignWord = "hola"
-        let translation = "hello"
+        let id = "test_id_1"
+        let sourceWord = "hola"
+        let targetWord = "hello"
         let category = "greetings"
+        let lastAttempted: Date? = nil
         
         // Act
-        let wordPair = WordPair(foreignWord: foreignWord, translation: translation, category: category)
+        let wordPair = WordPair(id: id, sourceWord: sourceWord, targetWord: targetWord, category: category, lastAttempted: lastAttempted)
         
         // Assert
-        XCTAssertEqual(wordPair.foreignWord, foreignWord)
-        XCTAssertEqual(wordPair.translation, translation)
+        XCTAssertEqual(wordPair.id, id)
+        XCTAssertEqual(wordPair.sourceWord, sourceWord)
+        XCTAssertEqual(wordPair.targetWord, targetWord)
         XCTAssertEqual(wordPair.category, category)
+        XCTAssertEqual(wordPair.lastAttempted, lastAttempted)
     }
     
     func testWordPairEquality() {
         // Arrange
-        let wordPair1 = WordPair(foreignWord: "hola", translation: "hello", category: "greetings")
-        let wordPair2 = WordPair(foreignWord: "hola", translation: "hello", category: "greetings")
-        let wordPair3 = WordPair(foreignWord: "adios", translation: "goodbye", category: "greetings")
-        
+        let wordPair1 = WordPair(id: "1", sourceWord: "hola", targetWord: "hello", category: "greetings", lastAttempted: nil)
+        let wordPair2 = WordPair(id: "1", sourceWord: "hola", targetWord: "hello", category: "greetings", lastAttempted: nil) // Same ID and content
+        let wordPair3 = WordPair(id: "2", sourceWord: "adios", targetWord: "goodbye", category: "greetings", lastAttempted: nil) // Different ID
+        let wordPair4 = WordPair(id: "1", sourceWord: "hola", targetWord: "bonjour", category: "greetings", lastAttempted: nil) // Same ID, different content (equality is based on ID)
+
         // Assert
         XCTAssertEqual(wordPair1, wordPair2)
         XCTAssertNotEqual(wordPair1, wordPair3)
+        XCTAssertEqual(wordPair1, wordPair4) // Should be equal as ID is the same, equality doesn't check content beyond ID by default
     }
     
     func testWordPairHashable() {
         // Arrange
-        let wordPair1 = WordPair(foreignWord: "hola", translation: "hello", category: "greetings")
-        let wordPair2 = WordPair(foreignWord: "adios", translation: "goodbye", category: "greetings")
+        let wordPair1 = WordPair(id: "hash_1", sourceWord: "hola", targetWord: "hello", category: "greetings", lastAttempted: nil)
+        let wordPair2 = WordPair(id: "hash_2", sourceWord: "adios", targetWord: "goodbye", category: "greetings", lastAttempted: nil)
         
         // Act
         var dictionary = [WordPair: String]()
@@ -49,7 +55,7 @@ class ModelTests: XCTestCase {
     
     func testWordPairCodable() throws {
         // Arrange
-        let wordPair = WordPair(foreignWord: "hola", translation: "hello", category: "greetings")
+        let wordPair = WordPair(id: "codable_1", sourceWord: "hola", targetWord: "hello", category: "greetings", lastAttempted: Date())
         
         // Act
         let encoder = JSONEncoder()
@@ -59,6 +65,11 @@ class ModelTests: XCTestCase {
         
         // Assert
         XCTAssertEqual(wordPair, decodedWordPair)
+        XCTAssertEqual(wordPair.sourceWord, decodedWordPair.sourceWord)
+        XCTAssertEqual(wordPair.targetWord, decodedWordPair.targetWord)
+        XCTAssertEqual(wordPair.category, decodedWordPair.category)
+        // Optional: Compare dates with tolerance if needed, or ensure both are nil/non-nil
+        XCTAssertEqual(wordPair.lastAttempted?.timeIntervalSince1970, decodedWordPair.lastAttempted?.timeIntervalSince1970)
     }
     
     // MARK: - Language Tests
@@ -111,8 +122,8 @@ class ModelTests: XCTestCase {
         let source = Language.english
         let target = Language.spanish
         let pairs = [
-            WordPair(foreignWord: "hola", translation: "hello", category: "greetings"),
-            WordPair(foreignWord: "adios", translation: "goodbye", category: "greetings")
+            WordPair(id: "lp_1", sourceWord: "hola", targetWord: "hello", category: "greetings", lastAttempted: nil),
+            WordPair(id: "lp_2", sourceWord: "adios", targetWord: "goodbye", category: "greetings", lastAttempted: nil)
         ]
         
         // Act
@@ -150,7 +161,7 @@ class ModelTests: XCTestCase {
         let pair2 = LanguagePair(
             sourceLanguage: Language.english,
             targetLanguage: Language.spanish,
-            pairs: [WordPair(foreignWord: "hola", translation: "hello", category: "greetings")]
+            pairs: [WordPair(id: "eq_1", sourceWord: "hola", targetWord: "hello", category: "greetings", lastAttempted: nil)]
         )
         
         let pair3 = LanguagePair(

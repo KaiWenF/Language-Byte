@@ -292,11 +292,12 @@ struct QuizView: View {
 }
 
 // STEP 9: Define a supporting model struct
-struct QuizQuestion {
-    let sourceWord: String
-    let correctAnswer: String
-    let choices: [String]
-}
+// QuizQuestion is now defined in Models/QuizModels.swift
+// struct QuizQuestion {
+//     let sourceWord: String
+//     let correctAnswer: String
+//     let choices: [String]
+// }
 
 #Preview {
     NavigationStack {

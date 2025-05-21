@@ -15,6 +15,11 @@ class LanguageDataManager {
     /// All available language pairs loaded from JSON
     private(set) var languagePairs: [LanguagePair] = []
     
+    /// Public accessor for language pairs
+    var availableLanguagePairs: [LanguagePair] {
+        return languagePairs
+    }
+    
     // MARK: - Initialization
     
     init() {

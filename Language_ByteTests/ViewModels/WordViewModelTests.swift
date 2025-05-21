@@ -1,27 +1,27 @@
-import Testing
+import XCTest
 import SwiftUI
 import Foundation
 @testable import Language_Byte_Watch_App
 
-struct WordViewModelTests {
+class WordViewModelTests: XCTestCase {
     
     // Test the initialization of WordViewModel
-    @Test func testWordViewModelInitialization() {
+    func testWordViewModelInitialization() {
         // Act
         let viewModel = WordViewModel()
         
         // Assert
-        #expect(viewModel.showingForeign == true)
+        XCTAssertTrue(viewModel.showingForeign)
         // Check if selectedCategory is nil or matches the UserDefaults value (case insensitive)
         // The selectedCategory getter returns nil when selectedCategoryRawValue is "All"
         let storedCategory = UserDefaults.standard.string(forKey: "selectedCategory")?.lowercased()
-        #expect(viewModel.selectedCategory == nil || 
+        XCTAssertTrue(viewModel.selectedCategory == nil || 
                 (storedCategory != nil && storedCategory == viewModel.selectedCategory?.lowercased()))
-        #expect(!viewModel.availableCategories.isEmpty)
+        XCTAssertFalse(viewModel.availableCategories.isEmpty)
     }
     
     // Test toggling between foreign word and translation
-    @Test func testToggleWordDisplay() {
+    func testToggleWordDisplay() {
         // Arrange
         let viewModel = WordViewModel()
         let initialState = viewModel.showingForeign
@@ -30,11 +30,11 @@ struct WordViewModelTests {
         viewModel.toggleDisplay()
         
         // Assert
-        #expect(viewModel.showingForeign != initialState)
+        XCTAssertNotEqual(viewModel.showingForeign, initialState)
     }
     
     // Test word selection
-    @Test func testSelectRandomWord() {
+    func testSelectRandomWord() {
         // Arrange
         let viewModel = WordViewModel()
         let initialWord = viewModel.currentWord
@@ -45,17 +45,17 @@ struct WordViewModelTests {
         // Assert
         // If we have words, the current word should change (or at least be set)
         if !viewModel.allWords.isEmpty {
-            #expect(viewModel.currentWord != nil)
+            XCTAssertNotNil(viewModel.currentWord)
             
             // Check if the word has actually changed or if we're in the initial state
             if initialWord != nil {
-                #expect(viewModel.currentWord != initialWord)
+                XCTAssertNotEqual(viewModel.currentWord, initialWord)
             }
         }
     }
     
     // Test adding words to favorites
-    @Test func testToggleFavorite() {
+    func testToggleFavorite() {
         // Arrange
         let viewModel = WordViewModel()
         
@@ -66,7 +66,7 @@ struct WordViewModelTests {
         
         // Skip the test if there's no current word
         guard let currentWord = viewModel.currentWord else {
-            #expect(false, "No current word available for test")
+            XCTFail("No current word available for test")
             return
         }
         
@@ -75,14 +75,14 @@ struct WordViewModelTests {
         viewModel.toggleFavorite()
         
         // Assert
-        #expect(viewModel.isCurrentWordFavorite != initialIsFavorite)
+        XCTAssertNotEqual(viewModel.isCurrentWordFavorite, initialIsFavorite)
         
         // Clean up - toggle back to original state
         viewModel.toggleFavorite()
     }
     
     // Test category filtering
-    @Test func testFilterByCategory() {
+    func testFilterByCategory() {
         // Arrange
         let viewModel = WordViewModel()
         
@@ -108,8 +108,8 @@ struct WordViewModelTests {
         let wordsInCategory2 = countWordsInCategory(viewModel.allWords, category: category2)
         
         // Assert
-        #expect(wordsInCategory1 > 0)
-        #expect(wordsInCategory2 > 0)
+        XCTAssertGreaterThan(wordsInCategory1, 0)
+        XCTAssertGreaterThan(wordsInCategory2, 0)
     }
     
     // Helper method to count words in a category
@@ -118,7 +118,7 @@ struct WordViewModelTests {
     }
     
     // Test the display word property
-    @Test func testDisplayWord() {
+    func testDisplayWord() {
         // Arrange
         let viewModel = WordViewModel()
         
@@ -129,7 +129,7 @@ struct WordViewModelTests {
         
         // Skip the test if there's no current word
         guard let currentWord = viewModel.currentWord else {
-            #expect(false, "No current word available for test")
+            XCTFail("No current word available for test")
             return
         }
         
@@ -141,12 +141,12 @@ struct WordViewModelTests {
         let translationDisplay = viewModel.displayWord
         
         // Assert
-        #expect(foreignDisplay == currentWord.foreignWord)
-        #expect(translationDisplay == currentWord.translation)
+        XCTAssertEqual(foreignDisplay, currentWord.sourceWord)
+        XCTAssertEqual(translationDisplay, currentWord.targetWord)
     }
     
     // Test word of the day functionality
-    @Test func testWordOfTheDay() {
+    func testWordOfTheDay() {
         // Arrange
         let viewModel = WordViewModel()
         
@@ -155,8 +155,8 @@ struct WordViewModelTests {
         
         // Assert
         // After setting word of the day, the stored values should be populated
-        #expect(!viewModel.wordOfTheDaySource.isEmpty)
-        #expect(!viewModel.wordOfTheDayTarget.isEmpty)
+        XCTAssertFalse(viewModel.wordOfTheDaySource.isEmpty)
+        XCTAssertFalse(viewModel.wordOfTheDayTarget.isEmpty)
         
         // Check date format
         let formatter = DateFormatter()
@@ -166,11 +166,11 @@ struct WordViewModelTests {
         
         // Update the Word of the Day and check if the date is set
         viewModel.updateWordOfTheDayIfNeeded()
-        #expect(!viewModel.wordOfTheDayDate.isEmpty)
+        XCTAssertFalse(viewModel.wordOfTheDayDate.isEmpty)
     }
     
     // Test the change language functionality
-    @Test func testChangeLanguagePair() {
+    func testChangeLanguagePair() {
         // Arrange
         let viewModel = WordViewModel()
         
@@ -191,8 +191,8 @@ struct WordViewModelTests {
         viewModel.selectLanguagePair(differentPair)
         
         // Assert
-        #expect(viewModel.selectedLanguagePair?.id == differentPair.id)
-        #expect(viewModel.selectedSourceLanguage == differentPair.sourceLanguage.code)
-        #expect(viewModel.selectedTargetLanguage == differentPair.targetLanguage.code)
+        XCTAssertEqual(viewModel.selectedLanguagePair?.id, differentPair.id)
+        XCTAssertEqual(viewModel.selectedSourceLanguage, differentPair.sourceLanguage.code)
+        XCTAssertEqual(viewModel.selectedTargetLanguage, differentPair.targetLanguage.code)
     }
 } 

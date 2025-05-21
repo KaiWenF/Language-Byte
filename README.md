@@ -2,6 +2,8 @@
 
 A watchOS application for learning vocabulary in multiple languages with a clean, intuitive interface.
 
+"Language Byte is a gamified Apple Watch app that helps you build daily vocabulary in multiple languages — right from your wrist.
+
 ![Language Byte - WatchOS App](app_screenshot.png)
 
 ## Features
@@ -23,6 +25,7 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - Comprehensive quiz system with score tracking and persistence
 - Streak counting and best streak tracking
 - Visual feedback for correct/incorrect answers
+- **Quiz difficulty adapts to user performance**
 - Achievement system with multiple categories:
   * Beginner achievements (Quiz Novice, Language Apprentice)
   * Streak-based achievements (On Fire, Unstoppable)
@@ -33,6 +36,50 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - Detailed quiz statistics and progress tracking
 - Achievement display with custom icons and colors
 - Exit confirmation to prevent accidental navigation
+
+### Premium Features
+- **Premium paywall and feature gating** for advanced features:
+  * Weekly review
+  * Multiple languages
+  * Advanced categories
+  * AI-powered word bundles
+- Mock StoreKit and PremiumAccessManager for robust testing
+- Seamless integration of paywall and feature unlocks
+
+#### Premium Feature Gating & Paywall Integration
+
+The app now supports **premium features** that are only accessible to users with an active subscription. This is managed through a paywall system and a premium access manager, allowing you to offer advanced features as part of a paid upgrade.
+
+**Key Components:**
+- **PremiumAccessManager:** Singleton that checks subscription status and feature availability.
+- **PaywallView:** Dedicated view for premium upsell, purchase, and restore.
+- **Feature Gating in UI:** Premium features (Weekly Review, Multiple Languages, Advanced Categories, AI Word Bundles) are locked for non-subscribers, with seamless paywall presentation.
+- **MockStoreKitManager & MockPremiumAccessManager:** For robust, isolated testing of premium logic.
+
+**How It Works:**
+- When a user tries to access a premium feature, the app checks their subscription status.
+- If not subscribed, the paywall is shown, offering purchase/restore.
+- Upon successful purchase/restore, premium features unlock immediately.
+- All logic is fully testable with mocks.
+
+**Premium Features Gated:**
+- Weekly Review
+- Multiple Languages
+- Advanced Categories
+- AI Word Bundles
+
+**Benefits:**
+- Monetization via in-app purchases
+- Seamless, non-intrusive paywall
+- Fully testable and scalable for future premium features
+
+### Accessibility
+- **Comprehensive accessibility support**:
+  * Custom accessibility labels, hints, and traits
+  * VoiceOver grouping and announcements
+  * Dynamic Type and text scaling
+  * Reduced motion support for animations
+  * Custom accessibility actions for interactive elements
 
 ### Text-to-Speech
 - Dynamic voice selection based on target language
@@ -72,10 +119,12 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - Intelligent notification scheduling
 
 ### Testing
-- Comprehensive automated test suite
+- **Comprehensive automated test suite**
 - Unit tests for models, managers, and view models
+- Performance tests for key operations (loading, filtering, searching, quiz generation)
+- Accessibility tests for all major views and controls
+- Mock data and classes for isolated testing
 - Basic UI initialization tests
-- Mock data for testing without external dependencies
 
 ## Setup Instructions
 
@@ -94,6 +143,7 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 
 ### Models
 - `WordPair`: A word pair with foreign word, translation, and category
+- `QuizQuestion`: Represents a quiz question for the quiz system
 - `Language`: A language with code, name, and speech code
 - `LanguagePair`: A pair of languages with word pairs
 
@@ -107,14 +157,17 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - `QuizView`: Interactive quiz mode with scoring and achievements
 - `QuizStatsView`: Detailed quiz statistics and achievements display
 - `LevelView`: Display XP progress, level information, and statistics
+- `PaywallView`: Handles premium feature upsell and purchase flow
 
 ### View Models
 - `WordViewModel`: Central data model managing words and app state
+- `QuizViewModel`: Handles quiz logic, question generation, and scoring
+- `DashboardViewModel`: Calculates and presents user progress and statistics
+- `PremiumAccessManager`: Handles premium feature access and paywall logic
 - `LanguageDataManager`: Handles loading and organizing language data
 
 ### Managers
 - `NotificationManager`: Handles scheduling of daily notifications
-- `LanguageDataManager`: Manages language data loading and formatting
 - `AchievementManager`: Manages achievement tracking and unlocking
 - `XPManager`: Manages XP calculation, level progression, and notifications
 
@@ -122,6 +175,9 @@ A watchOS application for learning vocabulary in multiple languages with a clean
 - `ModelTests`: Tests for data models and their behavior
 - `ManagerTests`: Tests for managers and their functionality
 - `WordViewModelTests`: Tests for the core view model logic
+- `QuizViewModelTests`: Tests for quiz logic and statistics
+- `PerformanceTests`: Performance tests for key operations
+- `AccessibilityTests`: Accessibility tests for all major views
 - `UITests`: Basic tests for view initialization
 - `TestHelpers`: Helper methods and mock data for testing
 
@@ -134,32 +190,34 @@ The app uses a JSON structure for language data:
 
 ## Recent Improvements
 
+- **Premium feature gating and paywall integration**
+- **Accessibility improvements and comprehensive accessibility tests**
+- **Performance tests for quiz, search, and dashboard operations**
 - Implemented comprehensive XP system with level progression
 - Added XP-based achievements to reward learning milestones
 - Created dedicated LevelView with detailed XP statistics
 - Implemented level-up celebrations with animations and visual feedback
 - Added streak bonuses for consistent correct answers in quizzes
-- Previous improvements:
-  * Implemented comprehensive quiz system with achievement tracking
-  * Added persistent score and streak counting functionality
-  * Created achievement system with multiple categories and custom icons
-  * Enhanced DailyDashboardView with quiz statistics integration
-  * Improved UI consistency across all views with standardized styling
-  * Optimized button placement and navigation flow
-  * Added exit confirmation for quiz mode to prevent accidental exits
-  * Enhanced visual feedback for user interactions
-  * Fixed quiz score reset functionality and state management
-  * Enhanced text scrolling mechanism to display long words without truncation
-  * Optimized animation cycles for faster text return when scrolling long content
-  * Implemented context-aware text display that adapts to content length
-  * Added Word of the Day feature with persistent storage
-  * Implemented daily notification system with customizable scheduling
-  * Created DailyDashboardView to track learning progress
-  * Added notification settings with time picker and toggle controls
-  * Enhanced UI with better feedback for notification status
-  * Improved overall app structure and navigation flow
-  * Streamlined app startup by replacing ContentView with MainView
-  * Added comprehensive automated test suite to ensure code reliability
+- Implemented comprehensive quiz system with achievement tracking
+- Added persistent score and streak counting functionality
+- Created achievement system with multiple categories and custom icons
+- Enhanced DailyDashboardView with quiz statistics integration
+- Improved UI consistency across all views with standardized styling
+- Optimized button placement and navigation flow
+- Added exit confirmation for quiz mode to prevent accidental exits
+- Enhanced visual feedback for user interactions
+- Fixed quiz score reset functionality and state management
+- Enhanced text scrolling mechanism to display long words without truncation
+- Optimized animation cycles for faster text return when scrolling long content
+- Implemented context-aware text display that adapts to content length
+- Added Word of the Day feature with persistent storage
+- Implemented daily notification system with customizable scheduling
+- Created DailyDashboardView to track learning progress
+- Added notification settings with time picker and toggle controls
+- Enhanced UI with better feedback for notification status
+- Improved overall app structure and navigation flow
+- Streamlined app startup by replacing ContentView with MainView
+- Added comprehensive automated test suite to ensure code reliability
 
 ## Future Development
 
