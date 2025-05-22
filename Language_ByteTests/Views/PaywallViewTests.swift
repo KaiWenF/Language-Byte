@@ -7,16 +7,16 @@ class PaywallViewTests: XCTestCase {
     var storeManager: MockStoreKitManager!
     var premiumManager: MockPremiumAccessManager!
     
-    override func setUp() async throws {
-        try await super.setUp()
+    override func setUp() throws {
+        try super.setUp()
         storeManager = MockStoreKitManager()
         premiumManager = MockPremiumAccessManager()
     }
     
-    override func tearDown() async throws {
+    override func tearDown() throws {
         storeManager = nil
         premiumManager = nil
-        try await super.tearDown()
+        try super.tearDown()
     }
     
     func testPurchaseSubscriptionSuccess() async {
@@ -123,7 +123,7 @@ class MockStoreKitManager {
     var errorToThrow: Error?
     
     var subscriptions: [any Product] = [
-        MockProduct(id: "com.languagebyte.monthly", title: "Monthly Plan", description: "Unlimited access for one month", price: 4.99)
+        MockProduct(id: "com.languagebyte.monthly", title: "Monthly Plan", description: "Unlimited access for one month", price: 6.99)
     ]
     
     func purchase(_ product: any Product) async throws {

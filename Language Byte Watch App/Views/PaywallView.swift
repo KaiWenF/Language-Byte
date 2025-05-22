@@ -20,8 +20,8 @@ struct PaywallView: View {
         
         var price: String {
             switch self {
-            case .monthly: return "$4.99"
-            case .annual: return "$39.99"
+            case .monthly: return "$6.99"
+            case .annual: return "$49.99"
             }
         }
         
@@ -35,7 +35,7 @@ struct PaywallView: View {
         var discount: String? {
             switch self {
             case .monthly: return nil
-            case .annual: return "Save 33%"
+            case .annual: return "Save 40%"
             }
         }
     }
@@ -160,7 +160,20 @@ struct PaywallView: View {
     private func subscribeAction() async {
         isLoading = true
         do {
-            try await storeManager.purchase(storeManager.subscriptions[0])
+            let product = storeManager.subscriptions.first { product in
+                switch selectedPlan {
+                case .monthly:
+                    return product.id == "com.languagebyte.premium.monthly"
+                case .annual:
+                    return product.id == "com.languagebyte.premium.annual"
+                }
+            }
+            
+            guard let product = product else {
+                throw StoreError.unknown
+            }
+            
+            try await storeManager.purchase(product)
             dismiss()
         } catch {
             errorMessage = error.localizedDescription

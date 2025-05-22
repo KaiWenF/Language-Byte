@@ -30,7 +30,7 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "4.99",
+          "displayPrice" : "6.99",
           "familyShareable" : false,
           "groupNumber" : 1,
           "internalID" : "monthly_premium",
@@ -60,7 +60,7 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "39.99",
+          "displayPrice" : "49.99",
           "familyShareable" : false,
           "groupNumber" : 1,
           "internalID" : "annual_premium",

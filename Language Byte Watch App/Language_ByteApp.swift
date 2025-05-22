@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-// Import the MainView
-import struct Language_Byte_Watch_App.MainView
+// No need to import MainView since it's in the same module
 
 @main
 struct Language_ByteApp: App {
