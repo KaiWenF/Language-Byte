@@ -1,4 +1,20 @@
 import SwiftUI
+import StoreKit
+
+// Import necessary view models and managers
+import class Language_Byte_Watch_App.AIWordBundlesViewModel
+import class Language_Byte_Watch_App.PremiumAccessManager
+
+// Import models
+import struct Language_Byte_Watch_App.WordPair
+import struct Language_Byte_Watch_App.WordBundle
+import struct Language_Byte_Watch_App.PerformanceInsight
+
+// Import views
+import struct Language_Byte_Watch_App.PaywallView
+
+// Import modifiers
+import enum Language_Byte_Watch_App.PremiumFeature
 
 struct AIWordBundlesView: View {
     @StateObject private var viewModel = AIWordBundlesViewModel()
@@ -54,7 +70,7 @@ struct AIWordBundlesView: View {
     
     private var lockedContent: some View {
         VStack(spacing: 20) {
-            Image(systemName: "lock.fill")
+            Image(systemName: PremiumFeature.aiWordBundles.icon)
                 .font(.largeTitle)
                 .foregroundColor(.secondary)
             
@@ -62,7 +78,7 @@ struct AIWordBundlesView: View {
                 .font(.title2)
                 .bold()
             
-            Text("Unlock premium to get AI-powered word recommendations and personalized learning paths")
+            Text(PremiumFeature.aiWordBundles.description)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)

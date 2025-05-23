@@ -1,17 +1,72 @@
 import SwiftUI
 import StoreKit
 
+// MARK: - Premium Feature Types
+public enum PremiumFeature: String, CaseIterable, Hashable {
+    case multipleLanguages
+    case advancedCategories
+    case quizEnhancements
+    case weeklyReview
+    case voiceCustomization
+    case aiWordBundles
+    case achievements
+    case levelUpAnimations
+    
+    public var description: String {
+        switch self {
+        case .multipleLanguages:
+            return "Learn multiple languages simultaneously"
+        case .advancedCategories:
+            return "Access advanced word categories and specialized vocabulary"
+        case .quizEnhancements:
+            return "Enhanced quiz features with personalized difficulty"
+        case .weeklyReview:
+            return "Weekly progress reviews and insights"
+        case .voiceCustomization:
+            return "Customize voice settings for a personalized learning experience"
+        case .aiWordBundles:
+            return "AI-powered word recommendations and personalized learning paths"
+        case .achievements:
+            return "Track your progress with achievements and milestones"
+        case .levelUpAnimations:
+            return "Celebrate your progress with engaging level-up animations"
+        }
+    }
+    
+    public var icon: String {
+        switch self {
+        case .multipleLanguages:
+            return "globe"
+        case .advancedCategories:
+            return "folder.fill"
+        case .quizEnhancements:
+            return "star.fill"
+        case .weeklyReview:
+            return "chart.bar.fill"
+        case .voiceCustomization:
+            return "waveform"
+        case .aiWordBundles:
+            return "brain"
+        case .achievements:
+            return "trophy.fill"
+        case .levelUpAnimations:
+            return "sparkles"
+        }
+    }
+}
+
+// MARK: - Premium Access Manager
 @MainActor
-class PremiumAccessManager: ObservableObject {
+public class PremiumAccessManager: ObservableObject {
     // MARK: - Singleton
-    static let shared = PremiumAccessManager()
+    public static let shared = PremiumAccessManager()
     
     // MARK: - Published Properties
-    @Published private(set) var isPremium: Bool = false
-    @Published private(set) var hasActiveTrial: Bool = false
-    @Published private(set) var trialEndDate: Date?
-    @Published private(set) var lastUpgradePrompt: Date?
-    @Published private(set) var upgradePromptCount: Int = 0
+    @Published public private(set) var isPremium: Bool = false
+    @Published public private(set) var hasActiveTrial: Bool = false
+    @Published public private(set) var trialEndDate: Date?
+    @Published public private(set) var lastUpgradePrompt: Date?
+    @Published public private(set) var upgradePromptCount: Int = 0
     
     // MARK: - Constants
     private let maxUpgradePrompts = 3
@@ -35,13 +90,13 @@ class PremiumAccessManager: ObservableObject {
     // MARK: - Public Methods
     
     /// Check if a feature is available to the user
-    func isFeatureAvailable(_ feature: PremiumFeature) -> Bool {
+    public func isFeatureAvailable(_ feature: PremiumFeature) -> Bool {
         if isPremium { return true }
-        return feature.isAvailableInFreeTier
+        return false // All features require premium
     }
     
     /// Track user activity and potentially trigger upgrade prompts
-    func trackActivity(_ activity: UserActivity) {
+    public func trackActivity(_ activity: UserActivity) {
         switch activity {
         case .wordViewed:
             wordsViewed += 1
@@ -65,7 +120,7 @@ class PremiumAccessManager: ObservableObject {
     }
     
     /// Start a free trial
-    func startTrial() async throws {
+    public func startTrial() async throws {
         guard !hasActiveTrial else { return }
         
         trialEndDate = Date().addingTimeInterval(trialDuration)
@@ -77,8 +132,23 @@ class PremiumAccessManager: ObservableObject {
         UserDefaults.standard.set(true, forKey: "has_active_trial")
     }
     
+    /// Purchase a subscription
+    public func purchaseSubscription() async throws {
+        // This will be implemented with StoreKit integration
+        // For now, we'll use a mock implementation
+        isPremium = true
+        UserDefaults.standard.set(true, forKey: "is_premium")
+    }
+    
+    /// Restore purchases
+    public func restorePurchases() async throws {
+        // This will be implemented with StoreKit integration
+        // For now, we'll use a mock implementation
+        isPremium = UserDefaults.standard.bool(forKey: "is_premium")
+    }
+    
     /// Check if user should see an upgrade prompt
-    func shouldShowUpgradePrompt() -> Bool {
+    public func shouldShowUpgradePrompt() -> Bool {
         guard !isPremium else { return false }
         guard upgradePromptCount < maxUpgradePrompts else { return false }
         
@@ -123,33 +193,12 @@ class PremiumAccessManager: ObservableObject {
 
 // MARK: - Supporting Types
 
-enum PremiumFeature {
-    case multipleLanguages
-    case advancedCategories
-    case quizEnhancements
-    case achievements
-    case levelUpAnimations
-    case xpBoost
-    case voiceCustomization
-    case weeklyReview
-    case aiWordBundles
-    
-    var isAvailableInFreeTier: Bool {
-        switch self {
-        case .multipleLanguages, .advancedCategories, .quizEnhancements,
-             .achievements, .levelUpAnimations, .xpBoost, .voiceCustomization,
-             .weeklyReview, .aiWordBundles:
-            return false
-        }
-    }
-}
-
-enum UserActivity {
+public enum UserActivity {
     case wordViewed
     case quizCompleted
     case appLaunched
 }
 
 extension Notification.Name {
-    static let showUpgradePrompt = Notification.Name("showUpgradePrompt")
+    public static let showUpgradePrompt = Notification.Name("showUpgradePrompt")
 } 

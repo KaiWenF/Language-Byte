@@ -1,12 +1,33 @@
 import SwiftUI
 import AVFoundation
 
+// Import necessary view models and managers
+import class Language_Byte_Watch_App.WordViewModel
+import class Language_Byte_Watch_App.PremiumAccessManager
+
+// Import views
+import struct Language_Byte_Watch_App.DailyDashboardView
+import struct Language_Byte_Watch_App.CategorySelectionView
+import struct Language_Byte_Watch_App.WordStudyView
+import struct Language_Byte_Watch_App.FavoritesView
+import struct Language_Byte_Watch_App.QuizView
+import struct Language_Byte_Watch_App.WeeklyReviewView
+import struct Language_Byte_Watch_App.SettingsView
+import struct Language_Byte_Watch_App.LanguageSelectionView
+
+// Import modifiers
+import struct Language_Byte_Watch_App.PremiumFeatureModifier
+import enum Language_Byte_Watch_App.PremiumFeature
+
 struct MainView: View {
     @StateObject private var viewModel = WordViewModel()
+    @StateObject private var premiumManager = PremiumAccessManager.shared
     @AppStorage("selectedSourceLanguage") private var sourceLanguage: String = "en"
     @AppStorage("selectedTargetLanguage") private var targetLanguage: String = "es"
     @State private var showLanguageSelection = false
     @State private var showCategorySelection = false
+    @State private var showPaywall = false
+    @State private var selectedPremiumFeature: PremiumFeature?
     
     // Function to get display name for language code
     private func languageName(for code: String) -> String {
@@ -36,7 +57,12 @@ struct MainView: View {
                     
                     // Current language selector
                     Button(action: {
-                        showLanguageSelection = true
+                        if premiumManager.isFeatureAvailable(.multipleLanguages) {
+                            showLanguageSelection = true
+                        } else {
+                            selectedPremiumFeature = .multipleLanguages
+                            showPaywall = true
+                        }
                     }) {
                         VStack(spacing: 4) {
                             HStack(spacing: 10) {
@@ -61,6 +87,22 @@ struct MainView: View {
                         .cornerRadius(12)
                     }
                     .buttonStyle(.plain)
+                    .overlay(
+                        Group {
+                            if !premiumManager.isFeatureAvailable(.multipleLanguages) {
+                                VStack {
+                                    Image(systemName: "lock.fill")
+                                        .font(.title)
+                                        .foregroundColor(.secondary)
+                                    Text("Premium Feature")
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                }
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color.black.opacity(0.1))
+                            }
+                        }
+                    )
                     
                     // Remove the Spacer and add a small fixed-height spacer instead
                     Spacer(minLength: 4)
@@ -90,6 +132,26 @@ struct MainView: View {
                     .buttonStyle(.borderedProminent)
                     .tint(.indigo)
                     .padding(.bottom, 10)
+                    .overlay(
+                        Group {
+                            if !premiumManager.isFeatureAvailable(.advancedCategories) {
+                                VStack {
+                                    Image(systemName: "lock.fill")
+                                        .font(.title)
+                                        .foregroundColor(.secondary)
+                                    Text("Premium Feature")
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                }
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color.black.opacity(0.1))
+                                .onTapGesture {
+                                    selectedPremiumFeature = .advancedCategories
+                                    showPaywall = true
+                                }
+                            }
+                        }
+                    )
                     
                     // Start studying button
                     NavigationLink(destination: WordStudyView().environmentObject(viewModel)) {
@@ -129,6 +191,59 @@ struct MainView: View {
                     .buttonStyle(.borderedProminent)
                     .tint(.purple)
                     .padding(.bottom, 10)
+                    .overlay(
+                        Group {
+                            if !premiumManager.isFeatureAvailable(.quizEnhancements) {
+                                VStack {
+                                    Image(systemName: "lock.fill")
+                                        .font(.title)
+                                        .foregroundColor(.secondary)
+                                    Text("Premium Feature")
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                }
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color.black.opacity(0.1))
+                                .onTapGesture {
+                                    selectedPremiumFeature = .quizEnhancements
+                                    showPaywall = true
+                                }
+                            }
+                        }
+                    )
+                    
+                    // Weekly Review button
+                    NavigationLink(destination: WeeklyReviewView()) {
+                        HStack {
+                            Image(systemName: "calendar.badge.clock")
+                            Text("Weekly Review")
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.blue)
+                    .padding(.bottom, 10)
+                    .overlay(
+                        Group {
+                            if !premiumManager.isFeatureAvailable(.weeklyReview) {
+                                VStack {
+                                    Image(systemName: "lock.fill")
+                                        .font(.title)
+                                        .foregroundColor(.secondary)
+                                    Text("Premium Feature")
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                }
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color.black.opacity(0.1))
+                                .onTapGesture {
+                                    selectedPremiumFeature = .weeklyReview
+                                    showPaywall = true
+                                }
+                            }
+                        }
+                    )
                     
                     // Settings button
                     NavigationLink(destination: SettingsView().environmentObject(viewModel)) {
@@ -140,13 +255,18 @@ struct MainView: View {
                         .padding()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(.blue)
+                    .tint(.gray)
                     .padding(.bottom, 10)
                 }
                 .padding()
             }
             .navigationDestination(isPresented: $showLanguageSelection) {
                 LanguageSelectionView().environmentObject(viewModel)
+            }
+            .sheet(isPresented: $showPaywall) {
+                if let feature = selectedPremiumFeature {
+                    PaywallView(feature: feature)
+                }
             }
             .onAppear {
                 viewModel.loadLanguageData()

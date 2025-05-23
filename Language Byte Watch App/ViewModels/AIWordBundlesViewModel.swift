@@ -1,11 +1,11 @@
 import SwiftUI
 
-class AIWordBundlesViewModel: ObservableObject {
-    @Published var performanceInsights: [PerformanceInsight] = []
-    @Published var wordBundles: [WordBundle] = []
-    @Published var isGenerating = false
+public class AIWordBundlesViewModel: ObservableObject {
+    @Published public var performanceInsights: [PerformanceInsight] = []
+    @Published public var wordBundles: [WordBundle] = []
+    @Published public var isGenerating = false
     
-    init() {
+    public init() {
         loadData()
     }
     
@@ -54,7 +54,7 @@ class AIWordBundlesViewModel: ObservableObject {
         ]
     }
     
-    func generateNewBundle() {
+    public func generateNewBundle() {
         isGenerating = true
         // TODO: Implement AI bundle generation
         // For now, just add a mock bundle
@@ -75,21 +75,35 @@ class AIWordBundlesViewModel: ObservableObject {
         }
     }
     
-    func startPractice(with bundle: WordBundle) {
+    public func startPractice(with bundle: WordBundle) {
         // TODO: Implement practice session
     }
 }
 
-struct PerformanceInsight: Identifiable {
-    let id: String
-    let icon: String
-    let description: String
+public struct PerformanceInsight: Identifiable {
+    public let id: String
+    public let icon: String
+    public let description: String
+    
+    public init(id: String, icon: String, description: String) {
+        self.id = id
+        self.icon = icon
+        self.description = description
+    }
 }
 
-struct WordBundle: Identifiable {
-    let id: String
-    let title: String
-    let description: String
-    let words: [WordPair]
-    let tags: [String]
+public struct WordBundle: Identifiable {
+    public let id: String
+    public let title: String
+    public let description: String
+    public let words: [WordPair]
+    public let tags: [String]
+    
+    public init(id: String, title: String, description: String, words: [WordPair], tags: [String]) {
+        self.id = id
+        self.title = title
+        self.description = description
+        self.words = words
+        self.tags = tags
+    }
 } 

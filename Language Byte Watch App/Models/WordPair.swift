@@ -1,17 +1,28 @@
 import Foundation
 
 /// A word pair representing a translation between two languages
-struct WordPair: Identifiable, Codable, Equatable, Hashable {
-    let id: String
-    let sourceWord: String
-    let targetWord: String
-    let category: String
-    let lastAttempted: Date?
+public struct WordPair: Identifiable, Codable, Equatable, Hashable {
+    public let id: String
+    public let sourceWord: String
+    public let targetWord: String
+    public let category: String
+    public let lastAttempted: Date?
     
     // Additional properties for quiz functionality
-    var isCorrect: Bool?
-    var timeSpent: TimeInterval?
-    var difficulty: Int = 1
+    public var isCorrect: Bool?
+    public var timeSpent: TimeInterval?
+    public var difficulty: Int = 1
+    
+    public init(id: String, sourceWord: String, targetWord: String, category: String, lastAttempted: Date? = nil, isCorrect: Bool? = nil, timeSpent: TimeInterval? = nil, difficulty: Int = 1) {
+        self.id = id
+        self.sourceWord = sourceWord
+        self.targetWord = targetWord
+        self.category = category
+        self.lastAttempted = lastAttempted
+        self.isCorrect = isCorrect
+        self.timeSpent = timeSpent
+        self.difficulty = difficulty
+    }
     
     // MARK: - Codable
     enum CodingKeys: String, CodingKey {
@@ -20,11 +31,11 @@ struct WordPair: Identifiable, Codable, Equatable, Hashable {
     }
     
     // MARK: - Hashable
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
     
-    static func == (lhs: WordPair, rhs: WordPair) -> Bool {
+    public static func == (lhs: WordPair, rhs: WordPair) -> Bool {
         lhs.id == rhs.id
     }
 } 

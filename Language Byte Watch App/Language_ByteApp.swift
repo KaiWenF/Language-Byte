@@ -12,12 +12,12 @@ import SwiftUI
 @main
 struct Language_ByteApp: App {
     var body: some Scene {
-           WindowGroup {
+        WindowGroup {
             MainView()
-           }
-       }
-   }
+        }
+    }
+}
 
-   #Preview {
+#Preview {
     MainView()
-   }
+}
